@@ -1,0 +1,16 @@
+@mixin primary {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+@mixin heading {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+@mixin title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+}

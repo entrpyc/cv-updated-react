@@ -1,0 +1,66 @@
+@use './style/font.scss';
+@use './style/color.scss';
+@use './style/flex.scss';
+@use './style/spacing.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap');
+
+$sidebar-width: 260px;
+
+
+* {
+  font-family: 'Montserrat', sans-serif;
+
+  @include font.primary;
+}
+
+div {
+  display: block;
+}
+
+h1 {
+  @include font.heading;
+}
+
+.main {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  width: calc(100% - $sidebar-width);
+  min-height: 100vh;
+
+  float: right;
+}
+
+.sidebar {
+  width: $sidebar-width;
+  padding: 46px;
+  z-index: 5;
+  height: 100vh;
+  background: color.$background;
+  color: color.$third;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  float: left;
+}
+
+section {
+  padding: spacing.$section-xy;
+  border-bottom: solid 1px color.$border;
+
+}
+
+h1 {
+  @include font.title;
+}
+
+h2 {
+  @include font.heading;
+  color: color.$secondary;
+  margin-bottom: spacing.$heading-y;
+}
