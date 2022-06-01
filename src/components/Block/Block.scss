@@ -1,0 +1,10 @@
+@use '../../style/grid.scss';
+@use '../../style/font.scss';
+
+.sub {
+  @include font.secondary;
+}
+
+.text, .secondary {
+  margin-top: grid.$gap-1-1;
+}
