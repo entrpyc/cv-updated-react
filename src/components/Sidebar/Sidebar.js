@@ -3,6 +3,7 @@ import './Sidebar.scss';
 import { useContext } from 'react';
 import { GlobalContext } from '../../context/GlobalContext';
 
+import Avatar from '../Avatar/Avatar';
 
 function Sidebar() {
   const { sidebar } = useContext(GlobalContext)
@@ -10,11 +11,7 @@ function Sidebar() {
 
   return (
     <div className="sidebar">
-      <div className="picture">
-        <div className="img-container">
-          <img src={info.picture} alt={info.name} />
-        </div>
-      </div>
+      <Avatar picture={info.picture} name={info.name} />
       <div className="info">
         <h1>{info.name}</h1>
         <p>{info.position}</p>
