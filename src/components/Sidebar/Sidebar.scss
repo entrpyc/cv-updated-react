@@ -1,15 +1,26 @@
-@use '../../style/flex.scss';
+@use '../../style/grid.scss';
+@use '../../style/color.scss';
 
 .picture {
+  @include grid.center;
   width: 165px;
   height: 165px;
   margin: 0 auto;
 
-  @include flex.center;
+  .img-container {
+    @include grid.center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+
+    background-color: color.$background-secondary;
+  }
 
   img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: calc(100% - 10px);
+    max-height: calc(100% - 10px);
     width: auto;
     height: auto;
 
@@ -17,3 +28,28 @@
   }
 }
 
+.info {
+  margin-top: grid.$gap-4;
+}
+
+.social {
+  @include grid.jc-start;
+  gap: grid.$gap-2;
+  margin-top: grid.$gap-3;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.navigation {
+  @include grid.column;
+  gap: grid.$gap-1;
+  margin-top: grid.$gap-3;
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
