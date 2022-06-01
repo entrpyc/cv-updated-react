@@ -1,0 +1,12 @@
+@use '../../style/grid.scss';
+
+#portfolio {
+  .wrap {
+    @include grid.column;
+    gap: grid.$gap-1;
+  }
+
+  .wrap + .wrap {
+    margin-top: grid.$gap-4;
+  }
+}

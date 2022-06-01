@@ -1,0 +1,38 @@
+@use '../../../../style/grid.scss';
+@use '../../../../style/color.scss';
+
+.portfolio-block {
+  display: flex;
+  gap: grid.$gap-0;
+
+  .block {
+    @include grid.jc-start;
+    flex-grow: 1;
+    padding: grid.$gap-1;
+  
+    background-color: color.$secondary;
+    border-radius: 5px;
+    text-decoration: none;
+    
+    &.single {
+      width: 100%;
+    }
+    
+    &.external {
+      @include grid.center;
+      flex-grow: 0;
+      width: 80px;
+    }
+
+    .icon {
+      @include grid.center;
+  
+      width: 25px;
+      height: 25px;
+    }
+  
+    p {
+      margin-left: grid.$gap-1;
+    }
+  }
+}
