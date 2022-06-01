@@ -1,50 +1,13 @@
 import './Sidebar.scss';
 
-const info = {
-  picture: './assets/profile.jpeg',
-  name: 'Asen Angelov',
-  position: 'Software Engineer',
-}
+import { useContext } from 'react';
+import { GlobalContext } from '../../context/GlobalContext';
 
-const social = [
-  {
-    src: './assets/github-logo.png',
-    href: 'https://github.com/entrpyc',
-    alt: 'github',
-  },
-  {
-    src: './assets/gitlab-logo.png',
-    href: 'https://gitlab.com/aangelov1',
-    alt: 'gitlab',
-  },
-  {
-    src: './assets/npm-logo.png',
-    href: 'https://www.npmjs.com/~entrpyc',
-    alt: 'npm',
-  },
-  {
-    src: './assets/linkedin-logo.png',
-    href: 'https://www.linkedin.com/in/asen-angelov-a26458195/',
-    alt: 'linkedin',
-  }
-]
-
-const navigation = [
-  {
-    name: 'Experience',
-    href: '#experience',
-  },
-  {
-    name: 'Portfolio',
-    href: '#portfolio',
-  },
-  {
-    name: 'Contact',
-    href: '#contact',
-  }
-]
 
 function Sidebar() {
+  const { sidebar } = useContext(GlobalContext)
+  const { info, social, navigation } = sidebar
+
   return (
     <div className="sidebar">
       <div className="picture">
