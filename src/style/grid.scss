@@ -1,6 +1,7 @@
 $sidebar-width: 260px;
 
 $section-xy: 60px 70px;
+$section-xy-mobile: 50px 25px;
 $heading-y: 40px;
 
 $gap-0: 5px;
@@ -31,4 +32,22 @@ $gap-5: 60px;
 @mixin column {
   display: flex;
   flex-direction: column;
+}
+
+@mixin column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin mobile {
+  @media (max-width: 720px) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media (max-width: 450px) {
+    @content;
+  }
 }
