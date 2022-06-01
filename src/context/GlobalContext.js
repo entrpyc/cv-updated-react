@@ -4,22 +4,22 @@ import {
   experienceData,
   sidebarData,
   portfolioData,
-  contactData,
-} from './api';
+  aboutData,
+} from '../api/page-data';
 
 export const GlobalContext = createContext()
 
 export const GlobalProvider = props => {
+  const [about] = useState(aboutData)
   const [experience] = useState(experienceData)
   const [sidebar] = useState(sidebarData)
   const [portfolio] = useState(portfolioData)
-  const [contact] = useState(contactData)
 
   return <GlobalContext.Provider value={{
+    about,
     experience,
     sidebar,
     portfolio,
-    contact,
   }}>
     {props.children}
   </GlobalContext.Provider>
