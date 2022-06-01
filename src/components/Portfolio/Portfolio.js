@@ -19,7 +19,7 @@ function Portfolio() {
         ))}
       </div>
       <div className="wrap">
-        <h3>Web Development</h3>
+        <h3>Animations and Graphic Design</h3>
         {animationAndGraphicDesign.map((item, index) => (
           <PortfolioBlock {...item} key={index} />
         ))}
