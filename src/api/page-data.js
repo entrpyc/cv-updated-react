@@ -42,7 +42,67 @@ export const experienceData = [
 ]
 
 export const portfolioData = {
-
+  webDevelopment: [
+    {
+      "title": "Biotrade - Marketing files management platform",
+      "href": "https://drive.google.com/file/d/1J_AFyDkNsjrEuE2LcJGGBr90nyQk3-b8/view?usp=sharing"
+    },
+    {
+      "title": "Leptonite - Decentralized marketplace",
+      "href": "https://drive.google.com/file/d/1kcHqZaJ0nFAv81cahQx-CjeledTU6Tsm/view?usp=sharing",
+      "external": "https://www.leptonite.io/"
+    },
+    {
+      "title": "AllianceBlock - Crypto currency bridge",
+      "href": "https://drive.google.com/file/d/1l4rGgV1Skud4TS-MiNqymRd_A12YnIS4/view?usp=sharing",
+      "external": "https://alliancebridge.io/"
+    },
+    {
+      "title": "Universe.xyz - NFT minting and marketplace",
+      "href": "https://drive.google.com/file/d/1JSi48k3WFX5v_BQLM903Jbr5CYJDWIri/view?usp=sharing",
+      "external": "https://universe.xyz/"
+    },
+    {
+      "title": "Hippoland - Mobile menu with filters",
+      "href": "https://drive.google.com/file/d/1C4lb9z_nmg0VIOpG4iihr34eJGPDzqpQ/view?usp=sharing"
+    },
+    {
+      "title": "Biotrade Corporate website - Interactive Map",
+      "href": "https://drive.google.com/file/d/1riZ-2vvcyhDlqQdtQ-I9VqiYf_Un42P1/view?usp=sharing",
+      "external": "https://biotrade.global/"
+    },
+    {
+      "title": "Biotrade Corporate website - Interactive Navigation",
+      "href": "https://drive.google.com/file/d/1zCEEWuQOZtQA5gN4mETEdBCRwgmdb5fT/view?usp=sharing",
+      "external": "https://biotrade.global/"
+    }
+  ],
+  animationAndGraphicDesign: [
+    {
+      "title": "Slot game symbols animation",
+      "href": "https://drive.google.com/file/d/1ToqxvFfgmMM5HZrWVXtOLZerZdW-PVyC/view?usp=sharing"
+    },
+    {
+      "title": "Slot game symbols animation 2",
+      "href": "https://drive.google.com/file/d/139BrhZGyf1Hi_h1CDeMoa5wwwz_zm7ZT/view?usp=sharing"
+    },
+    {
+      "title": "Slot game animation sequence",
+      "href": "https://drive.google.com/file/d/1MqaFu4E_QRXAmgt26JuqNywTbvjrMplo/view?usp=sharing"
+    },
+    {
+      "title": "Game sheet",
+      "href": "https://drive.google.com/file/d/10ZpJrkzI0xqjJhO_VBBgTDuzmDyYgIqF/view?usp=sharing"
+    },
+    {
+      "title": "Poster design",
+      "href": "https://drive.google.com/file/d/1s5QKQboxEh2jAs2GlE5LJ34tcqzWj9uP/view?usp=sharing"
+    },
+    {
+      "title": "Schedule design",
+      "href": "https://drive.google.com/file/d/1_c6ySTC9wv4AtQHYxR-4L1jpCt2NoiQj/view?usp=sharing"
+    }
+  ]
 }
 
 export const sidebarData = {

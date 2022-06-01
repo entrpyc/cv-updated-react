@@ -5,6 +5,7 @@ import { GlobalProvider } from './context/GlobalContext'
 
 import Sidebar from './components/Sidebar/Sidebar';
 import Experience from './components/Experience/Experience';
+import Portfolio from './components/Portfolio/Portfolio';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Sidebar />
           <div className="container">
             <Experience />
+            <Portfolio />
           </div>
         </div>
       </div>
