@@ -1,0 +1,43 @@
+@use '../../style/grid.scss';
+@use '../../style/font.scss';
+
+#about {
+  display: flex;
+
+  .about {
+    display: none;
+  }
+
+  .row.mobile {
+    display: none;
+
+    @include font.heading-2;
+    margin-bottom: grid.$gap-2;
+  }
+
+  @include grid.mobile {
+    @include grid.split;
+
+    .about {
+      display: block;
+    }
+
+    .info {
+      @include grid.column-center;
+    }
+
+    .row.mobile {
+      display: block;
+    }
+  }
+
+  @include grid.small {
+    @include grid.column;
+
+    .info {
+      margin-top: grid.$gap-4;
+
+      text-align: center;
+    }
+  }
+}
