@@ -1,27 +1,27 @@
 @mixin primary {
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 300;
   line-height: 28px;
 }
 
 @mixin heading {
-  font-size: 21px;
+  font-size: 1.3125rem;
   font-weight: 500;
 }
 
 @mixin heading-2 {
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 500;
 }
 
 @mixin title {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 @mixin secondary {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 300;
   line-height: 28px;
 }
