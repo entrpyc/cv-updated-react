@@ -1,17 +1,23 @@
 @use './style/font.scss';
 @use './style/color.scss';
-@use './style/flex.scss';
-@use './style/spacing.scss';
+@use './style/grid.scss';
+@use './style/util.scss';
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap');
-
-$sidebar-width: 260px;
 
 
 * {
   font-family: 'Montserrat', sans-serif;
-
   @include font.primary;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: color.$background-third;
 }
 
 div {
@@ -29,14 +35,16 @@ h1 {
 }
 
 .container {
-  width: calc(100% - $sidebar-width);
+  width: calc(100% - grid.$sidebar-width);
   min-height: 100vh;
 
   float: right;
+
+  background-color: color.$background-secondary;
 }
 
 .sidebar {
-  width: $sidebar-width;
+  width: grid.$sidebar-width;
   padding: 46px;
   z-index: 5;
   height: 100vh;
@@ -50,7 +58,7 @@ h1 {
 }
 
 section {
-  padding: spacing.$section-xy;
+  padding: grid.$section-xy;
   border-bottom: solid 1px color.$border;
 
 }
@@ -62,5 +70,20 @@ h1 {
 h2 {
   @include font.heading;
   color: color.$secondary;
-  margin-bottom: spacing.$heading-y;
+  margin-bottom: grid.$heading-y;
+  font-weight: 700;
+}
+
+h3 {
+  @include font.heading-2;
+}
+
+a {
+  @include util.transition(0.1s);
+
+  color: color.$third;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }

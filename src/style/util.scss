@@ -1,0 +1,10 @@
+$default-timing: 0.2s;
+$default-easing: ease-in-out;
+
+@mixin transition($timing: $default-timing, $easing: $default-easing) {
+  transition: $timing $easing;
+
+  @media prefers-reduced-motion {
+    transition: none;
+  }
+}

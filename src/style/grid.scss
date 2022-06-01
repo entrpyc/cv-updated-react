@@ -1,0 +1,33 @@
+$sidebar-width: 260px;
+
+$section-xy: 60px 70px;
+$heading-y: 40px;
+
+$gap-1: 10px;
+$gap-1-1: 15px;
+$gap-2: 18px;
+$gap-3: 25px;
+$gap-4: 40px;
+$gap-5: 60px;
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin split {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin jc-start {
+  display: flex;
+  align-items: center;
+}
+
+@mixin column {
+  display: flex;
+  flex-direction: column;
+}

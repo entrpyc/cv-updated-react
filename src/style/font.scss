@@ -1,10 +1,15 @@
 @mixin primary {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 300;
   line-height: 28px;
 }
 
 @mixin heading {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+@mixin heading-2 {
   font-size: 17px;
   font-weight: 500;
 }
@@ -13,4 +18,10 @@
   font-size: 30px;
   font-weight: 700;
   line-height: 1.2;
+}
+
+@mixin secondary {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 28px;
 }
