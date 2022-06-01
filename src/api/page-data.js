@@ -1,7 +1,6 @@
 const picture = './assets/profile.jpeg'
 
 export const aboutData = {
-  picture,
   birthdate: 'June 10, 1999',
   location: 'Sofia, Bulgaria',
   email: 'contact@a-angelov.eu',
@@ -137,16 +136,16 @@ export const sidebarData = {
   
   navigation: [
     {
+      name: 'About',
+      href: '#about',
+    },
+    {
       name: 'Experience',
       href: '#experience',
     },
     {
       name: 'Portfolio',
       href: '#portfolio',
-    },
-    {
-      name: 'Contact',
-      href: '#contact',
     }
   ],
 }
