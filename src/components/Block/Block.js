@@ -1,12 +1,11 @@
 import "./Block.scss";
 
-function Block({ title, subTitle, text, secondary}) {
+function Block({ title, subTitle, text }) {
   return (
     <div className="block">
       <h3>{title}</h3>
       <p className="sub">{subTitle}</p>
-      <p className="text">{text}</p>
-      <p className="secondary">{secondary}</p>
+      {text.map((row, i) => <p className="text" key={i}>{row}</p>)}
     </div>
   )
 }

@@ -1,0 +1,8 @@
+@use '../../style/grid.scss';
+
+#skills {
+  .wrap {
+    @include grid.column;
+    gap: grid.$space-2;
+  }
+}

@@ -4,13 +4,15 @@ $section-xy: 60px 70px;
 $section-xy-mobile: 50px 25px;
 $heading-y: 40px;
 
-$gap-0: 5px;
-$gap-1: 10px;
-$gap-1-1: 15px;
-$gap-2: 18px;
-$gap-3: 25px;
-$gap-4: 40px;
-$gap-5: 60px;
+$space-0: 0;
+$space-0-1: 3px;
+$space-0-2: 5px;
+$space-1: 10px;
+$space-1-1: 15px;
+$space-2: 18px;
+$space-3: 25px;
+$space-4: 40px;
+$space-5: 60px;
 
 @mixin center {
   display: flex;

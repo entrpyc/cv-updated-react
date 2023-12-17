@@ -18,7 +18,7 @@ function Sidebar() {
       </div>
       <div className="social">
         {social.map((item, index) => (
-          <a href={item.href} target="_blank" rel="noreferrer">
+          <a href={item.href} target="_blank" key={index} rel="noreferrer">
             <img src={item.src} key={index} alt={item.alt} />
           </a>
         ))}

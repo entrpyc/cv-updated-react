@@ -12,7 +12,7 @@
     display: none;
 
     @include font.heading-2;
-    margin-bottom: grid.$gap-2;
+    margin-bottom: grid.$space-2;
   }
 
   @include grid.mobile {
@@ -35,7 +35,7 @@
     @include grid.column;
 
     .info {
-      margin-top: grid.$gap-4;
+      margin-top: grid.$space-4;
 
       text-align: center;
     }

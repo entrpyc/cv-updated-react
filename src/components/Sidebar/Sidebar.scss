@@ -3,13 +3,13 @@
 
 .sidebar {
   .info {
-    margin-top: grid.$gap-4;
+    margin-top: grid.$space-4;
   }
   
   .social {
     @include grid.jc-start;
-    gap: grid.$gap-2;
-    margin-top: grid.$gap-3;
+    gap: grid.$space-2;
+    margin-top: grid.$space-3;
   
     img {
       width: 20px;
@@ -19,8 +19,8 @@
   
   .navigation {
     @include grid.column;
-    gap: grid.$gap-1;
-    margin-top: grid.$gap-3;
+    gap: grid.$space-1;
+    margin-top: grid.$space-3;
   
     a {
       text-decoration: none;

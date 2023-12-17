@@ -1,0 +1,12 @@
+@use '../../../../style/grid.scss';
+@use '../../../../style/color.scss';
+
+.bio-wrapper {
+  @include grid.column;
+  gap: grid.$space-2;
+  
+  .content {
+    @include grid.column;
+    gap: grid.$space-0-1;
+  }
+}

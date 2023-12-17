@@ -1,0 +1,41 @@
+@use '../../../../style/grid.scss';
+@use '../../../../style/color.scss';
+
+.skills-wrapper {
+  .block {
+    @include grid.jc-start;
+    flex-grow: 1;
+    padding: grid.$space-1;
+  
+    color: color.$third;
+    background-color: color.$secondary;
+    border-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    text-decoration: none;
+    width: 100%;
+    
+    p {
+      font-weight: 500;
+      margin-left: grid.$space-1;
+    }
+  }
+  
+  
+  .content {
+    @include grid.column;
+    gap: grid.$space-1;
+    color: color.$third;
+    background-color: rgba(color.$secondary, 0.8);
+    z-index: 2;
+    padding: grid.$space-1;
+    margin-top: grid.$space-0-1;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    
+    p {
+      margin-left: grid.$space-1;
+    }
+  }
+}

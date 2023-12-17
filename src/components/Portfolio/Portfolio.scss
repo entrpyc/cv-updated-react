@@ -3,10 +3,10 @@
 #portfolio {
   .wrap {
     @include grid.column;
-    gap: grid.$gap-1;
+    gap: grid.$space-3;
   }
 
   .wrap + .wrap {
-    margin-top: grid.$gap-4;
+    margin-top: grid.$space-4;
   }
 }

@@ -60,7 +60,7 @@ h1 {
 
 section {
   padding: grid.$section-xy;
-  border-bottom: solid 1px color.$border;
+  border-bottom: solid grid.$space-1 color.$border;
 
   @include grid.mobile {
     padding: grid.$section-xy-mobile;
