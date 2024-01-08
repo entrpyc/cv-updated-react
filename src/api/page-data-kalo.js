@@ -1,0 +1,305 @@
+const picture = './assets/profile.jpg'
+
+export const aboutData = {
+  birthdate: 'June 10, 1999',
+  location: 'Sofia, Bulgaria',
+  email: 'asenangelov.cv@gmail.com',
+  phone: '+359 896 929 913',
+  specialized: 'Front-end and Javascript technologies',
+  lookingFor: 'React Mid-level Developer Role',
+  minimumSalaryExpected: `NET 5'000BGN / month`,
+}
+
+export const experienceData = [
+  {
+    title: 'Indepth Solutions',
+    subTitle: 'Co-Founder & Software Engineer | July, 2023 - PRESENT',
+    text: [
+      "At our company, we specialize in integrating AI solutions tailored for automating repetitive tasks within businesses.",
+      "My technical role encompasses designing both low-level and high-level Linux server architectures, along with creating and managing node servers. I specialize in crafting solutions by interfacing third-party software with our API, employing a diverse range of technologies dictated by our clients' unique requirements.",
+      "React, Svelte, Storybook, Jest, GraphQL, Node.js, Express, Neo4j, dGraph, Google App Scripts, Linux Server Administration",
+    ],
+  },
+  {
+    title: 'Clustermarket',
+    subTitle: 'Software Engineer | February, 2022 - July, 2023',
+    text: [
+      "While at Clustermarket, my primary role involved constructing Booking software.",
+      "We transitioned the software from its initial Ruby-based structure to a comprehensive Svelte and GraphQL framework, encompassing all existing components while further expanding its functionality.",
+      "Svelte, GraphQL, Storybook, Jest, Gitlab, Ruby",
+    ],
+  },
+  {
+    title: 'Senteca Commerce',
+    subTitle: 'Software Engineer | October, 2021 - January 2022',
+    text: [
+      "At Senteca Commerce, I contributed to developing e-commerce solutions for major brands in Bulgaria.",
+      "My responsibilities included reviewing junior code and optimizing websites for enhanced usability and performance. Utilizing Next.js, GraphQL, and Tailwind, I revamped these platforms to ensure they met the highest standards of functionality and user experience.",
+      "React, Next.js, Tailwind, PostCSS",
+    ]
+  },
+  {
+    title: 'LimeChain',
+    subTitle: 'Blockchain Developer | November, 2020 - November, 2021',
+    text: [
+      "At LimeChain, our focus was pioneering blockchain solutions for esteemed clients.",
+      "My focus centered on crafting PWAs leveraging blockchain technology. This involved hands-on development of smart contracts, API creation, and pivotal contributions to complex projects like Boson Protocol and Universe.xyz. Within these projects, my team and I pioneered the creation of a decentralized marketplace, facilitated auctions, and curated an NFT collection.",
+      "JavaScript, React, Solidity, Sass",
+    ]
+  },
+  {
+    title: 'Grind Web Studio',
+    subTitle: 'Front-end Developer | November, 2019 - November, 2020',
+    text: [
+      "I developed e-commerce platforms with WordPress using Sass, JavaScript, and Laravel blades.",
+      "My responsibilities at Grind were to build pixel-perfect pages, provide needed custom data fields in the admin panel of WordPress, optimize device and browser compatibility, and create custom functionalities using vanilla JavaScript.",
+      "Javascript, Wordpress, Laravel, Sass",
+    ]
+  },
+  {
+    title: 'Max Win Gaming',
+    subTitle: '2D Animation Developer | December, 2017 - October, 2019',
+    text: [
+      "At Max Win Gaming, I was working on slot games animations.",
+      "The games were developed using HTML Canvas and EaselJS - a JS library for animations. My role demanded proficient expertise in Adobe Photoshop, After Effects, and Animate to ensure high-quality and engaging game visuals.",
+      "Javascript, EaselJS, Adobe Suite",
+    ]
+  },
+]
+
+export const portfolioData = [
+  {
+    title: "Web Development",
+    content: [
+      {
+        "title": "Biotrade - Marketing files management platform",
+        "href": "https://drive.google.com/file/d/1J_AFyDkNsjrEuE2LcJGGBr90nyQk3-b8/view?usp=sharing",
+        "techStack": [
+          { title: "Javascript (Vanilla)" },
+          { title: "Sass" },
+        ]
+      },
+      {
+        "title": "Leptonite - Decentralized marketplace",
+        "href": "https://drive.google.com/file/d/1kcHqZaJ0nFAv81cahQx-CjeledTU6Tsm/view?usp=sharing",
+        "techStack": [
+          { title: "React" },
+          { title: "Solidity" },
+          { title: "MongoDB" },
+        ]
+      },
+      {
+        "title": "AllianceBlock - Crypto currency bridge",
+        "href": "https://drive.google.com/file/d/1l4rGgV1Skud4TS-MiNqymRd_A12YnIS4/view?usp=sharing",
+        "techStack": [
+          { title: "React" },
+          { title: "Solidity" },
+          { title: "MongoDB" },
+        ]
+      },
+      {
+        "title": "Universe.xyz - NFT minting and marketplace",
+        "href": "https://drive.google.com/file/d/1JSi48k3WFX5v_BQLM903Jbr5CYJDWIri/view?usp=sharing",
+        "techStack": [
+          { title: "React" },
+          { title: "Solidity" },
+          { title: "MongoDB" },
+        ]
+      },
+      {
+        "title": "Hippoland - Mobile menu with filters",
+        "href": "https://drive.google.com/file/d/1C4lb9z_nmg0VIOpG4iihr34eJGPDzqpQ/view?usp=sharing",
+        "techStack": [
+          { title: "Javascript (Vanilla)" },
+          { title: "Next.js" },
+          { title: "Typescript" },
+        ]
+      },
+      {
+        "title": "Biotrade Corporate website - Interactive Map",
+        "href": "https://drive.google.com/file/d/1riZ-2vvcyhDlqQdtQ-I9VqiYf_Un42P1/view?usp=sharing",
+        "external": "https://biotrade.global/",
+        "techStack": [
+          { title: "Javascript (Vanilla)" },
+          { title: "Laravel" },
+          { title: "Wordpress (with ACF)" },
+        ]
+      },
+      {
+        "title": "Biotrade Corporate website - Interactive Navigation",
+        "href": "https://drive.google.com/file/d/1zCEEWuQOZtQA5gN4mETEdBCRwgmdb5fT/view?usp=sharing",
+        "external": "https://biotrade.global/",
+        "techStack": [
+          { title: "Javascript (Vanilla)" },
+          { title: "Laravel" },
+          { title: "Wordpress (with ACF)" },
+        ]
+      }
+    ]
+  },
+  {
+    title: "Animations",
+    content: [
+      {
+        "title": "Javascript & CSS animations",
+        "href": "https://drive.google.com/file/d/1ToqxvFfgmMM5HZrWVXtOLZerZdW-PVyC/view?usp=sharing",
+        "techStack": [
+          { title: "EaselJS" },
+          { title: "Canvas" },
+          { title: "Adobe: Animate, AE, PS" },
+        ]
+      },
+      {
+        "title": "Javascript & CSS animations 2",
+        "href": "https://drive.google.com/file/d/139BrhZGyf1Hi_h1CDeMoa5wwwz_zm7ZT/view?usp=sharing",
+        "techStack": [
+          { title: "EaselJS" },
+          { title: "Canvas" },
+          { title: "Adobe: Animate, AE, PS" },
+        ]
+      },
+      {
+        "title": "Javascript animation sequence",
+        "href": "https://drive.google.com/file/d/1MqaFu4E_QRXAmgt26JuqNywTbvjrMplo/view?usp=sharing",
+        "techStack": [
+          { title: "EaselJS" },
+          { title: "Canvas" },
+          { title: "Adobe: Animate, AE, PS" },
+        ]
+      },
+    ]
+  }
+]
+
+export const skillsData = [
+  {
+    title: 'Javascript',
+    text: [
+      `JavaScript is my primary technology of choice. I possess experience in both front-end and back-end development using JS, although my focus has primarily been on front-end work.`,
+      `Regarding theoretical knowledge, I've studied both high-level and low-level concepts of the language. This includes understanding Hoisting, Closures, Event Loop, Heap and Stack, among others. Additionally, I've delved into compilation and interpretation, IR and AST parsing, transpilation, and more.`,
+      `I tend to favor shorter syntax, common in other languages, while avoiding ternary expressions or anything that might compromise code readability. My approach involves using simple methods, often employing pure function expressions for data aggregation and common design patterns for data storage. These techniques generally cover most technical cases. For more intricate solutions, I resort to OOP with ES6+ syntax, creating abstractions characterized by high cohesion and low coupling.`,
+      `I've developed numerous packages serving a wide range of purposes, all of which I continue to use to this day. You can review them on my NPM account.`,
+    ]
+  },
+  {
+    title: 'Front-end Engineering',
+    text: [
+      `Front-end development is my primary specialization, with over 4 years of experience.`,
+      `I've explored a wide range of concepts and have adapted the best practices in the field through individual research and communication with other professionals.`,
+      `I'm most proficient at designing architectures suitable for continuous integration. By aiming for reusability and simplicity in software components, I contribute code that is easily maintainable, requires less refactoring, and can be utilized in other parts of the software, effectively saving development time.`,
+      `During the product design stages, I actively participate in the development of software features by offering a developer's perspective in the process. I recognize potential solutions for problems I've encountered in previous projects.`,
+      `While I am adept at being framework-agnostic, in my previous positions, I have gained extensive expertise in various frameworks, including React and Svelte. I quickly grasp the design patterns of diverse projects and efficiently extend or enhance them as necessary. My preferred approach with frameworks involves segregating logic and UI, a strategy I've found to be highly efficient and time-saving in the long term.`,
+    ]
+  },
+  {
+    title: 'Software Development',
+    text: [
+      `I've navigated diverse work environments, gaining exposure to iterative development and waterfall methodologies. Each approach has enriched my problem-solving skills in areas like maintaining clean code, version control, testing strategies, managing technical debt, code refactoring, and documentation.`,
+      `Personally, I prioritize addressing technical debt early on to minimize costly refactoring later. I emphasize the importance of thorough unit testing to prevent regressions when implementing new features or modifications.`,
+      `Central to my process is allocating time to design solutions using recognizable design patterns, enhancing code reusability. Additionally, I prioritize assessing code cohesion and coupling during submissions and reviews, facilitating code extension rather than extensive refactoring.`,
+    ]
+  },
+  {
+    title: 'Software Design & Architecture',
+    text: [
+      `Designing my own systems taught me systematic approaches in software design and architecture, aiding in recognizing high and low-level bottlenecks within the software I develop.`,
+      `During code reviews, I assess scalability, conduct performance profiling, and pinpoint opportunities to implement caching strategies, aligning code modifications with the software's overarching architecture.`,
+      `Though relatively new to extending these skills, I'm swiftly gaining proficiency, noticeably enhancing my overall performance in software development.`,
+    ]
+  },
+  {
+    title: 'Server Design & Architecture',
+    text: [
+      `At my company, I delved into designing Linux servers and APIs, honing my skills in this area. I concentrated on making server components reusable by using NPM with various backend services I built from the ground up. I implemented a monolithic structure for our APIs, following commonly used practices for this type of setup.`,
+      `This experience expanded my comprehension of web security and motivated me to further deepen my expertise in this field.`,
+    ]
+  },
+  {
+    title: 'Computer science',
+    text: [
+      `Frequently, I've tackled lower-level technical challenges, delving into the implementation of more efficient, faster, and lighter code. My grasp of algorithms, data structures, and performance metrics has been instrumental in resolving these issues.`,
+      `While I lean towards OOP for software development, I've also crafted highly effective implementations using functional approaches. In my experience, OOP excels in providing declarative code, whereas functional programming methods often prove more efficient for developing imperative code.`,
+    ]
+  },
+  {
+    title: 'Product design',
+    text: [
+      `My understanding of product design methods that I gained during the work at my own company enables me to have more efficient collaboration with product designers. This allows me to offer valuable insights and preempt potential issues in feature implementation during later development stages.`,
+      `Additionally, it has significantly enhanced my decision-making in feature development, incorporating practices like using user personas, prototyping, and striking a balance between user needs and business objectives.`,
+    ]
+  },
+  {
+    title: 'Internet Infrastructure & Network Protocols',
+    text: [
+      `Understanding internet infrastructure was pivotal in my development of secure Linux servers and hosting multiple APIs containing sensitive data. This knowledge also deepened my comprehension of client-side, server-side, and alternative content rendering methodologies for the web.`,
+      `Ultimately, this experience significantly impacts my capacity to devise optimal solutions for maintaining and delivering web applications efficiently to end users.`
+    ]
+  },
+  {
+    title: 'UI & UX',
+    text: [
+      `I've learned essential UI & UX principles and applied them at Max Win Gaming by creating UI solutions, becoming skilled in JS and CSS animation, and designing user-friendly software interfaces.`,
+      `This experience has trained me to anticipate potential design issues and offer solutions, enhancing both user interaction and the efficiency of asynchronous code for smoother user experiences.`,
+    ]
+  },
+  {
+    title: 'Business Solutions',
+    text: [
+      `I use my business experience gained from co-founding a company to identify more efficient solutions for engineering challenges that directly affect the overall performance of the business.`,
+      `This experience has also sharpened my ability to prioritize tasks effectively and discern their levels of urgency. Also understanding the goals and challenges of colleagues across various departments has notably enhanced my communication skills within the team.`,
+    ]
+  },
+  {
+    title: 'Coaching & Teaching',
+    text: [
+      `For the past three years, I've been building online communities for studying software engineering. I've led groups of 6 to 15 members from various backgrounds, helping them pave their paths towards successful programming careers. I created detailed plans and career guides, hosting frequent 1-2 weekly meetings to dive into the core principles of software development.`,
+      `I've switched from hosting groups to individual mentoring, adapting my methods to fit each student's specific needs. I specialize in guiding beginners towards landing junior developer roles. Additionally, I work closely with some students, helping them advance from junior to senior positions and even move up from developer to architect roles.`,
+      `Also, at Softuni I earned a scholarship after achieving a perfect score, allowing me to mentor and teach in courses I've already completed. There I had the opportunity to teach larger groups of students for a short period of time.`
+    ]
+  },
+]
+
+export const sidebarData = {
+  info: {
+    picture,
+    name: 'Asen Angelov',
+    position: 'Software Engineer',
+  },
+  
+  social: [
+    {
+      src: './assets/github-logo.png',
+      href: 'https://github.com/entrpyc',
+      alt: 'github',
+    },
+    {
+      src: './assets/npm-logo.png',
+      href: 'https://www.npmjs.com/~entrpyc',
+      alt: 'npm',
+    },
+    {
+      src: './assets/linkedin-logo.png',
+      href: 'https://www.linkedin.com/in/asen-angelov-a26458195/',
+      alt: 'linkedin',
+    }
+  ],
+  
+  navigation: [
+    {
+      name: 'About',
+      href: '#about',
+    },
+    {
+      name: 'Experience',
+      href: '#experience',
+    },
+    {
+      name: 'Portfolio',
+      href: '#portfolio',
+    },
+    {
+      name: 'Skills',
+      href: '#skills',
+    },
+  ],
+}
