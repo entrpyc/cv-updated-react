@@ -3,9 +3,26 @@
 
 #about {
   display: flex;
+  gap: grid.$space-2;
+
+  .info {
+    width: 100%;
+  }
+
+  hr {
+    margin: grid.$space-3 0;
+  }
 
   .about {
     display: none;
+  }
+
+  .accent {
+    @include font.secondary;
+  }
+
+  .bold {
+    font-weight: 600;
   }
 
   .row.mobile {

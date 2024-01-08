@@ -65,6 +65,10 @@ section {
   @include grid.mobile {
     padding: grid.$section-xy-mobile;
   }
+
+  &:last-of-type {
+    border-bottom: 0;
+  }
 }
 
 h1 {

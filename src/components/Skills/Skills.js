@@ -7,17 +7,20 @@ import SkillBlock from './components/SkillBlock/SkillBlock';
 
 
 function Skills() {
-  const { skills } = useContext(GlobalContext)
+  const { pageData } = useContext(GlobalContext)
+  const { skills } = pageData
 
   return (
-    <section id="skills">
-      <h2>Skills</h2>
-      <div className="wrap">
-        {skills.map((skill, i) => (
-          <SkillBlock key={i} {...skill} />
-        ))}
-      </div>
-    </section>
+    skills ? (
+      <section id="skills">
+        <h2>Skills</h2>
+        <div className="wrap">
+          {skills.map((skill, i) => (
+            <SkillBlock key={i} {...skill} />
+          ))}
+        </div>
+      </section>
+    ) : null
   )
 }
 
