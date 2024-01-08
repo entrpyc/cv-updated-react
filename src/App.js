@@ -1,3 +1,6 @@
+import './reset.css';
+import './App.scss';
+
 import Home from './pages/Home/Home';
 import { GlobalProvider } from "./context/GlobalContext";
 

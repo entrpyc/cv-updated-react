@@ -1,8 +1,6 @@
-import '../../reset.css';
-import '../../App.scss';
+import './Home.scss';
 
 import React, { useEffect, useContext } from 'react';
-
 import { GlobalContext } from '../../context/GlobalContext'
 
 import Sidebar from '../../components/Sidebar/Sidebar';

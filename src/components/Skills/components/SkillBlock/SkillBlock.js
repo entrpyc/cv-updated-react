@@ -4,7 +4,7 @@ function TechSkillBlock({ title, text }) {
   return (
     <div className="skills-wrapper">
       <div className="block">
-        <p>{title}</p>
+        <h3>{title}</h3>
       </div>
       <div className="content">
         {text.map((paragraph, i) => (
