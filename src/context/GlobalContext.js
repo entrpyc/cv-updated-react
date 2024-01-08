@@ -6,7 +6,7 @@ import {
   sidebarData,
   portfolioData,
   aboutData,
-} from '../api/page-data';
+} from '../api/page-data-ref';
 
 export const GlobalContext = createContext()
 
