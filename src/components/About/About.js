@@ -44,12 +44,17 @@ function About() {
           <div className="row accent">
             <strong>Specialized in:</strong> {specialized}
           </div>
-          <div className="row accent">
-            <strong>Looking for:</strong> {lookingFor}
-          </div>
-          <div className="row accent">
-            <strong>Minimum salary expectation</strong> {minimumSalaryExpected}
-          </div>
+          {lookingFor ? (
+            <div className="row accent">
+              <strong>Looking for:</strong> {lookingFor}
+            </div>
+          ): null}
+          {minimumSalaryExpected ? (
+            <div className="row accent">
+              <strong>Minimum salary expectation</strong> {minimumSalaryExpected}
+            </div>
+          ): null}
+
         </div>
       </section>
     ) : null

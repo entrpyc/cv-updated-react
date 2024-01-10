@@ -1,7 +1,9 @@
 import './Home.scss';
 
 import React, { useEffect, useContext } from 'react';
-import { GlobalContext } from '../../context/GlobalContext'
+import { GlobalContext } from '../../context/GlobalContext';
+
+import pageDataJSON from './page-data.json';
 
 import Sidebar from '../../components/Sidebar/Sidebar';
 import About from '../../components/About/About';
@@ -13,9 +15,35 @@ function Home() {
   const { setPageData } = useContext(GlobalContext);
 
   useEffect(() => {
-    const queryParams = new URLSearchParams(window.location.search);
-    const application = queryParams.get('application-for');
-    if(application === 'limechain') setPageData({})
+    async function fetchAndSetPageData() {  
+      async function fetchCompanyData() {
+        const queryParams = new URLSearchParams(window.location.search);
+        const companyName = queryParams.get('application-for');
+
+        if(!companyName) return {};
+  
+        const companyDataResponse = await fetch(`${process.env.REACT_APP_API_ADDRESS}/${companyName}.json`);
+        let companyData;
+        
+        try {
+          companyData = await companyDataResponse.json();
+        } catch (error) {
+          companyData = false;
+        }
+  
+        return companyData || {};
+      }
+  
+      const pageData = pageDataJSON;
+      const companyData = await fetchCompanyData();
+  
+      setPageData({
+        ...pageData,
+        ...companyData
+      });
+    }
+
+    fetchAndSetPageData();
   }, []);
 
   return (

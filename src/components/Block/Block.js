@@ -5,7 +5,7 @@ function Block({ title, subTitle, text }) {
     <div className="block">
       <h3>{title}</h3>
       <p className="sub">{subTitle}</p>
-      {text.map((row, i) => <p className="text" key={i}>{row}</p>)}
+      {text.map((row, i) => <p className="text" key={i} dangerouslySetInnerHTML={{ __html: row }}></p>)}
     </div>
   )
 }
