@@ -25,4 +25,5 @@ yarn-error.log*
 .package-lock.json
 .yarn.lock
 
+/src/pages/Home/page-data.json
 /local
