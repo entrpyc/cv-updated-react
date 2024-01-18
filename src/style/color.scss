@@ -1,10 +1,21 @@
+// text
 $primary: #2c2c2c;
 $secondary: #275AA1;
 $third: #fff;
 $fourth: #555;
 
-$background: #112746;
-$background-secondary: #fff;
-$background-third: #eee;
+// icons
+$icon-primary: $third;
 
-$border: #eee;
+// backgrounds
+$bg: #112746;
+$bg-secondary: $third;
+$bg-third: #eee;
+$bg-fourth: #275aa1;
+$bg-fifth: #527bb3;
+$bg-sixth: #a8bdd9;
+
+// borders
+$border: $bg-third;
+$border-secondary: $third;
+$border-third: $secondary;

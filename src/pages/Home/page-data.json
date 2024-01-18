@@ -1,49 +1,49 @@
 {
-  "about": {
-    "birthdate": "June 10, 1999",
-    "location": "Sofia, Bulgaria",
-    "email": "asenangelov.cv@gmail.com",
-    "phone": "+359 896 929 913",
-    "specialized": "Front-end and Javascript technologies"
-  },
+  "about": [
+    [
+      {
+        "title": "Birthday",
+        "text": "June 10, 1999"
+      },
+      {
+        "title": "Location",
+        "text": "Sofia, Bulgaria"
+      },
+      {
+        "title": "Email",
+        "text": "asenangelov.cv@gmail.com"
+      }
+    ]
+  ],
   "sidebar": {
     "info": {
       "picture": "./assets/profile.jpg",
       "name": "Asen Angelov",
       "position": "Software Engineer"
     },
-    "social": [
-      {
-        "src": "./assets/github-logo.png",
-        "href": "https://github.com/entrpyc",
-        "alt": "github"
-      },
-      {
-        "src": "./assets/npm-logo.png",
-        "href": "https://www.npmjs.com/~entrpyc",
-        "alt": "npm"
-      },
-      {
-        "src": "./assets/linkedin-logo.png",
-        "href": "https://www.linkedin.com/in/asen-angelov-a26458195/",
-        "alt": "linkedin"
-      }
-    ],
+    "social": {
+      "npm": "https://www.npmjs.com/~entrpyc",
+      "github": "https://github.com/entrpyc",
+      "linkedin": "https://www.linkedin.com/in/asen-angelov-a26458195"
+    },
     "navigation": [
       { "name": "About", "href": "#about" },
+      { "name": "Summary", "href": "#summary" },
       { "name": "Experience", "href": "#experience" },
       { "name": "Portfolio", "href": "#portfolio" },
-      { "name": "Skills", "href": "#skills" }
+      { "name": "Skills", "href": "#skills" },
+      { "name": "Education", "href": "#education" },
+      { "name": "Methodologies", "href": "#methodologies" }
     ]
   },
   "experience": [
     {
       "title": "Indepth Solutions",
-      "subTitle": "Co-Founder & Software Engineer | July, 2023 - PRESENT",
+      "subTitle": "Co-Founder & Lead Software Engineer | July, 2023 - PRESENT",
       "text": [
         "At our company, we specialize in integrating AI solutions tailored for automating repetitive tasks within businesses.",
         "My technical role encompasses designing both low-level and high-level Linux server architectures, along with creating and managing node servers. I specialize in crafting solutions by interfacing third-party software with our API, employing a diverse range of technologies dictated by our clients' unique requirements.",
-        "<strong>Javascript, Typescript, React, Svelte, Storybook, Jest, GraphQL, Node.js, Express, Neo4j, dGraph, Google App Scripts, Linux Server Administration</strong>"
+        "Javascript, Typescript, React, Svelte, Storybook, Jest, GraphQL, Node.js, Express, Neo4j, dGraph, Google App Scripts, C#, Linux Server Administration"
       ]
     },
     {
@@ -52,16 +52,16 @@
       "text": [
         "While at Clustermarket, my primary role involved constructing Booking software.",
         "We transitioned the software from its initial Ruby-based structure to a comprehensive Svelte and GraphQL framework, encompassing all existing components while further expanding its functionality.",
-        "<strong>Svelte, GraphQL, Storybook, Jest, Gitlab, Ruby</strong>"
+        "Svelte, GraphQL, Storybook, Jest, Gitlab, Ruby"
       ]
     },
     {
       "title": "Senteca Commerce",
-      "subTitle": "Software Engineer | October, 2021 - January, 2022",
+      "subTitle": "Senior Software Engineer | October, 2021 - January, 2022",
       "text": [
         "At Senteca Commerce, I contributed to developing e-commerce solutions for major brands in Bulgaria.",
         "My responsibilities included reviewing junior code and optimizing websites for enhanced usability and performance. Utilizing Next.js, GraphQL, and Tailwind, I revamped these platforms to ensure they met the highest standards of functionality and user experience.",
-        "<strong>Typescript, React, Next.js, Tailwind, PostCSS</strong>"
+        "Typescript, React, Next.js, Tailwind, PostCSS"
       ]
     },
     {
@@ -70,7 +70,7 @@
       "text": [
         "At LimeChain, our focus was pioneering blockchain solutions for esteemed clients.",
         "My focus centered on crafting PWAs leveraging blockchain technology. This involved hands-on development of smart contracts, API creation, and pivotal contributions to complex projects like Boson Protocol and Universe.xyz. Within these projects, my team and I pioneered the creation of a decentralized marketplace, facilitated auctions, and curated an NFT collection.",
-        "<strong>JavaScript, React, Solidity, Sass</strong>"
+        "JavaScript, React, Solidity, Sass"
       ]
     },
     {
@@ -79,7 +79,7 @@
       "text": [
         "I developed e-commerce platforms with WordPress using Sass, JavaScript, and Laravel blades.",
         "My responsibilities at Grind were to build pixel-perfect pages, provide needed custom data fields in the admin panel of WordPress, optimize device and browser compatibility, and create custom functionalities using vanilla JavaScript.",
-        "<strong>Javascript, Wordpress, Laravel, Sass</strong>"
+        "Javascript, Wordpress, Laravel, Sass"
       ]
     },
     {
@@ -88,7 +88,7 @@
       "text": [
         "At Max Win Gaming, I was working on slot games animations.",
         "The games were developed using HTML Canvas and EaselJS - a JS library for animations. My role demanded proficient expertise in Adobe Photoshop, After Effects, and Animate to ensure high-quality and engaging game visuals.",
-        "<strong>Javascript, EaselJS, Adobe Suite</strong>"
+        "Javascript, EaselJS, Adobe Suite"
       ]
     }
   ],

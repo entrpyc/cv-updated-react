@@ -1,10 +1,11 @@
 $sidebar-width: 260px;
+$page-width: 1240px;
 
 $section-xy: 60px 70px;
 $section-xy-mobile: 50px 25px;
-$heading-y: 40px;
 
-$space-0: 0;
+// margin, padding, gap
+$space-0-0: 1px;
 $space-0-1: 3px;
 $space-0-2: 5px;
 $space-1: 10px;
@@ -14,33 +15,9 @@ $space-3: 25px;
 $space-4: 40px;
 $space-5: 60px;
 
-@mixin center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin split {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@mixin jc-start {
-  display: flex;
-  align-items: center;
-}
-
-@mixin column {
-  display: flex;
-  flex-direction: column;
-}
-
-@mixin column-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+$radius-1: 5px;
+$radius-2: 50%;
+$radius-3: 10px;
 
 @mixin mobile {
   @media (max-width: 720px) {

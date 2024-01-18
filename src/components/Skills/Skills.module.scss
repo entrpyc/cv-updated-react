@@ -1,0 +1,11 @@
+@use 'style/grid.scss';
+
+.skills {
+  :global {
+    .wrap {
+      display: flex;
+      flex-direction: column;
+      gap: grid.$space-2;
+    }
+  }
+}
