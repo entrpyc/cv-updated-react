@@ -1,0 +1,76 @@
+@use 'style/grid.scss';
+@use 'style/color.scss';
+
+.portfolioBlock {
+  :global {
+    .portfolio-block-content {
+      display: flex;
+      gap: grid.$space-0-2;
+    
+      .block {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        padding: grid.$space-1;
+      
+        background-color: color.$bg-fourth;
+        border-radius: grid.$radius-1;
+        text-decoration: none;
+        
+        &.single {
+          width: 100%;
+        }
+        
+        &.external {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-grow: 0;
+
+          width: 80px;
+        }
+    
+        .icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      
+          width: 24px;
+          height: 24px;
+        }
+      
+        p {
+          margin-left: grid.$space-1;
+        }
+      }
+    
+      &.with-tech-stack {
+        a {
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+      }
+    }
+    
+    .tech-stack {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: grid.$space-1;
+      background-color: color.$bg-sixth;
+      padding: grid.$space-1;
+      margin-top: grid.$space-0-1;
+      border-radius: grid.$radius-1;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    
+      .tech-stack-item {
+        background-color: color.$bg-third;
+        color: color.$secondary;
+        font-weight: 400;
+        padding: grid.$space-0-0 grid.$space-1;
+        border-radius: grid.$radius-1;
+      }
+    }
+  }
+}

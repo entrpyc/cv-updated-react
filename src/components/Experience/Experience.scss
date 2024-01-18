@@ -1,5 +1,0 @@
-@use '../../style/grid.scss'; 
-
-.block-container + .block-container {
-  margin-top: grid.$space-5;
-}

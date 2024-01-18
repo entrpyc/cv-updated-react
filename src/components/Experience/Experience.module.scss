@@ -1,0 +1,9 @@
+@use 'style/grid.scss'; 
+
+.experience {
+  :global {
+    .block-container + .block-container {
+      margin-top: grid.$space-5;
+    }
+  }
+}

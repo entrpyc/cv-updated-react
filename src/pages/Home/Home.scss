@@ -3,7 +3,7 @@
 @use '../../style/font.scss';
 
 @media print {
-  .main {
+  .content {
     max-width: 100%;
   }
   

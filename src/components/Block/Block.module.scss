@@ -1,0 +1,17 @@
+@use 'style/grid.scss';
+@use 'style/font.scss';
+
+.block {
+  :global {
+    .block-text {
+      display: flex;
+      flex-direction: column;
+      gap: grid.$space-1-1;
+      margin-top: grid.$space-1-1;
+    }
+    
+    .sub {
+      @include font.heading-3;
+    }
+  }
+}

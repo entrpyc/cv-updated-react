@@ -1,0 +1,45 @@
+@use 'style/grid.scss';
+@use 'style/color.scss';
+
+.skillsBlock {
+  :global {
+    .block {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      padding: grid.$space-1;
+    
+      color: color.$third;
+      background-color: color.$bg-fourth;
+      border-radius: grid.$radius-1;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      text-decoration: none;
+      width: 100%;
+      
+      h3 {
+        font-weight: 500;
+        margin-left: grid.$space-1;
+        color: color.$third;
+      }
+    }
+    
+    
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: grid.$space-1;
+      color: color.$third;
+      background-color: color.$bg-fifth;
+      padding: grid.$space-1;
+      margin-top: grid.$space-0-1;
+      border-radius: grid.$radius-1;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      
+      p {
+        margin-left: grid.$space-1;
+      }
+    }
+  }
+}

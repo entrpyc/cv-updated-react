@@ -1,0 +1,96 @@
+@use 'style/grid.scss';
+@use 'style/color.scss';
+@use 'style/util.scss';
+
+.sidebar {
+  :global {
+    .aside-content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding: grid.$space-4;
+    }
+    
+    .sidebar-content {
+      .info {
+        margin-top: grid.$space-4;
+      }
+      
+      .social {
+        display: flex;
+        align-items: center;
+        gap: grid.$space-2;
+        margin-top: grid.$space-3;
+      
+        a {
+          width: 25px;
+          height: 25px;
+        }
+      }
+      
+      .navigation {
+        display: flex;
+        flex-direction: column;
+        gap: grid.$space-1;
+        margin-top: grid.$space-3;
+      
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          display: flex;
+          gap: grid.$space-1;
+          align-items: center;
+    
+          svg {
+            max-width: 20px;
+          }
+        }
+      }
+    }
+    
+    .menu {
+      display: flex;
+      margin-top: auto;
+    
+      .menu-button {
+        color: color.$third;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: grid.$space-0-2;
+        width: 100%;
+        border: 1px solid color.$border-secondary;
+        padding: grid.$space-1 grid.$space-1-1;
+        border-radius: grid.$radius-1;
+        position: relative;
+        font-weight: 500;
+        @include util.transition;
+        cursor: pointer;
+        
+        svg {
+          max-width: 34px;
+        }
+        
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.2);
+        }
+      }
+    }
+  }
+}
+
+:global {
+  main {
+    width: calc(100% - grid.$sidebar-width);
+  }
+
+  @include grid.mobile {
+    main {
+      width: 100%;
+    }
+
+    aside {
+      display: none;
+    }
+  }
+}

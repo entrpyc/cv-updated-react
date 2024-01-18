@@ -7296,6 +7296,18 @@
   "resolved" "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-6.0.11.tgz"
   "version" "6.0.11"
 
+"react-from-dom@^0.6.2":
+  "integrity" "sha512-qvWWTL/4xw4k/Dywd41RBpLQUSq97csuv15qrxN+izNeLYlD9wn5W8LspbfYe5CWbaSdkZ72BsaYBPQf2x4VbQ=="
+  "resolved" "https://registry.npmjs.org/react-from-dom/-/react-from-dom-0.6.2.tgz"
+  "version" "0.6.2"
+
+"react-inlinesvg@^4.1.0":
+  "integrity" "sha512-S7kSE6ldKVpumEYTNXmCs4pAKoDzklP6TklI8oBx23fw8/+VBwO5X0M7/Ii0weieO1DqElUJg5EI8cq7zo5oPg=="
+  "resolved" "https://registry.npmjs.org/react-inlinesvg/-/react-inlinesvg-4.1.0.tgz"
+  "version" "4.1.0"
+  dependencies:
+    "react-from-dom" "^0.6.2"
+
 "react-is@^16.13.1":
   "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
@@ -7386,7 +7398,7 @@
   optionalDependencies:
     "fsevents" "^2.3.2"
 
-"react@^18.0.0", "react@^18.1.0", "react@>= 16", "react@>=16.8":
+"react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^18.0.0", "react@^18.1.0", "react@>= 16", "react@>=16.8", "react@16.8 - 18":
   "integrity" "sha512-4oL8ivCz5ZEPyclFQXaNksK3adutVS8l2xzZU0cqEFrE9Sb7fC0EFK5uEk74wIreL1DERyjvsU915j1pcT2uEQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.1.0.tgz"
   "version" "18.1.0"

@@ -1,0 +1,16 @@
+@use 'style/grid.scss';
+@use 'style/color.scss';
+
+.bioBlock {
+  display: flex;
+  flex-direction: column;
+  gap: grid.$space-2;
+  
+  :global {
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: grid.$space-0-1;
+    }
+  }
+}

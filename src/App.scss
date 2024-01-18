@@ -8,59 +8,61 @@
 
 * {
   font-family: 'Montserrat', sans-serif;
-  @include font.primary;
+  @include font.text-primary;
+}
+
+html, body {
+  scroll-behavior: smooth !important;
 }
 
 html {
   font-size: 16px;
-  scroll-behavior: smooth;
-  color: #000;
+  color: color.$primary;
 }
 
 body {
-  background-color: color.$background-third;
+  background-color: color.$bg-third;
 }
 
 div {
   display: block;
 }
 
-h1 {
-  @include font.heading;
+svg {
+  width: 100%;
+  fill: color.$icon-primary;
 }
 
-.main {
-  max-width: 1000px;
+.container {
+  max-width: grid.$page-width;
   width: 100%;
   margin: 0 auto;
 }
 
-.container {
-  width: calc(100% - grid.$sidebar-width);
-  min-height: 100vh;
-
-  float: right;
-
-  background-color: color.$background-secondary;
+.content {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-.sidebar {
+main {
+  min-height: 100vh;
+  background-color: color.$bg-secondary;
+  position: relative;
+}
+
+aside {
   width: grid.$sidebar-width;
-  padding: 60px 46px;
-  z-index: 5;
   height: 100vh;
-  background: color.$background;
+  background: color.$bg;
   color: color.$third;
 
-  position: fixed;
+  position: sticky;
   top: 0;
-  bottom: 0;
-  float: left;
 }
 
 section {
   padding: grid.$section-xy;
-  border-bottom: solid grid.$space-1 color.$border;
+  border-bottom: solid 10px color.$border;
 
   @include grid.mobile {
     padding: grid.$section-xy-mobile;
@@ -72,13 +74,13 @@ section {
 }
 
 h1 {
-  @include font.title;
+  @include font.page-title;
 }
 
 h2 {
-  @include font.heading;
+  @include font.heading-1;
   color: color.$secondary;
-  margin-bottom: grid.$heading-y;
+  margin-bottom: grid.$space-4;
   font-weight: 700;
 }
 
@@ -91,9 +93,22 @@ a {
 
   color: color.$third;
 
+  svg {
+    @include util.transition(0.1s);
+  }
+
   &:hover {
     opacity: 0.8;
+
+    svg {
+      transform: scale(0.9);
+    }
   }
+}
+
+button {
+  background-color: transparent;
+  border: none; 
 }
 
 img {
@@ -101,14 +116,4 @@ img {
   max-height: 100%;
   width: auto;
   height: auto;
-}
-
-@include grid.mobile {
-  .sidebar {
-    display: none;
-  }
-  .container {
-    width: 100%;
-    float: none;
-  }
 }

@@ -1,0 +1,15 @@
+@use 'style/grid.scss';
+
+.portfolio {
+  :global {
+    .wrap {
+      display: flex;
+      flex-direction: column;
+      gap: grid.$space-3;
+    }
+  
+    .wrap + .wrap {
+      margin-top: grid.$space-4;
+    }
+  }
+}
