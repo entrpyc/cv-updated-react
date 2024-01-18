@@ -1,4 +1,5 @@
 import React, { useState, createContext, useEffect } from 'react'
+
 export const GlobalContext = createContext()
 
 export const GlobalProvider = props => {

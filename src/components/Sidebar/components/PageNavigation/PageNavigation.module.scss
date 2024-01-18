@@ -1,0 +1,104 @@
+@use 'style/grid.scss';
+@use 'style/color.scss';
+@use 'style/util.scss';
+
+.pageNavigation {
+  :global {
+    .navigation {
+      .website-navigation,
+      .page-navigation {
+        display: none;
+        flex-direction: column;
+        gap: grid.$space-0-2;
+
+        &.active {
+          display: flex;
+        }
+      }
+
+      .link {
+        text-decoration: none;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: grid.$space-1;
+        padding: grid.$space-0-2;
+    
+        svg {
+          max-width: 20px;
+        }
+
+        &:hover {
+          border-radius: grid.$radius-1;
+          background-color: rgba(255, 255, 255, 0.2);
+          opacity: 1;
+        }
+      }
+
+      .menu {
+        display: flex;
+        margin-bottom: grid.$space-1;
+      
+        .navigation-switch {
+          color: color.$third;
+          display: flex;
+          align-items: center;
+          gap: grid.$space-0-1;
+          width: 100%;
+          border: 1px solid transparent;
+          border-bottom: 1px solid color.$border-secondary;
+          border-top: 1px solid color.$border-secondary;
+          padding: grid.$space-0-2;
+          position: relative;
+          font-weight: 500;
+          @include util.transition;
+
+          &:last-of-type {
+            border-right: 1px solid color.$border-secondary;
+            border-top-right-radius: grid.$radius-1;
+            border-bottom-right-radius: grid.$radius-1;
+          }
+
+          &:first-of-type {
+            border-left: 1px solid color.$border-secondary;
+            border-top-left-radius: grid.$radius-1;
+            border-bottom-left-radius: grid.$radius-1;
+          }
+          
+          svg {
+            max-width: 30px;
+          }
+          
+          &:hover {
+            background-color: rgba(color.$bg-seventh, 0.5);
+          }
+
+          &.active {
+            border: 1px solid color.$border-secondary;
+            background-color: color.$bg-seventh;
+            border-radius: grid.$radius-1;
+            cursor: auto;
+            pointer-events: none;
+          }
+        }
+      }
+    }
+
+    .info {
+      margin-top: grid.$space-4;
+    }
+    
+    .social {
+      display: flex;
+      align-items: center;
+      gap: grid.$space-2;
+      margin-top: grid.$space-3;
+      margin-bottom: grid.$space-4;
+    
+      a {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}

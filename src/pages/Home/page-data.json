@@ -26,7 +26,7 @@
       "github": "https://github.com/entrpyc",
       "linkedin": "https://www.linkedin.com/in/asen-angelov-a26458195"
     },
-    "navigation": [
+    "pageNavigation": [
       { "name": "About", "href": "#about" },
       { "name": "Summary", "href": "#summary" },
       { "name": "Experience", "href": "#experience" },
@@ -34,6 +34,11 @@
       { "name": "Skills", "href": "#skills" },
       { "name": "Education", "href": "#education" },
       { "name": "Methodologies", "href": "#methodologies" }
+    ],
+    "websiteNavigation": [
+      { "name": "Resume", "to": "/resume", "icon": "link" },
+      { "name": "CV", "to": "/cv", "icon": "link" },
+      { "name": "Personal Website", "to": "/", "icon": "link" }
     ]
   },
   "experience": [
