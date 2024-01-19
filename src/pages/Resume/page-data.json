@@ -15,7 +15,7 @@
       }
     ]
   ],
-  "sidebar": {
+  "navigation": {
     "info": {
       "picture": "./assets/profile.jpg",
       "name": "Asen Angelov",
@@ -36,7 +36,7 @@
       { "name": "Methodologies", "href": "#methodologies" }
     ],
     "websiteNavigation": [
-      { "name": "Resume", "to": "/resume", "icon": "link" },
+      { "name": "Resume", "to": "/resume", "icon": "link", "id": "resume" },
       { "name": "CV", "to": "/cv", "icon": "link" },
       { "name": "Personal Website", "to": "/", "icon": "link" }
     ]

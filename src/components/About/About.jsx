@@ -3,9 +3,7 @@ import css from './About.module.scss';
 import Avatar from 'components/Avatar/Avatar';
 import Text from 'elements/Text/Text';
 
-function About({ about, sidebar }) {
-  const { info } = sidebar || {}
-
+function About({ about, info }) {
   return ((info && about) &&
     <section id="about" className={css.about}>
       <div className="about-me">

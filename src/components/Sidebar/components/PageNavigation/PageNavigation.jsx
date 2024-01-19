@@ -9,24 +9,33 @@ import Title from 'elements/Title/Title';
 import Text from 'elements/Text/Text';
 import Link from 'elements/Link/Link';
 import Button from 'elements/Button/Button';
+import { LocalStorage, keys } from 'adapters/localstorage/localstorage-adapter';
 
 function PageNavigation() {
   const [menuOpened, setMenuOpened] = useState(false);
   const { message, pageData } = useContext(GlobalContext);
-  const { sidebar } = pageData;
+  const { navigation } = pageData;
   const {
     info,
     social,
     websiteNavigation,
     pageNavigation,
-  } = sidebar || {};
+  } = navigation || {};
 
 
   function onMenuClick() {
     setMenuOpened(!menuOpened);
   }
 
-  return (sidebar &&
+  function showMenuItem(item) {
+    const application = LocalStorage.get(keys.application);
+
+    if(item.id === "resume" && !application) return false;
+
+    return true;
+  }
+
+  return (navigation &&
     <div className={css.pageNavigation}>
       <Avatar picture={info.picture} name={info.name} message={message} />
       <div className="info">
@@ -53,8 +62,18 @@ function PageNavigation() {
       <div className="navigation">
         {websiteNavigation ? (
           <div className="menu">
-            <Button className={`navigation-switch ${!menuOpened ? "active" : ''}`} onClick={onMenuClick}>Page Navigation</Button>
-            <Button className={`navigation-switch ${menuOpened ? "active" : ''}`} onClick={onMenuClick}>Website Navigation</Button>
+            <Button className={`navigation-switch ${!menuOpened ? "active" : ''}`} onClick={onMenuClick}>
+              <span>
+                <Icon name="arrow" direction="right" />
+                Page Navigation
+              </span>
+            </Button>
+            <Button className={`navigation-switch ${menuOpened ? "active" : ''}`} onClick={onMenuClick}>
+              <span>
+                <Icon name="arrow" direction="right" />
+                Website Navigation
+              </span>
+            </Button>
           </div>
         ): null}
         <div className={`page-navigation ${!menuOpened ? "active" : ''}`}>
@@ -71,7 +90,7 @@ function PageNavigation() {
         </div>
         {websiteNavigation ? (
           <div className={`website-navigation ${menuOpened ? "active" : ''}`}>
-            {websiteNavigation.map((item, index) => (
+            {websiteNavigation.map((item, index) => (showMenuItem(item) ? (
               <Link
                 className="link"
                 href={item.href}
@@ -80,7 +99,7 @@ function PageNavigation() {
               >
                 <Icon name={item.icon || "anchor"} /> {item.name}
               </Link>
-            ))}
+            ): null))}
           </div>
         ): null}
       </div>
