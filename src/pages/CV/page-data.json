@@ -21,11 +21,20 @@
       "name": "Asen Angelov",
       "position": "Software Engineer"
     },
-    "social": {
-      "npm": "https://www.npmjs.com/~entrpyc",
-      "github": "https://github.com/entrpyc",
-      "linkedin": "https://www.linkedin.com/in/asen-angelov-a26458195"
-    },
+    "social": [
+      {
+        "name": "npm",
+        "link": "https://www.npmjs.com/~entrpyc"
+      },
+      {
+        "name": "github",
+        "link": "https://github.com/entrpyc"
+      },
+      {
+        "name": "linkedin",
+        "link": "https://www.linkedin.com/in/asen-angelov-a26458195"
+      }
+    ],
     "pageNavigation": [
       { "name": "About", "href": "#about" },
       { "name": "Summary", "href": "#summary" },
@@ -36,7 +45,7 @@
       { "name": "Methodologies", "href": "#methodologies" }
     ],
     "websiteNavigation": [
-      { "name": "Resume", "to": "/resume", "icon": "link" },
+      { "name": "Resume", "to": "/resume", "icon": "link", "id": "resume" },
       { "name": "CV", "to": "/cv", "icon": "link" },
       { "name": "Personal Website", "to": "/", "icon": "link" }
     ]

@@ -88,10 +88,9 @@ h3 {
   @include font.heading-2;
 }
 
-a {
+a:not(.default),
+button:not(.default) {
   @include util.transition(0.1s);
-
-  color: color.$third;
 
   svg {
     @include util.transition(0.1s);

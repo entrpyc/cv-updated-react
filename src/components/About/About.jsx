@@ -4,7 +4,7 @@ import Avatar from 'components/Avatar/Avatar';
 import Text from 'elements/Text/Text';
 
 function About({ about, info }) {
-  return ((info && about) &&
+  return ((info && about?.length) &&
     <section id="about" className={css.about}>
       <div className="about-me">
         <Avatar picture={info.picture} name={info.name} />

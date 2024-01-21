@@ -18,6 +18,23 @@
         display: none;  /* Safari and Chrome */
       }
     }
+
+    .info {
+      margin-top: grid.$space-4;
+    }
+    
+    .social {
+      display: flex;
+      align-items: center;
+      gap: grid.$space-2;
+      margin-top: grid.$space-3;
+      margin-bottom: grid.$space-4;
+    
+      a {
+        width: 25px;
+        height: 25px;
+      }
+    }
   }
 }
 

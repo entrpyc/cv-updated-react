@@ -54,7 +54,7 @@ function Home() {
         <div className="container">
           <div className="content">
             <main>
-              <About about={pageData.about} info={pageData.navigation.info} />
+              <About about={pageData.about} info={pageData?.navigation?.info} />
               <Experience experience={pageData.experience} />
               <Portfolio portfolio={pageData.portfolio} />
               <Skills skills={pageData.skills} />
