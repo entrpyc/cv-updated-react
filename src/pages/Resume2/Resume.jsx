@@ -1,4 +1,4 @@
-import './Resume.scss'
+import css from './Resume.module.scss'
 
 import React, { useContext, useEffect } from 'react'
 import { GlobalContext } from 'context/GlobalContext';
@@ -47,8 +47,8 @@ const Resume = () => {
   }, []);
 
   return (
-    <div className="resumeBlock">
-        <div>
+    <div className={css.resumeBlock}>
+        <div className='sideBar'>
           <Profile profile={pageData.profile} />
           <Skills skills={pageData.skills} />
         </div>

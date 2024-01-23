@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import CV from './pages/CV/CV';
 import PersonalWebsite from './pages/PersonalWebsite/PersonalWebsite';
-import Resume from './pages/Resume/Resume';
+import Resume from './pages/Resume2/Resume';
 
 import { GlobalProvider } from "./context/GlobalContext";
 

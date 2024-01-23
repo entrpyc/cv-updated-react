@@ -13,14 +13,14 @@ const Profile = ({ profile }) => {
         <Title tag="h1" className="name">
           {profile?.name}
         </Title>
-        <Text className="position">{profile?.position}</Text>
+        <Title tag="h3" className="position">{profile?.position}</Title>
       </div>
       <div>
         <ul className="info-container">
           {profile?.contact.map((info, index) => (
             <li className="info" key={index}>
               <Icon className="icon" name={info.icon} />
-              {info.link ? <a href={info.text} className="text">{info.text}</a> :
+              {info.link ? <a href={info.link} className="text">{info.text}</a> :
               <Text href={info.text} className="text">{info.text}</Text>
               }
             </li>

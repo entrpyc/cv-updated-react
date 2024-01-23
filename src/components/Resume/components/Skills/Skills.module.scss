@@ -1,12 +1,15 @@
 @use 'style/grid.scss';
+@use 'style/color.scss';
 
 .skillsBlock {
   :global {
+    background-color: color.$fifth;
+
     .container-skills {
       padding: grid.$space-1 grid.$space-3;
 
       h1 {
-        font-size: 18px;
+        font-size: 24px;
         padding: grid.$space-2 0;
       }
     }
@@ -15,7 +18,22 @@
       padding: 0 grid.$space-1-1;
       display: flex;
       flex-direction: column;
-      gap:  grid.$space-1;
+      gap: grid.$space-1;
+
+      li {
+        font-size: 20px;
+      }
+    }
+
+    @media print {
+      h1 {
+        font-size: 18px !important;
+        padding: grid.$space-2 0;
+      }
+
+      li {
+        font-size: 16px !important;
+      }
     }
   }
 }

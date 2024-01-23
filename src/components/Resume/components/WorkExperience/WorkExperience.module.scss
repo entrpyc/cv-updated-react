@@ -1,4 +1,5 @@
 @use 'style/grid.scss';
+@use 'style/color.scss';
 
 .workExperienceBlock {
   :global {
@@ -9,16 +10,18 @@
     background-color: #fff;
 
     h1 {
-      font-size: 18px;
+      font-size: 28px;
       padding-bottom: grid.$space-1-1;
     }
 
     .company {
-      font-size: 12px;
+      font-size: 24px;
+      padding: grid.$space-1-1 0;
+      font-weight: 700;
     }
 
     .time {
-      font-size: 12px;
+      font-size: 22px;
     }
 
     .icon {
@@ -28,6 +31,9 @@
     .date {
       display: flex;
       gap: grid.$space-1;
+      margin: grid.$space-1-1 0;
+      padding: grid.$space-1-1;
+      background-color: color.$fifth;
     }
 
     .work {
@@ -37,13 +43,25 @@
       }
 
       li {
-        font-size: 12px;
+        font-size: 18px;
+        max-width: 800px;
       }
     }
 
     @media print {
+      h1 {
+        font-size: 18px !important;
+      }
+
       .company {
         font-size: 12px !important;
+        padding: 0 !important;
+      }
+
+      .date {
+        padding-bottom: 0 !important;
+        margin: 0 0 grid.$space-1 0 !important;
+        padding: 0 grid.$space-1-1 !important;
       }
 
 

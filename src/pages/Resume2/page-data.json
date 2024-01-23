@@ -17,13 +17,18 @@
       },
       {
         "icon": "github",
-        "text": "https://github.com/Kaloiann",
+        "text": "GitHub",
         "link": "https://github.com/Kaloiann"
       },
       {
         "icon": "linkedIn",
-        "text": "https://www.linkedin.com/in/kaloyan-tsenkulovski/",
+        "text": "LinkedIn",
         "link": "https://www.linkedin.com/in/kaloyan-tsenkulovski/"
+      },
+      {
+        "icon": "external-link",
+        "text": "Personal Web Site",
+        "link": "https://k-tsenkulovski.eu/"
       }
     ]
   },
