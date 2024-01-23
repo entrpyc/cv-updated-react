@@ -23,12 +23,24 @@
     },
     "social": [
       {
+        "name": "npm",
+        "link": "https://www.npmjs.com/~entrpyc"
+      },
+      {
         "name": "github",
-        "link": "https://github.com/Kaloiann"
+        "link": "https://github.com/entrpyc"
       },
       {
         "name": "linkedin",
-        "link": "https://www.linkedin.com/in/kaloyan-tsenkulovski"
+        "link": "https://www.linkedin.com/in/asen-angelov-a26458195"
+      },
+      {
+        "name": "instagram",
+        "link": "https://www.instagram.com/asen_angelov_1/"
+      },
+      {
+        "name": "soundcloud",
+        "link": "https://soundcloud.com/kota_prod"
       }
     ],
     "pageNavigation": [
@@ -36,7 +48,9 @@
       { "name": "Summary", "href": "#summary" },
       { "name": "Experience", "href": "#experience" },
       { "name": "Portfolio", "href": "#portfolio" },
-      { "name": "Skills", "href": "#skills" }
+      { "name": "Skills", "href": "#skills" },
+      { "name": "Education", "href": "#education" },
+      { "name": "Methodologies", "href": "#methodologies" }
     ],
     "websiteNavigation": [
       { "name": "Resume", "to": "/resume", "icon": "link", "id": "resume" },

@@ -1,12 +1,11 @@
 import css from './About.module.scss';
 
 import Avatar from 'components/Avatar/Avatar';
+import TextListBlock from 'components/Blocks/TextListBlock/TextListBlock';
 import Text from 'elements/Text/Text';
 
-function About({ about, sidebar }) {
-  const { info } = sidebar || {}
-
-  return ((info && about) &&
+function About({ about, info }) {
+  return ((info && about?.length) &&
     <section id="about" className={css.about}>
       <div className="about-me">
         <Avatar picture={info.picture} name={info.name} />
@@ -15,15 +14,7 @@ function About({ about, sidebar }) {
         <div className="row mobile">
           <Text>{info.name}</Text>
         </div>
-        {about.map((block, i) => (
-          <div className="block" key={i}>
-            {block.map((row, j) => (
-              <div className={`row ${row.class || ''}`} key={j}>
-                <Text><strong>{row.title}:</strong> {row.text}</Text>
-              </div>
-            ))}
-          </div>
-        ))}
+        <TextListBlock text={about} />
       </div>
     </section>
   )

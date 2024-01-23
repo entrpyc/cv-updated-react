@@ -1,7 +1,11 @@
-.icon-container {
+@use 'style/util.scss';
+
+.icon {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include util.transition(0.4s);
   
   &.right {
     transform: rotate(90deg);

@@ -9,33 +9,7 @@
     .about-me {
       display: none;
     }
-  
-    .info {
-      width: 100%;
-    }
 
-    .row {
-      .accent {
-        @include font.heading-3;
-      }
-    }
-  
-    .bold {
-      font-weight: 600;
-    }
-  
-    .block + .block {
-      margin-top: grid.$space-3;
-      padding-top: grid.$space-3;
-      border-top: 1px solid;
-    }
-  
-    .row.mobile {
-      display: none;
-      margin-bottom: grid.$space-2;
-  
-      @include font.heading-2;
-    }
   
     @include grid.mobile {
       display: flex;

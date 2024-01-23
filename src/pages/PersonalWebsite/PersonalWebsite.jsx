@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import './Home.scss';
+import './PersonalWebsite.scss';
 
 import React, { useEffect, useContext } from 'react';
 import { GlobalContext } from '../../context/GlobalContext';
@@ -52,9 +52,9 @@ function Home() {
   return (
       <div className="App">
         <div className="container">
-          <div className="content">
+          <div className="page-content">
             <main>
-              <About about={pageData.about} sidebar={pageData.sidebar} />
+              <About about={pageData.about} info={pageData?.navigation?.info} />
               <Experience experience={pageData.experience} />
               <Portfolio portfolio={pageData.portfolio} />
               <Skills skills={pageData.skills} />
