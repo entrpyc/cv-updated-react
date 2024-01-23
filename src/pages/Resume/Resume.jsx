@@ -58,7 +58,7 @@ function Home() {
   return (
       <div className="App">
         <div className="container">
-          <div className="content">
+          <div className="page-content">
             <main>
               {validApplication ? (
                 <p>Valid</p>
