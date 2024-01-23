@@ -1,0 +1,66 @@
+@use 'style/grid.scss';
+
+.workExperienceBlock {
+  :global {
+    width: 100%;
+    padding: grid.$space-1-1 grid.$space-2;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+
+    h1 {
+      font-size: 18px;
+      padding-bottom: grid.$space-1-1;
+    }
+
+    .company {
+      font-size: 12px;
+    }
+
+    .time {
+      font-size: 12px;
+    }
+
+    .icon {
+      width: 12px;
+    }
+
+    .date {
+      display: flex;
+      gap: grid.$space-1;
+    }
+
+    .work {
+
+      ul {
+        padding: 0 grid.$space-1-1;
+      }
+
+      li {
+        font-size: 12px;
+      }
+    }
+
+    @media print {
+      .company {
+        font-size: 12px !important;
+      }
+
+
+      .time {
+        font-size: 12px !important;
+      }
+
+      .work {
+        ul {
+          padding: 0 grid.$space-1-1 !important;
+        }
+
+        li {
+          font-size: 10px !important;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
