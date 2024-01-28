@@ -1,0 +1,84 @@
+@use 'style/grid.scss';
+@use 'style/color.scss';
+
+.workExperienceBlock {
+  :global {
+    width: 100%;
+    padding: grid.$space-1-1 grid.$space-2;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+
+    h1 {
+      font-size: 28px;
+      padding-bottom: grid.$space-1-1;
+    }
+
+    .company {
+      font-size: 24px;
+      padding: grid.$space-1-1 0;
+      font-weight: 700;
+    }
+
+    .time {
+      font-size: 22px;
+    }
+
+    .icon {
+      width: 12px;
+    }
+
+    .date {
+      display: flex;
+      gap: grid.$space-1;
+      margin: grid.$space-1-1 0;
+      padding: grid.$space-1-1;
+      background-color: color.$fifth;
+    }
+
+    .work {
+
+      ul {
+        padding: 0 grid.$space-1-1;
+      }
+
+      li {
+        font-size: 18px;
+        max-width: 800px;
+      }
+    }
+
+    @media print {
+      h1 {
+        font-size: 18px !important;
+      }
+
+      .company {
+        font-size: 12px !important;
+        padding: 0 !important;
+      }
+
+      .date {
+        padding-bottom: 0 !important;
+        margin: 0 0 grid.$space-1 0 !important;
+        padding: 0 grid.$space-1-1 !important;
+      }
+
+
+      .time {
+        font-size: 12px !important;
+      }
+
+      .work {
+        ul {
+          padding: 0 grid.$space-1-1 !important;
+        }
+
+        li {
+          font-size: 10px !important;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

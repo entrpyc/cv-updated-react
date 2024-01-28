@@ -1,0 +1,92 @@
+{
+  "profile": {
+    "name": "Kaloyan Tsenkulovski",
+    "position": "Front-End Developer",
+    "contact": [
+      {
+        "icon": "email",
+        "text": "kaloyantsenkulovski.cv@gmail.com"
+      },
+      {
+        "icon": "phone",
+        "text": "(+359) 898 437 788"
+      },
+      {
+        "icon": "location",
+        "text": "Sofia, Bulgaria"
+      },
+      {
+        "icon": "github",
+        "text": "GitHub",
+        "link": "https://github.com/Kaloiann"
+      },
+      {
+        "icon": "linkedIn",
+        "text": "LinkedIn",
+        "link": "https://www.linkedin.com/in/kaloyan-tsenkulovski/"
+      },
+      {
+        "icon": "external-link",
+        "text": "Personal Web Site",
+        "link": "https://k-tsenkulovski.eu/"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "category": "Technical Skills",
+      "items": [
+        "Tailwind",
+        "Javascript",
+        "React & Next JS",
+        "Web Development",
+        "SEO",
+        "Git & Github",
+        "Business Solutions & Marketing",
+        "Shopify & Wordpress"
+      ]
+    },
+    {
+      "category": "Soft Skills",
+      "items": [
+        "Communicative",
+        "Fast Learner",
+        "Adaptive",
+        "Patient"
+      ]
+    }
+  ],
+  "workExperience": [
+    {
+      "company": "Indepth Solutions - CEO & Co-founder",
+      "date": "November, 2022 - Present",
+      "responsibilities": [
+        "Connecting with companies facing challenges in their work processes and providing tailored solutions based on their budget and timeline.",
+        "Conducting a comprehensive analysis of the company's operational cycle to discern key insights.Participating in collaborative brainstorming sessions to identify and assess operational gaps within the daily routine.",
+        "Through a meticulous examination of our web platform processes, we have implemented strategic automation, alleviating employees from certain manual tasks. This not only eradicates the necessity for human involvement in specific operations but also significantly reduces the likelihood of errors."
+      ]
+    },
+    {
+      "company": "Grind Web Studio - Front End Developer",
+      "date": "April, 2022 - July, 2022",
+      "responsibilities": [
+        "Initiating and overseeing projects from inception to completion, ensuring the development of fully maintainable and well-structured websites.",
+        "Conducting daily client meetings to address priorities and implement necessary changes for alignment with goals.",
+        "Facilitating weekly team meetings to promote continuous improvement strategies and enhance overall team dynamics.",
+        "Demonstrating autonomy by independently addressing and resolving multiple corrections and errors across various projects.",
+        "Maintaining regular communication with designers for the seamless implementation of client-requested changes, ensuring the creation of pixel-perfect pages."
+      ]
+    },
+    {
+      "company": "Freelance - Web Development & Marketing",
+      "date": "August, 2021 - May, 2022",
+      "responsibilities": [
+       "Crafting e-commerce websites on WordPress and Shopify platforms for a seamless online shopping experience.",
+       "Devising impactful advertising campaigns through Facebook Ads and Google Ads, consistently doubling or tripling client revenue within budget constraints for profitability.",
+       "Utilizing advanced plugins and apps to gain deep insights into customer behavior, thereby enhancing understanding of target audiences.",
+       "Implementing continuous improvements for optimal performance, including rigorous A/B testing and strategic sales adjustments based on customer response for sustained success.",
+       "Enhancing website performance and user experience through server-side rendering using Next.js. Utilizing Firebase for efficient database functionality and integrating a custom CMS for simplicity, providing clients with a user-friendly platform for content updates and management."
+      ]
+    }
+  ]
+}

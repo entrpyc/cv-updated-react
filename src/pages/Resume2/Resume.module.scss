@@ -1,0 +1,31 @@
+.resumeBlock {    
+    @media (min-width: 1025px) {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    @media print {
+        flex-direction: row;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    :global {
+        .sideBar {
+            @media (min-width: 1025px) {
+                position: sticky;
+                top: 0;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+    
+                > *:last-child {
+                    flex-grow: 1;
+                }
+            }
+        }
+    }
+}
