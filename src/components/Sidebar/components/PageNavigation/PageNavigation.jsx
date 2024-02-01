@@ -4,15 +4,15 @@ import css from './PageNavigation.module.scss';
 
 import Icon from 'elements/Icon/Icon';
 import Link from 'elements/Link/Link';
-import Button from 'elements/Button/Button';
+// import Button from 'elements/Button/Button';
 import { LocalStorage, keys } from 'adapters/localstorage/localstorage-adapter';
 
 function PageNavigation({ websiteNavigation, pageNavigation }) {
   const [menuOpened, setMenuOpened] = useState(false);
 
-  function onMenuClick() {
-    setMenuOpened(!menuOpened);
-  }
+  // function onMenuClick() {
+  //   setMenuOpened(!menuOpened);
+  // }
 
   function showMenuItem(item) {
     const application = LocalStorage.get(keys.application);
@@ -24,7 +24,7 @@ function PageNavigation({ websiteNavigation, pageNavigation }) {
 
   return (
     <div className={css.navigation}>
-      {websiteNavigation && pageNavigation ? (
+      {/* {websiteNavigation && pageNavigation ? (
         <div className="menu">
           <Button className={`navigation-switch default ${!menuOpened ? "active" : ''}`} onClick={onMenuClick}>
             <span>
@@ -39,7 +39,7 @@ function PageNavigation({ websiteNavigation, pageNavigation }) {
             </span>
           </Button>
         </div>
-      ): null}
+      ): null} */}
       {pageNavigation ? (
         <div className={`page-navigation ${!menuOpened ? "active" : ''}`}>
           {pageNavigation.map((item, index) => (

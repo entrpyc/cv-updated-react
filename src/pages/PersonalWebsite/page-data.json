@@ -19,7 +19,7 @@
     "info": {
       "picture": "./assets/profile.png",
       "name": "Kaloyan Tsenkulovski",
-      "position": "Front-End Developer"
+      "position": "Front End Developer"
     },
     "social": [
       {
@@ -32,39 +32,49 @@
       }
     ],
     "pageNavigation": [
-      { "name": "About", "href": "#about" },
-      { "name": "Experience", "href": "#experience" },
-      { "name": "Portfolio", "href": "#portfolio" },
-      { "name": "Skills", "href": "#skills" }
+      {
+        "name": "About",
+        "href": "#about"
+      },
+      {
+        "name": "Experience",
+        "href": "#experience"
+      },
+      {
+        "name": "Portfolio",
+        "href": "#portfolio"
+      },
+      {
+        "name": "Skills",
+        "href": "#skills"
+      }
     ],
     "websiteNavigation": [
-      { "name": "Resume", "to": "/resume", "icon": "link", "id": "resume" },
-      { "name": "CV", "to": "/cv", "icon": "link" },
-      { "name": "Personal Website", "to": "/", "icon": "link" }
+      {
+        "name": "Resume",
+        "to": "/resume",
+        "icon": "link",
+        "id": "resume"
+      },
+      {
+        "name": "CV",
+        "to": "/cv",
+        "icon": "link"
+      },
+      {
+        "name": "Personal Website",
+        "to": "/",
+        "icon": "link"
+      }
     ]
   },
   "experience": [
     {
       "title": "Indepth Solutions",
-      "subTitle": "CEO & Co-Founder | November, 2022 - PRESENT",
+      "subTitle": "Front End Developer | November, 2021 - PRESENT",
       "text": [
-        "At our company, we specialize in integrating AI solutions tailored for automating repetitive tasks within businesses.",
-        "I was playing a crucial role in connecting with both my colleagues and the CTO to comprehensively grasp the requirements of our customers. This involved a seamless integration of fast solutions coupled with artificial intelligence. My primary focus was on ensuring a profound understanding of our clients' operations, dissecting the entire process from inception to conclusion, and delivering the most optimal solutions for their needs."
-      ]
-    },
-    {
-      "title": "Grind Web Studio",
-      "subTitle": "Front End Developer | August, 2022 - July, 2022",
-      "text": [
-        "I developed e-commerce platforms with WordPress using Sass, JavaScript, and Laravel blades.",
-        "My responsibilities at Grind were to build pixel-perfect pages, provide needed custom data fields in the admin panel of WordPress, optimize device and browser compatibility, and create custom functionalities using vanilla JavaScript."
-      ]
-    },
-    {
-      "title": "Freelance",
-      "subTitle": "Web Development | August, 2021 - May, 2022",
-      "text": [
-        "In my freelance journey, I've engaged in a variety of projects, lending my skills in web development. My dedication to producing top-notch results is evident through successful collaborations with diverse clients. I have a demonstrated history of grasping client requirements, transforming them into actionable plans, and executing projects with precision. Through clear communication and keen attention to detail, I prioritize client satisfaction while meeting project timelines. Freelancing has sharpened my adaptability, problem-solving abilities, and the knack for delivering outstanding results in dynamic and fast-paced settings."
+      "I developed e-commerce platforms with WordPress, utilizing Sass, JavaScript, and Laravel blades. My responsibilities included building pixel-perfect pages, adding custom data fields to the WordPress admin panel, optimizing device and browser compatibility, and creating unique functionalities using vanilla JavaScript.",
+      "I've worked on various web development projects, demonstrating dedication to producing high-quality results through successful collaborations with diverse clients. I have a proven history of understanding client requirements, transforming them into actionable plans, and executing projects with precision. Through clear communication and attention to detail, I prioritize client satisfaction while meeting project timelines. This has honed my adaptability, problem-solving abilities, and the skill for delivering outstanding results in dynamic and fast-paced settings."
       ]
     }
   ],
@@ -110,28 +120,48 @@
           "title": "BMI Bulgaria- Roof installations information and catalog",
           "href": "https://www.bmigroup.com/bg/",
           "techStack": [
-            { "title": "Javascript" },
-            { "title": "jQuery" },
-            { "title": "Laravel" },
-            { "title": "Tailwind" }
+            {
+              "title": "Javascript"
+            },
+            {
+              "title": "jQuery"
+            },
+            {
+              "title": "Laravel"
+            },
+            {
+              "title": "Tailwind"
+            }
           ]
         },
         {
           "title": "Kaiski - Web site for an artist with custom  CMS",
           "href": "https://www.kaiski.com/",
           "techStack": [
-            { "title": "Next JS" },
-            { "title": "Firebase" },
-            { "title": "Tailwind" }
+            {
+              "title": "Next JS"
+            },
+            {
+              "title": "Firebase"
+            },
+            {
+              "title": "Tailwind"
+            }
           ]
         },
         {
           "title": "Biotrade Corporate website - Interactive Map",
           "href": "https://biotrade.global/",
           "techStack": [
-            { "title": "Javascript (Vanilla)" },
-            { "title": "Laravel" },
-            { "title": "Wordpress (with ACF)" }
+            {
+              "title": "Javascript (Vanilla)"
+            },
+            {
+              "title": "Laravel"
+            },
+            {
+              "title": "Wordpress (with ACF)"
+            }
           ]
         }
       ]
