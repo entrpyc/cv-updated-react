@@ -37,12 +37,9 @@
     ],
     "pageNavigation": [
       { "name": "About", "href": "#about" },
-      { "name": "Summary", "href": "#summary" },
       { "name": "Experience", "href": "#experience" },
       { "name": "Portfolio", "href": "#portfolio" },
-      { "name": "Skills", "href": "#skills" },
-      { "name": "Education", "href": "#education" },
-      { "name": "Methodologies", "href": "#methodologies" }
+      { "name": "Skills", "href": "#skills" }
     ]
   },
   "experience": [
