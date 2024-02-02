@@ -10,7 +10,9 @@ function Link({
   rel = null,
   className = '',
 }) {
-  return (href ?(
+  return (to ? (
+    <ReactRouterLink className={className} to={to}>{children}</ReactRouterLink>
+  ): (
     <a
       href={href}
       className={className}
@@ -19,8 +21,6 @@ function Link({
     >
       {children}
     </a>
-  ): (
-    <ReactRouterLink className={className} to={to}>{children}</ReactRouterLink>
   ));
 }
 

@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 
 import css from './Sidebar.module.scss';
 
@@ -16,6 +16,7 @@ import { GlobalContext } from 'context/GlobalContext';
 function Sidebar() {
   const { message, pageData } = useContext(GlobalContext);
   const { navigation } = pageData;
+
   const {
     info,
     social,

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useContext, useState, useEffect } from 'react';
 
 import css from './PageNavigation.module.scss';
 
@@ -7,8 +7,10 @@ import Link from 'elements/Link/Link';
 import Button from 'elements/Button/Button';
 import { LocalStorage, keys } from 'adapters/localstorage/localstorage-adapter';
 
+import { GlobalContext } from 'context/GlobalContext';
+
 function PageNavigation({ websiteNavigation, pageNavigation }) {
-  const [menuOpened, setMenuOpened] = useState(false);
+  const { menuOpened, setMenuOpened } = useContext(GlobalContext);
 
   function onMenuClick() {
     setMenuOpened(!menuOpened);
@@ -42,12 +44,12 @@ function PageNavigation({ websiteNavigation, pageNavigation }) {
       ): null}
       {pageNavigation ? (
         <div className={`page-navigation ${!menuOpened ? "active" : ''}`}>
-          {pageNavigation.map((item, index) => (
+          {pageNavigation.map((item, i) => (
             <Link
               className="link default"
               href={item.href}
               to={item.to}
-              key={index}
+              key={i}
             >
               <Icon name={item.icon || "anchor"} /> {item.name}
             </Link>
@@ -56,12 +58,12 @@ function PageNavigation({ websiteNavigation, pageNavigation }) {
       ): null}
       {websiteNavigation ? (
         <div className={`website-navigation ${menuOpened ? "active" : ''}`}>
-          {websiteNavigation.map((item, index) => (showMenuItem(item) ? (
+          {websiteNavigation.map((item, i) => (showMenuItem(item) ? (
             <Link
               className="link default"
               href={item.href}
               to={item.to}
-              key={index}
+              key={i}
             >
               <Icon name={item.icon || "anchor"} /> {item.name}
             </Link>

@@ -15,33 +15,6 @@
       }
     ]
   ],
-  "navigation": {
-    "info": {
-      "picture": "./assets/profile.jpg",
-      "name": "Asen Angelov",
-      "position": "Software Engineer"
-    },
-    "social": [
-      {
-        "name": "npm",
-        "link": "https://www.npmjs.com/~entrpyc"
-      },
-      {
-        "name": "github",
-        "link": "https://github.com/entrpyc"
-      },
-      {
-        "name": "linkedin",
-        "link": "https://www.linkedin.com/in/asen-angelov-a26458195"
-      }
-    ],
-    "pageNavigation": [
-      { "name": "About", "href": "#about" },
-      { "name": "Experience", "href": "#experience" },
-      { "name": "Portfolio", "href": "#portfolio" },
-      { "name": "Skills", "href": "#skills" }
-    ]
-  },
   "experience": [
     {
       "title": "Indepth Solutions",

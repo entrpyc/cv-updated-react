@@ -1,11 +1,14 @@
-import React, { useState, createContext, useEffect } from 'react'
+import React, { useState, createContext, useEffect } from 'react';
+
+import websiteDataJSON from '../website-api.json';
 
 export const GlobalContext = createContext()
 
 export const GlobalProvider = props => {
-  const [ pageData, setPageData ] = useState({});
+  const [ pageData, setPageData ] = useState(websiteDataJSON || {});
   const [ message, setMessage ] = useState('');
   const [ messageVisible, setMessageVisible ] = useState(false);
+  const [ menuOpened, setMenuOpened ] = useState(false);
 
   const setMessageWithTimeout = (str) => {
     if(str === false) {
@@ -30,11 +33,11 @@ export const GlobalProvider = props => {
   }, [messageVisible]);
 
   return <GlobalContext.Provider value={{
-    pageData,
-    setPageData,
+    menuOpened, setMenuOpened,
+    pageData, setPageData,
     message,
     messageVisible,
-    setMessage: setMessageWithTimeout
+    setMessage: setMessageWithTimeout,
   }}>
     {props.children}
   </GlobalContext.Provider>

@@ -37,11 +37,11 @@ function Home() {
         return companyData || {};
       }
   
-      const pageData = pageDataJSON;
       const companyData = await fetchCompanyData();
   
       setPageData({
         ...pageData,
+        ...pageDataJSON,
         ...companyData
       });
     }
@@ -50,20 +50,12 @@ function Home() {
   }, []);
 
   return (
-      <div className="App">
-        <div className="container">
-          <div className="page-content">
-            <main>
-              <About about={pageData.about} info={pageData?.navigation?.info} />
-              <Experience experience={pageData.experience} />
-              <Portfolio portfolio={pageData.portfolio} />
-              <Skills skills={pageData.skills} />
-            </main>
-            <Sidebar />
-          </div>
-          
-        </div>
-      </div>
+      <>
+        <About about={pageData.about} info={pageData?.navigation?.info} />
+        <Experience experience={pageData.experience} />
+        <Portfolio portfolio={pageData.portfolio} />
+        <Skills skills={pageData.skills} />
+      </>
   );
 }
 

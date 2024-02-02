@@ -43,11 +43,11 @@ function Home() {
         return companyData || {};
       }
   
-      const pageData = pageDataJSON;
       const companyData = await fetchCompanyData();
   
       setPageData({
         ...pageData,
+        ...pageDataJSON,
         ...companyData
       });
     }
@@ -56,20 +56,13 @@ function Home() {
   }, []);
 
   return (
-      <div className="App">
-        <div className="container">
-          <div className="page-content">
-            <main>
-              {validApplication ? (
-                <p>Valid</p>
-              ) : (
-                <p>Invalid</p>
-              )}
-            </main>
-            <Sidebar />
-          </div>
-        </div>
-      </div>
+    <div>
+      {validApplication ? (
+        <p>Valid</p>
+      ) : (
+        <p>Invalid</p>
+      )}
+    </div>
   );
 }
 
