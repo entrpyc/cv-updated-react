@@ -1,0 +1,77 @@
+@use '../../style/color.scss';
+@use '../../style/grid.scss';
+@use '../../style/font.scss';
+
+.Cv :global {
+  @media print {  
+    p {
+      font-size: 1rem !important;
+    }
+  
+    #about {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+  
+      .about {
+        display: flex !important;
+      }
+  
+      .mobile {
+        display: block !important;
+      }
+    }
+  
+    #experience {
+      .block-container {
+        .block {
+          p:last-of-type {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  
+    #skills {
+      h3 {
+        @include font.heading-2;
+        margin-left: 0;
+      }
+  
+      .skills-wrapper + .skills-wrapper {
+        margin-top: 60px;
+      }
+  
+      .block, .content {
+        padding: 0;
+        background-color: transparent;
+  
+        p {
+          margin-left: 0;
+          margin-top: 15px;
+          color: color.$fourth;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+:global {
+  aside {
+    display: none !important;
+  }
+  
+  .page-content {
+    max-width: 100%;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  main {
+    width: 100% !important;
+  }
+}

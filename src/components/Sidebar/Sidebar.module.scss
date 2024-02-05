@@ -8,14 +8,25 @@
       display: flex;
       flex-direction: column;
       height: 100%;
-      padding: grid.$space-4;
+      padding: grid.$space-4 grid.$space-3;
       overflow-y: scroll;
 
-      -ms-overflow-style: none;  /* Internet Explorer 10+ */
-      scrollbar-width: none;  /* Firefox */
+      &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      }
 
-      &::-webkit-scrollbar { 
-        display: none;  /* Safari and Chrome */
+      &::-webkit-scrollbar {
+        width: 7px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-image: -webkit-gradient(linear,
+          left bottom,
+          left top,
+          color-stop(0.44, color.$bg-sixth),
+          color-stop(0.86, color.$bg-seventh)
+        );
       }
     }
 

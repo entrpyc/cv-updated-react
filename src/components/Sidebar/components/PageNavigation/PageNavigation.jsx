@@ -5,7 +5,7 @@ import css from './PageNavigation.module.scss';
 import Icon from 'elements/Icon/Icon';
 import Link from 'elements/Link/Link';
 import Button from 'elements/Button/Button';
-import { LocalStorage, keys } from 'adapters/localstorage/localstorage-adapter';
+import { LocalStorage, keys } from 'helpers/adapters/localstorage-adapter';
 
 import { GlobalContext } from 'context/GlobalContext';
 

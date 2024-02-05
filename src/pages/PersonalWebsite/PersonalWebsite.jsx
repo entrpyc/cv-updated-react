@@ -6,44 +6,25 @@ import { GlobalContext } from '../../context/GlobalContext';
 
 import pageDataJSON from './page-data.json';
 
-import Sidebar from '../../components/Sidebar/Sidebar';
 import About from '../../components/About/About';
 import Experience from '../../components/Experience/Experience';
 import Portfolio from '../../components/Portfolio/Portfolio';
 import Skills from '../../components/Skills/Skills';
 
-// import MainNavigation from '../../components/MainNavigation/MainNavigation';
+import { fetchAndSetCompanyData } from 'helpers/uri-resolver';
+import { mergeObjects } from 'helpers/data-aggregation';
+
 
 function Home() {
   const { pageData, setPageData } = useContext(GlobalContext);
 
   useEffect(() => {
     async function fetchAndSetPageData() {  
-      async function fetchCompanyData() {
-        const queryParams = new URLSearchParams(window.location.search);
-        const companyName = queryParams.get('application-for');
+      const companyData = await fetchAndSetCompanyData();
 
-        if(!companyName) return {};
-  
-        const companyDataResponse = await fetch(`${process.env.REACT_APP_API_ADDRESS}/${companyName}.json`);
-        let companyData;
-        
-        try {
-          companyData = await companyDataResponse.json();
-        } catch (error) {
-          companyData = false;
-        }
-  
-        return companyData || {};
-      }
-  
-      const companyData = await fetchCompanyData();
-  
-      setPageData({
-        ...pageData,
-        ...pageDataJSON,
-        ...companyData
-      });
+      setPageData(mergeObjects(
+        [pageData, pageDataJSON, companyData], ['navigation']
+      ));
     }
 
     fetchAndSetPageData();
