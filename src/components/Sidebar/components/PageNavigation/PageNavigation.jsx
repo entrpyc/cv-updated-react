@@ -21,7 +21,7 @@ function PageNavigation({ websiteNavigation, pageNavigation }) {
     setVisiblePageNavigation(
       websiteNavigation.filter(item => showMenuItem(item))
     );
-  }, [websiteNavigation])
+  }, [websiteNavigation, pageNavigation])
 
   return (
     <div className={css.navigation}>
