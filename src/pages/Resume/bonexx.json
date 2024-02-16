@@ -31,11 +31,11 @@
       }
     },
     {
-      "name": "Experience",
+      "name": "PlainText",
       "props": {
         "id": "experience",
         "title": "Experience",
-        "experience": [
+        "text": [
           {
             "title": "Indepth Solutions",
             "subTitle": "Co-Founder & Lead Software Engineer | July, 2023 - PRESENT",
