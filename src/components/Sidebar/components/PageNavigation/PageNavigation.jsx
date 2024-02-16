@@ -25,10 +25,10 @@ function PageNavigation({ websiteNavigation, pageNavigation }) {
 
   return (
     <div className={css.navigation}>
-      <div className="menu">
-        {pageNavigation ? (
-          <div className={`page-navigation active`}>
-            {pageNavigation.map((item, i) => (
+      {visiblePageNavigation && visiblePageNavigation.length > 1 ? (
+        <div className="menu">
+          <div className={`website-navigation active`}>
+            {visiblePageNavigation.map((item, i) => (
               <Link
                 className="link default"
                 href={item.href}
@@ -39,20 +39,22 @@ function PageNavigation({ websiteNavigation, pageNavigation }) {
               </Link>
             ))}
           </div>
-        ): null}
-      </div>
-      {visiblePageNavigation && visiblePageNavigation.length > 1 ? (
-        <div className={`website-navigation active`}>
-          {visiblePageNavigation.map((item, i) => (
-            <Link
-              className="link default"
-              href={item.href}
-              to={item.to}
-              key={i}
-            >
-              <Icon name={item.icon || "anchor"} /> {item.name}
-            </Link>
-          ))}
+        </div>
+      ): null}
+      {pageNavigation ? (
+        <div className="menu">
+            <div className={`page-navigation active`}>
+              {pageNavigation.map((item, i) => (
+                <Link
+                  className="link default"
+                  href={item.href}
+                  to={item.to}
+                  key={i}
+                >
+                  <Icon name={item.icon || "anchor"} /> {item.name}
+                </Link>
+              ))}
+            </div>
         </div>
       ): null}
     </div>
