@@ -1,8 +1,22 @@
 @use 'style/grid.scss';
 @use 'style/font.scss';
+@use 'style/color.scss';
 
 .block {
   :global {
+    span {
+      @include font.text-secondary;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      gap: grid.$space-0-2;
+      text-decoration: none;
+    }
+    svg {
+      max-width: 15px;
+      fill: color.$primary;
+    }
     .block-text {
       display: flex;
       flex-direction: column;

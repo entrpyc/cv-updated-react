@@ -105,7 +105,7 @@ button:not(.default) {
   }
 }
 
-button {
+button, a {
   background-color: transparent;
   border: none; 
   cursor: pointer;
@@ -117,3 +117,13 @@ img {
   width: auto;
   height: auto;
 }
+
+.mobile {
+  display: none;
+}
+
+@include grid.mobile {
+  .mobile {
+    display: block;
+  }
+} 

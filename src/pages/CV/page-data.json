@@ -1,66 +1,75 @@
 {
-  "about": [
-    [
-      {
-        "title": "Birthday",
-        "text": "June 10, 1999"
-      },
-      {
-        "title": "Location",
-        "text": "Sofia, Bulgaria"
-      },
-      {
-        "title": "Email",
-        "text": "asenangelov.cv@gmail.com"
-      }
-    ]
-  ],
   "navigation": {
     "pageNavigation": [
       { "name": "About", "href": "#about" },
+      { "name": "Summary", "href": "#summary" },
       { "name": "Experience", "href": "#experience" },
       { "name": "Portfolio", "href": "#portfolio" },
-      { "name": "Skills", "href": "#skills" }
+      { "name": "Skills", "href": "#skills" },
+      { "name": "Recommendations", "href": "#recommendations" },
+      { "name": "Education", "href": "#education" },
+      { "name": "Methodologies", "href": "#methodologies" }
     ]
   },
   "components": [
     {
+      "name": "About",
+      "props": {
+        "id": "about",
+        "about": [
+          [
+            {
+              "title": "Birthday",
+              "text": "June 10, 1999"
+            },
+            {
+              "title": "Location",
+              "text": "Sofia, Bulgaria"
+            },
+            {
+              "title": "Email",
+              "text": "asenangelov.cv@gmail.com"
+            }
+          ]
+        ]
+      }
+    },
+    {
       "name": "Experience",
       "props": {
+        "id": "experience",
+        "title": "Experience",
         "experience": [
           {
             "title": "Indepth Solutions",
             "subTitle": "Co-Founder & Lead Software Engineer | July, 2023 - PRESENT",
             "text": [
-              "At our company, we specialize in integrating AI solutions tailored for automating repetitive tasks within businesses.",
-              "My technical role encompasses designing both low-level and high-level Linux server architectures, along with creating and managing node servers. I specialize in crafting solutions by interfacing third-party software with our API, employing a diverse range of technologies dictated by our clients' unique requirements.",
+              "Led a team of engineers in the development of 2 company products and 3 separate implementations with clients.",
+              "Developed a server architecture for handling sensitive information through API requests and SMPT requests.",
+              "Designed a package management system that allows the team to store more than 80% of the code as reusable packages and optimizes the work of the developers by at least 50%.",
+              "Designed and developed a Front-end architecture and procedures that stimulate the developers to write cohesive code and eliminate the complexity of maintaining the code base.",
               "Javascript, Typescript, React, Svelte, Storybook, Jest, GraphQL, Node.js, Express, Neo4j, dGraph, Google App Scripts, C#, Linux Server Administration"
             ]
           },
           {
             "title": "Clustermarket",
-            "subTitle": "Software Engineer | February, 2022 - July, 2023",
+            "subTitle": "Senior Software Engineer | February, 2022 - July, 2023",
             "text": [
-              "While at Clustermarket, my primary role involved constructing Booking software.",
-              "We transitioned the software from its initial Ruby-based structure to a comprehensive Svelte and GraphQL framework, encompassing all existing components while further expanding its functionality.",
+              "Clustermarket is a startup that develops booking software, which is used in laboratories at universities and pharmaceutical companies.",
+              "Among the front-end team of 3 engineers, I had a fundamental role in the transitioning of the software from its initial Ruby-based structure to a Svelte and GraphQL framework.",
+              "In this process, I actively participated in the development of the front-end architecture, I broke down the features into reusable components and implemented Storybook and Unit testing with Jest, and introduced some design patterns for building components.",
+              "I extended the software with 2 complex features which were reused in approximately 30% of the entire software and developed 3 low-level tools that deal with handling url parameters, data filtration, and search.",
               "Svelte, GraphQL, Storybook, Jest, Gitlab, Ruby"
-            ]
-          },
-          {
-            "title": "Senteca Commerce",
-            "subTitle": "Senior Software Engineer | October, 2021 - January, 2022",
-            "text": [
-              "At Senteca Commerce, I contributed to developing e-commerce solutions for major brands in Bulgaria.",
-              "My responsibilities included reviewing junior code and optimizing websites for enhanced usability and performance. Utilizing Next.js, GraphQL, and Tailwind, I revamped these platforms to ensure they met the highest standards of functionality and user experience.",
-              "Typescript, React, Next.js, Tailwind, PostCSS"
             ]
           },
           {
             "title": "LimeChain",
             "subTitle": "Blockchain Developer | November, 2020 - November, 2021",
             "text": [
-              "At LimeChain, our focus was pioneering blockchain solutions for esteemed clients.",
-              "My focus centered on crafting PWAs leveraging blockchain technology. This involved hands-on development of smart contracts, API creation, and pivotal contributions to complex projects like Boson Protocol and Universe.xyz. Within these projects, my team and I pioneered the creation of a decentralized marketplace, facilitated auctions, and curated an NFT collection.",
+              "At LimeChain, our focus was pioneering web3 solutions.",
+              "My core responsibilities involved the development of Progressive Web Apps by adopting blockchain technology.",
+              "The nature of this technology required me to pay special attention and perfect the UX implementations of the designs to provide the users with the necessary information about the ongoing requests to the blockchain network. For that reason, I delved more into studying UX principles and applied them in our projects, and by these advancements, I've set a higher standard for front-end development in the company.",
+              "I was appointed as the only front-end developer in 3 challenging projects. I also collaborated with other front-end developers on 2 other projects and participated in the development of smart contracts.",
               "JavaScript, React, Solidity, Sass"
             ]
           },
@@ -68,8 +77,10 @@
             "title": "Grind Web Studio",
             "subTitle": "Front-end Developer | November, 2019 - November, 2020",
             "text": [
-              "I developed e-commerce platforms with WordPress using Sass, JavaScript, and Laravel blades.",
-              "My responsibilities at Grind were to build pixel-perfect pages, provide needed custom data fields in the admin panel of WordPress, optimize device and browser compatibility, and create custom functionalities using vanilla JavaScript.",
+              "My position at Grind Web Studio was to develop the front end of e-commerce websites.",
+              "The responsibilities of the position included building pixel-perfect pages, providing needed custom data fields in the admin panel of WordPress, optimizing device and browser compatibility, and creating custom functionalities using vanilla JavaScript.",
+              "I participated in the development of 5 separate projects. During this time I've built over 10 custom features with vanilla Javascript, which I also converted to NPM packages.",
+              "The founders of the company assigned me to lead the development of a platform for the company that helps with optimizing the required time to build the interfaces of our websites.",
               "Javascript, Wordpress, Laravel, Sass"
             ]
           },
@@ -77,8 +88,10 @@
             "title": "Max Win Gaming",
             "subTitle": "2D Animation Developer | December, 2017 - October, 2019",
             "text": [
-              "At Max Win Gaming, I was working on slot games animations.",
-              "The games were developed using HTML Canvas and EaselJS - a JS library for animations. My role demanded proficient expertise in Adobe Photoshop, After Effects, and Animate to ensure high-quality and engaging game visuals.",
+              "At Max Win Gaming I was working on slot game mechanics and animations.",
+              "The games were developed using HTML Canvas and EaselJS - a JS library for animations. In order to guarantee captivating game graphics, my position required proficiency with Adobe Photoshop, After Effects, and Animate.",
+              "All team members, including myself, participated in every phase of the game production process - from the product development stage to digital marketing design, and localization.",
+              "After I gained expertise in the technology, I introduced new methods for the development of the games which greatly improved the productivity of the team. Some of these techniques are still used by the organization as standard operating procedures.",
               "Javascript, EaselJS, Adobe Suite"
             ]
           }
@@ -88,18 +101,71 @@
     {
       "name": "Portfolio",
       "props": {
+        "id": "portfolio",
         "portfolio": [
           {
-            "title": "Web Development",
+            "title": "Software and App Development",
             "content": [
               {
-                "title": "Biotrade - Marketing files management platform",
+                "title": "Indepth Solutions - Data structure for AI powered CMS",
+                "external": "https://gitfront.io/r/entrpyc/9MCA9pUcTn6G/dom-shadow-graph/tree/src/DOMShadowGraph/",
+                "techStack": [
+                  { "title": "Typescript" },
+                  { "title": "Jest" }
+                ]
+              },
+              {
+                "title": "Indepth Solutions - API for AI integrations",
+                "external": "https://gitfront.io/r/entrpyc/eX7EMiuSKjEi/indepth-apis/tree/apis/shopify/",
+                "techStack": [
+                  { "title": "Node.js" }
+                ]
+              },
+              {
+                "title": "Indepth Solutions - Front-end architecture for rendering AI generated code",
+                "external": "https://gitfront.io/r/entrpyc/HWHWo8rR9XFA/svelte-generator/",
+                "techStack": [
+                  { "title": "Typescript" },
+                  { "title": "Svelte" },
+                  { "title": "Jest" },
+                  { "title": "Storybook" }
+                ]
+              },
+              {
+                "title": "Clustermarket - Overview Table with Tabs, Pagination, Search and Filters, Loading placeholders, and Bulk Actions",
+                "href": "https://youtu.be/u24LkRtqNx0?si=WDfTMInnzrf7ZruH&t=390",
+                "techStack": [
+                  { "title": "Javascript (Vanilla)" },
+                  { "title": "Svelte" },
+                  { "title": "GraphQL" },
+                  { "title": "Storybook" },
+                  { "title": "Jest" }
+                ]
+              },
+              {
+                "title": "Clustermarket - Interactive Calendar for bookings with Bulk Actions and Validations",
+                "href": "https://www.youtube.com/watch?v=jcodcwIf6Jw",
+                "techStack": [
+                  { "title": "Javascript (Vanilla)" },
+                  { "title": "Svelte" },
+                  { "title": "GraphQL" },
+                  { "title": "Storybook" },
+                  { "title": "Jest" }
+                ]
+              },
+              {
+                "title": "Biotrade - File management platform",
                 "href": "https://drive.google.com/file/d/1J_AFyDkNsjrEuE2LcJGGBr90nyQk3-b8/view?usp=sharing",
                 "techStack": [
                   { "title": "Javascript (Vanilla)" },
                   { "title": "Sass" }
                 ]
-              },
+              }
+            ]
+          },
+          {
+            "title": "Web Development",
+            "content": [
               {
                 "title": "Leptonite - Decentralized marketplace",
                 "href": "https://drive.google.com/file/d/1kcHqZaJ0nFAv81cahQx-CjeledTU6Tsm/view?usp=sharing",
@@ -159,14 +225,14 @@
             ]
           },
           {
-            "title": "Animations",
+            "title": "Javascript Animations",
             "content": [
               {
                 "title": "Javascript & CSS animations",
                 "href": "https://drive.google.com/file/d/1ToqxvFfgmMM5HZrWVXtOLZerZdW-PVyC/view?usp=sharing",
                 "techStack": [
+                  { "title": "Javascript (Canvas)" },
                   { "title": "EaselJS" },
-                  { "title": "Canvas" },
                   { "title": "Adobe: Animate, AE, PS" }
                 ]
               },
@@ -174,8 +240,8 @@
                 "title": "Javascript & CSS animations 2",
                 "href": "https://drive.google.com/file/d/139BrhZGyf1Hi_h1CDeMoa5wwwz_zm7ZT/view?usp=sharing",
                 "techStack": [
+                  { "title": "Javascript (Canvas)" },
                   { "title": "EaselJS" },
-                  { "title": "Canvas" },
                   { "title": "Adobe: Animate, AE, PS" }
                 ]
               },
@@ -183,10 +249,44 @@
                 "title": "Javascript animation sequence",
                 "href": "https://drive.google.com/file/d/1MqaFu4E_QRXAmgt26JuqNywTbvjrMplo/view?usp=sharing",
                 "techStack": [
+                  { "title": "Javascript (Canvas)" },
                   { "title": "EaselJS" },
-                  { "title": "Canvas" },
                   { "title": "Adobe: Animate, AE, PS" }
                 ]
+              }
+            ]
+          },
+          {
+            "title": "Game Development",
+            "type": "parent",
+            "content": [
+              {
+                "title": "Slot games at Max Win Gaming",
+                "techStack": [
+                  { "title": "Javascript (Canvas)" },
+                  { "title": "EaselJS" },
+                  { "title": "Adobe: Animate, AE, PS" }
+                ]
+              },
+              {
+                "title": "Asian Fortune - Slot game",
+                "external": "https://www.maxwingaming.com/projects-archive/asian-fortune/"
+              },
+              {
+                "title": "Splendour Forest - Slot game",
+                "external": "https://www.maxwingaming.com/projects-archive/splendour-forest/"
+              },
+              {
+                "title": "Leprechauns Magic - Slot game",
+                "external": "https://www.maxwingaming.com/projects-archive/leprechauns-magic/"
+              },
+              {
+                "title": "Fruit Strike - Asian Fortune",
+                "external": "https://www.maxwingaming.com/projects-archive/fruit-strike/"
+              },
+              {
+                "title": "Lucky Carnival - Slot game",
+                "external": "https://www.maxwingaming.com/projects-archive/lucky-carnival/"
               }
             ]
           }
@@ -196,9 +296,61 @@
     {
       "name": "Skills",
       "props": {
+        "id": "skills",
+        "list": [
+          {
+            "level": "Expert - Technical Skills",
+            "list": [
+              "Javascript",
+              "Typescript",
+              "React",
+              "Svelte",
+              "SASS",
+              "Adobe Photoshop"
+            ]
+          },
+          {
+            "level": "Advanced - Technical Skills",
+            "list": [
+              "Tailwind",
+              "Storybook",
+              "Wordpress"
+            ]
+          },
+          {
+            "level": "Intermediate - Technical Skills",
+            "list": [
+              "Jest",
+              "Mocha",
+              "Next.js",
+              "EaselJS",
+              "Adobe Animate CC",
+              "Figma (Design)",
+              "Adobe Xd (Design)"
+            ]
+          },
+          {
+            "level": "Beginner - Technical Skills",
+            "list": [
+              "Node",
+              "Express",
+              "GraphQL",
+              "MongoDB",
+              "Laravel",
+              "Neo4j",
+              "dGraph",
+              "Google App Scripts",
+              "C#",
+              "Windows Forms (.NET)" ,
+              "Linux Server Development and Administration",
+              "Ruby",
+              "Solidity"
+            ]
+          }
+        ],
         "skills": [
           {
-            "title": "Javascript/Typescript",
+            "title": "Javascript/Typescript - 6 years",
             "text": [
               "JavaScript is my primary technology of choice. I possess experience in both front-end and back-end development using JS, although my focus has primarily been on front-end work.",
               "Regarding theoretical knowledge, I've studied both high-level and low-level concepts of the language. This includes understanding Hoisting, Closures, Event Loop, Heap and Stack, among others. Additionally, I've delved into compilation and interpretation, IR and AST parsing, transpilation, and more.",
@@ -207,17 +359,17 @@
             ]
           },
           {
-            "title": "Front-end Engineering",
+            "title": "Front-end Engineering - 3 years",
             "text": [
               "Front-end development is my primary specialization, with over 4 years of experience.",
-              "I've explored a wide range of concepts and have adapted the best practices in the field through individual research and communication with other professionals.",
+              "I've explored a wide range of concepts and have adapted some of the best practices in the field through individual research and communication with other professionals.",
               "I'm most proficient at designing architectures suitable for continuous integration. By aiming for reusability and simplicity in software components, I contribute code that is easily maintainable, requires less refactoring, and can be utilized in other parts of the software, effectively saving development time.",
               "During the product design stages, I actively participate in the development of software features by offering a developer's perspective in the process. I recognize potential solutions for problems I've encountered in previous projects.",
               "While I am adept at being framework-agnostic, in my previous positions, I have gained extensive expertise in various frameworks, including React and Svelte. I quickly grasp the design patterns of diverse projects and efficiently extend or enhance them as necessary. My preferred approach with frameworks involves segregating logic and UI, a strategy I've found to be highly efficient and time-saving in the long term."
             ]
           },
           {
-            "title": "Software Development",
+            "title": "Software Development - 2 years",
             "text": [
               "I've navigated diverse work environments, gaining exposure to iterative development and waterfall methodologies. Each approach has enriched my problem-solving skills in areas like maintaining clean code, version control, testing strategies, managing technical debt, code refactoring, and documentation.",
               "Personally, I prioritize addressing technical debt early on to minimize costly refactoring later. I emphasize the importance of thorough unit testing to prevent regressions when implementing new features or modifications.",
@@ -225,7 +377,7 @@
             ]
           },
           {
-            "title": "Software Design & Architecture",
+            "title": "Software Design & Architecture - 1 year",
             "text": [
               "Designing my own systems taught me systematic approaches in software design and architecture, aiding in recognizing high and low-level bottlenecks within the software I develop.",
               "During code reviews, I assess scalability, conduct performance profiling, and pinpoint opportunities to implement caching strategies, aligning code modifications with the software's overarching architecture.",
@@ -233,53 +385,147 @@
             ]
           },
           {
-            "title": "Server Design & Architecture",
+            "title": "Server Design & Architecture - 1 year",
             "text": [
               "At my company, I delved into designing Linux servers and APIs, honing my skills in this area. I concentrated on making server components reusable by using NPM with various backend services I built from the ground up. I implemented a monolithic structure for our APIs, following commonly used practices for this type of setup.",
               "This experience expanded my comprehension of web security and motivated me to further deepen my expertise in this field."
             ]
           },
           {
-            "title": "Computer science",
+            "title": "Computer science - 3 years",
             "text": [
               "Frequently, I've tackled lower-level technical challenges, delving into the implementation of more efficient, faster, and lighter code. My grasp of algorithms, data structures, and performance metrics has been instrumental in resolving these issues.",
               "While I lean towards OOP for software development, I've also crafted highly effective implementations using functional approaches. In my experience, OOP excels in providing declarative code, whereas functional programming methods often prove more efficient for developing imperative code."
             ]
           },
           {
-            "title": "Product design",
+            "title": "Product design - 2 years",
             "text": [
-              "My understanding of product design methods that I gained during the work at my own company enables me to have more efficient collaboration with product designers. This allows me to offer valuable insights and preempt potential issues in feature implementation during later development stages.",
+              "I can collaborate with product designers more effectively thanks to my comprehension of product design techniques, which I acquired while working at my own company. This allows me to offer valuable insights and preempt potential issues in feature implementation during later development stages.",
               "Additionally, it has significantly enhanced my decision-making in feature development, incorporating practices like using user personas, prototyping, and striking a balance between user needs and business objectives."
             ]
           },
           {
-            "title": "Internet Infrastructure & Network Protocols",
+            "title": "Internet Infrastructure & Network Protocols - 1 year",
             "text": [
               "Understanding internet infrastructure was pivotal in my development of secure Linux servers and hosting multiple APIs containing sensitive data. This knowledge also deepened my comprehension of client-side, server-side, and alternative content rendering methodologies for the web.",
               "Ultimately, this experience significantly impacts my capacity to devise optimal solutions for maintaining and delivering web applications efficiently to end users."
             ]
           },
           {
-            "title": "UI & UX",
+            "title": "UI & UX - 6 years",
             "text": [
               "I've learned essential UI & UX principles and applied them at Max Win Gaming by creating UI solutions, becoming skilled in JS and CSS animation, and designing user-friendly software interfaces.",
               "This experience has trained me to anticipate potential design issues and offer solutions, enhancing both user interaction and the efficiency of asynchronous code for smoother user experiences."
             ]
           },
           {
-            "title": "Business Solutions",
+            "title": "Business Solutions - 1 year",
             "text": [
               "I use my business experience gained from co-founding a company to identify more efficient solutions for engineering challenges that directly affect the overall performance of the business.",
               "This experience has also sharpened my ability to prioritize tasks effectively and discern their levels of urgency. Also understanding the goals and challenges of colleagues across various departments has notably enhanced my communication skills within the team."
             ]
           },
           {
-            "title": "Coaching & Teaching",
+            "title": "Coaching & Teaching - 3 years",
             "text": [
-              "For the past three years, I've been building online communities for studying software engineering. I've led groups of 6 to 15 members from various backgrounds, helping them pave their paths towards successful programming careers. I created detailed plans and career guides, hosting frequent 1-2 weekly meetings to dive into the core principles of software development.",
-              "I've switched from hosting groups to individual mentoring, adapting my methods to fit each student's specific needs. I specialize in guiding beginners towards landing junior developer roles. Additionally, I work closely with some students, helping them advance from junior to senior positions and even move up from developer to architect roles.",
+              "For the past three years, I've been building online communities for studying software engineering. I've led groups of 6 to 15 members from various backgrounds, helping them pave their paths toward successful programming careers. I created detailed plans and career guides, hosting frequent 1-2 weekly meetings to dive into the core principles of software development.",
+              "I've switched from hosting groups to individual mentoring, adapting my methods to fit each student's specific needs. I specialize in guiding beginners toward landing junior developer roles. Additionally, I work closely with some students, helping them advance from junior to senior positions and even move up from developer to architect roles.",
               "Also, at Softuni I earned a scholarship after achieving a perfect score, allowing me to mentor and teach in courses I've already completed. There I had the opportunity to teach larger groups of students for a short period of time."
+            ]
+          },
+          {
+            "title": "Design - 10 years",
+            "text": [
+            ]
+          },
+          {
+            "title": "Animation and Visual Effects - 6 years",
+            "text": [
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Experience",
+      "props": {
+        "id": "recommendations",
+        "title": "Recommendations",
+        "experience": [
+          {
+            "title": "Johannes Solzbach",
+            "span": "Co-Founder at Clustermarket",
+            "subTitle": "I reported directly to Johannes Solzbach",
+            "link": "https://www.linkedin.com/in/johannessolzbach",
+            "text": [
+              "Despite unfortunate circumstances leading to Asen's departure, he consistently demonstrated remarkable dedication, motivation, and reliability.",
+              "His rapid learning abilities, coupled with strong technical knowledge, made him an invaluable asset to our team. Asen is not only a skilled developer but also a genuinely nice person.",
+              "I highly recommend him and am confident he will excel in his future endeavors. Please contact me if you need a reference: jsolzbach@clustermarket.com"
+            ]
+          },
+          {
+            "title": "Emil Belyov",
+            "span": "Senior Game Developer at Max Win Gaming",
+            "subTitle": "Emil Belyov managed me directly",
+            "link": "https://www.linkedin.com/in/emil-belyov-581062102",
+            "text": [
+              "Asen is a highly skilled and motivated developer with whom I have had the pleasure of working on several challenging games.",
+              "His passion for his craft is evident in every task he undertakes, resulting in consistently high quality results. He has always shown a passion for his craft which has always resulted in high quality results.",
+              "His contributions to the company set the tone for development principles that we still follow today, where his solutions have significantly improved the production time and end results of our games.",
+              "I highly recommend Asen for his professionalism and attention to detail in his work, as his problem solving skills make him an invaluable asset to any team."
+            ]
+          },
+          {
+            "title": "Itay Grudev",
+            "span": "CTO at Clustermarket",
+            "link": "https://www.linkedin.com/in/itaygrudev/",
+            "subTitle": "Itay Grudev managed me directly",
+            "text": [
+              "I highly recommend Asen for any Front End Engineering role.",
+              "During his time at Clustermarket, he consistently delivered outstanding work, showcasing a strong command of software engineering principles.",
+              "Asen not only adapted quickly to our dynamic environment and technology stack, but also excelled in tackling challenging tasks with efficiency. His talent, combined with a deep understanding of advanced software practices, makes him a valuable addition to any software engineering team.",
+              "I am confident that Asen's contributions will exceed expectations, and he will be a tremendous asset to your organization."
+            ]
+          },
+          {
+            "title": "Ivan Dzholev",
+            "span": "Senior Developer at Clustermarket",
+            "link": "https://www.linkedin.com/in/ivan-dzholev-805720151",
+            "subTitle": "Ivan Dzholev managed me directly",
+            "text": [
+              "My name is Ivan Dzholev, and for a year I was directly responsible for Asen.",
+              "Asen is self-motivated constantly learning in his free time, and diligent in his work.",
+              "While we worked together, he had many brilliant suggestions on how to improve the code and processes. He also never stopped getting better.",
+              "Any team would be lucky to have him."
+            ]
+          },
+          {
+            "title": "Stoyan Statev",
+            "span": "Мanager at Max Win Gaming",
+            "link": "https://www.linkedin.com/company/max-win-gaming",
+            "subTitle": "I reported directly to Stoyan Statev",
+            "download": {
+              "text": "View full recomemndation",
+              "link": "https://drive.google.com/file/d/1flvxnoFueh-TbzHidGy_QJ8RCo119DPa/view?usp=sharing"
+            },
+            "text": [
+              "It is with pleasure that I write this letter to recommend Asen Angelov for the position of Software Developer. During the period from December 2017 to October 2019, I had the privilege to work with Asen as his company manager at 'Max Win Gaming' LTD.",
+              "During this period, Asen demonstrated exceptional programming skills and software development, as well as an unwavering commitment to the quality of our products. The employee flawlessly performed all functions typical of developing games and applications, contributing significantly to our projects.",
+              "Asen Angelov has excellent professional knowledge and skills. He knows how to work in a team, shows creativity in problem solving as well as the ability to deal with given tasks.",
+              "I confidently recommend Asen Angelov for the position of software programmer, as I am convinced, that he will do an excellent job with any task and any project he is assigned. I hope that my recommendation will be useful for you.",
+              "(Translated with DeepL)"
+            ]
+          },
+          {
+            "title": "Yavor Varbanov",
+            "span": "Software Architect at Grind Web Studio",
+            "link": "https://www.linkedin.com/in/yavor-varbanov",
+            "subTitle": "Yavor Varbanov managed me directly",
+            "text": [
+              "Asen has the drive and curiosity to succeed. Any company that does not have people with such curiosity will undoubtedly fall into mediocrity.",
+              "Asen showed a wide range of expertise in numerous fields throughout our time together at Grind. By now, I'm sure his knowledge base has grown.",
+              "(Translated with DeepL)"
             ]
           }
         ]

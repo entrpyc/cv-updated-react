@@ -13,6 +13,10 @@
         flex-grow: 1;
         padding: grid.$space-1;
         color: color.$third;
+
+        p {
+          font-weight: 500;
+        }
       
         background-color: color.$bg-fourth;
         border-radius: grid.$radius-1;

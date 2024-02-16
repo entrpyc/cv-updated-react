@@ -4,12 +4,12 @@ import Title from 'elements/Title/Title';
 
 import PortfolioBlock  from './components/PortfolioBlock/PortfolioBlock';
 
-function Portfolio({ portfolio }) {
+function Portfolio({ portfolio, type, id }) {
   return (portfolio &&
-    <section id="portfolio" className={css.portfolio}>
+    <section id={id} className={css.portfolio}>
       <Title>Portfolio</Title>
       {portfolio.map((portfolioItem, i) => (
-        <div className="wrap" key={i}>
+        <div className={`wrap ${portfolioItem.type || ''}`} key={i}>
           <Title tag="h3">{portfolioItem.title}</Title>
           {portfolioItem.content.map((item, index) => (
             <PortfolioBlock {...item} key={index} />

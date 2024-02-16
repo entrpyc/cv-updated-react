@@ -32,3 +32,9 @@
   font-weight: 300;
   line-height: 28px;
 }
+
+@mixin text-secondary {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 28px;
+}

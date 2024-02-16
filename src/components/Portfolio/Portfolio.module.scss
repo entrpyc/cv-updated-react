@@ -6,6 +6,10 @@
       display: flex;
       flex-direction: column;
       gap: grid.$space-3;
+
+      &.parent {
+        gap: grid.$space-1;
+      }
     }
   
     .wrap + .wrap {
