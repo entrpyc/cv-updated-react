@@ -1,18 +1,17 @@
 import React, { useState, useEffect } from 'react'
 
+import { asyncComponentImport } from 'helpers/file-system';
+
 function DynamicComponent({ component, props }) {
   const [dynamicModule, setDynamicModule] = useState(null);
 
   useEffect(() => {
     // Dynamically import the module/component
     const importDynamicModule = async () => {
-      try {
-        const module = await import(`../../components/${component}/${component}`);
-        setDynamicModule(module);
-      } catch (error) {
-        console.error('Error loading dynamic module:', error);
-      }
+      const module = await asyncComponentImport(() => import(`../../components/${component}/${component}`))
+      setDynamicModule(module);
     };
+
 
     importDynamicModule();
   }, []);
