@@ -2,12 +2,10 @@
   "navigation": {
     "pageNavigation": [
       { "name": "About", "href": "#about" },
-      { "name": "Summary", "href": "#summary" },
       { "name": "Experience", "href": "#experience" },
       { "name": "Portfolio", "href": "#portfolio" },
       { "name": "Skills", "href": "#skills" },
-      { "name": "Recommendations", "href": "#recommendations" },
-      { "name": "Methodologies", "href": "#methodologies" }
+      { "name": "Recommendations", "href": "#recommendations" }
     ]
   },
   "components": [
@@ -432,16 +430,6 @@
               "For the past three years, I've been building online communities for studying software engineering. I've led groups of 6 to 15 members from various backgrounds, helping them pave their paths toward successful programming careers. I created detailed plans and career guides, hosting frequent 1-2 weekly meetings to dive into the core principles of software development.",
               "I've switched from hosting groups to individual mentoring, adapting my methods to fit each student's specific needs. I specialize in guiding beginners toward landing junior developer roles. Additionally, I work closely with some students, helping them advance from junior to senior positions and even move up from developer to architect roles.",
               "Also, at Softuni I earned a scholarship after achieving a perfect score, allowing me to mentor and teach in courses I've already completed. There I had the opportunity to teach larger groups of students for a short period of time."
-            ]
-          },
-          {
-            "title": "Design - 10 years",
-            "text": [
-            ]
-          },
-          {
-            "title": "Animation and Visual Effects - 6 years",
-            "text": [
             ]
           }
         ]
