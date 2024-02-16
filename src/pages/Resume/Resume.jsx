@@ -4,39 +4,48 @@ import css from './Resume.module.scss';
 import React, { useEffect, useContext, useState } from 'react';
 import { GlobalContext } from '../../context/GlobalContext';
 
-import { getCompanyName } from 'helpers/uri-resolver';
+import { getCompanyNameFromURL } from 'helpers/uri-resolver';
 import { mergeObjects } from 'helpers/data-aggregation';
 
 import DynamicComponent from 'components/DynamicComponent/DynamicComponent';
 import { asyncJSONImport } from 'helpers/file-system';
+import { getCompanyNameFromLocalStorage, saveCompanyNameToLocalStorage, deleteCompanyNameFromLocalStorage } from 'helpers/adapters/localstorage-adapter';
 
-function Home() {
+function Resume() {
   const [companyData, setCompanyData] = useState(false);
   const [validApplication, setValidApplication] = useState(false);
   const { pageData, setPageData } = useContext(GlobalContext);
 
   useEffect(() => {
-    async function fetchAndSetPageData() {  
-      if(companyData) setValidApplication(true);
+    const companyNameFromURL = getCompanyNameFromURL();
+    const companyName = getCompanyNameFromLocalStorage();
+    
+    if(!companyNameFromURL && !companyName) return;
 
-      setPageData(mergeObjects(
-        [pageData, companyData], ['navigation']
-      ));
-    }
+    if(companyNameFromURL &&companyNameFromURL !== companyName) saveCompanyNameToLocalStorage(companyNameFromURL);
 
-    fetchAndSetPageData();
-  }, [companyData]);
-
-  useEffect(() => {
     const importAndSetData = async () => {
-      const companyName = getCompanyName();
-      const importedPageData = await asyncJSONImport(() => import(`./${companyName}.json`));
+      const importedPageData = await asyncJSONImport(() => import(`./${companyNameFromURL || companyName}.json`));
+      if(!importedPageData) deleteCompanyNameFromLocalStorage();
 
       setCompanyData(importedPageData);
     }
 
     importAndSetData();
   }, []);
+
+  useEffect(() => {
+    async function fetchAndSetPageData() {  
+      setValidApplication(true);
+
+
+      setPageData(mergeObjects(
+        [pageData, companyData], ['navigation']
+      ));
+    }
+
+    if(companyData) fetchAndSetPageData();
+  }, [companyData]);
 
   return (
     <div>
@@ -53,4 +62,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Resume;

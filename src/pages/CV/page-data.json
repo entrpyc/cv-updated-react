@@ -117,7 +117,8 @@
                 "title": "Indepth Solutions - API for AI integrations",
                 "external": "https://gitfront.io/r/entrpyc/eX7EMiuSKjEi/indepth-apis/tree/apis/shopify/",
                 "techStack": [
-                  { "title": "Node.js" }
+                  { "title": "Node.js" },
+                  { "title": "Express" }
                 ]
               },
               {
