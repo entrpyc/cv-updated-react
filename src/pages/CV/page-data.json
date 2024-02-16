@@ -34,11 +34,11 @@
       }
     },
     {
-      "name": "Experience",
+      "name": "PlainText",
       "props": {
         "id": "experience",
         "title": "Experience",
-        "experience": [
+        "text": [
           {
             "title": "Indepth Solutions",
             "subTitle": "Co-Founder & Lead Software Engineer | July, 2023 - PRESENT",
@@ -448,11 +448,11 @@
       }
     },
     {
-      "name": "Experience",
+      "name": "PlainText",
       "props": {
         "id": "recommendations",
         "title": "Recommendations",
-        "experience": [
+        "text": [
           {
             "title": "Johannes Solzbach",
             "span": "Co-Founder at Clustermarket",
