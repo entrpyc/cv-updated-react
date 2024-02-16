@@ -11,20 +11,24 @@ function Skills({ skills, list, id }) {
     techStack: skillList.list.map( skill => ({ title: skill }))
   })
 
-  return (skills &&
+  return (
     <section id={id} className={css.skills}>
       <Title>Skills</Title>
       <div className="skill-lists">
-        <div className="wrap">
-          {list.map((skillList, i) => (
-            <PortfolioBlock key={i} {...remapSkillListForPortfolioBlock(skillList)} />
-          ))}
-        </div>
-        <div className="wrap">
-          {skills.map((skill, i) => (
-            <SkillBlock key={i} {...skill} />
-          ))}
-        </div>
+        {list ? (
+          <div className="wrap">
+            {list.map((skillList, i) => (
+              <PortfolioBlock key={i} {...remapSkillListForPortfolioBlock(skillList)} />
+            ))}
+          </div>
+        ): null}
+        {skills ? (
+          <div className="wrap">
+            {skills.map((skill, i) => (
+              <SkillBlock key={i} {...skill} />
+            ))}
+          </div>
+        ): null}
       </div>
     </section>
   )

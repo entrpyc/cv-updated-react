@@ -1,13 +1,13 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-// import css from './Resume.module.scss';
+import css from './Resume.module.scss';
 
 import React, { useEffect, useContext, useState } from 'react';
 import { GlobalContext } from '../../context/GlobalContext';
 
-import pageDataJSON from './page-data.json';
-
 import { fetchAndSetCompanyData } from 'helpers/uri-resolver';
 import { mergeObjects } from 'helpers/data-aggregation';
+
+import DynamicComponent from 'components/DynamicComponent/DynamicComponent';
 
 function Home() {
   const [validApplication, setValidApplication] = useState(false);
@@ -19,7 +19,7 @@ function Home() {
       if(companyData) setValidApplication(true);
 
       setPageData(mergeObjects(
-        [pageData, pageDataJSON, companyData], ['navigation']
+        [pageData, companyData], ['navigation']
       ));
     }
 
@@ -29,7 +29,11 @@ function Home() {
   return (
     <div>
       {validApplication ? (
-        <p>Valid</p>
+        <div className={css.Cv}>
+          {pageData?.components?.map((comp, i) =>
+            <DynamicComponent key={i} component={comp.name} props={comp.props} />
+          )}
+        </div>
       ) : (
         <p>Invalid</p>
       )}

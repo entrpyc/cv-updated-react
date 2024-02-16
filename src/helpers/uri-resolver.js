@@ -17,7 +17,7 @@ export async function fetchAndSetCompanyData() {
     companyData = false;
   }
 
-  if(companyData && application && application !== companyName) LocalStorage.set(keys.application, companyName);
+  if(companyData && application !== companyName) LocalStorage.set(keys.application, companyName);
 
   return companyData;
 }

@@ -2,13 +2,10 @@
   "navigation": {
     "pageNavigation": [
       { "name": "About", "href": "#about" },
-      { "name": "Summary", "href": "#summary" },
       { "name": "Experience", "href": "#experience" },
       { "name": "Portfolio", "href": "#portfolio" },
       { "name": "Skills", "href": "#skills" },
-      { "name": "Recommendations", "href": "#recommendations" },
-      { "name": "Education", "href": "#education" },
-      { "name": "Methodologies", "href": "#methodologies" }
+      { "name": "Recommendations", "href": "#recommendations" }
     ]
   },
   "components": [
@@ -332,7 +329,7 @@
           {
             "level": "Beginner - Technical Skills",
             "list": [
-              "Node",
+              "Node.js",
               "Express",
               "GraphQL",
               "MongoDB",

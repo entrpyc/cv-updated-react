@@ -1,0 +1,284 @@
+{
+  "navigation": {
+    "pageNavigation": [
+      { "name": "About", "href": "#about" },
+      { "name": "Experience", "href": "#experience" },
+      { "name": "Portfolio", "href": "#portfolio" },
+      { "name": "Skills", "href": "#skills" }
+    ]
+  },
+  "components": [
+    {
+      "name": "About",
+      "props": {
+        "id": "about",
+        "about": [
+          [
+            {
+              "title": "Birthday",
+              "text": "June 10, 1999"
+            },
+            {
+              "title": "Location",
+              "text": "Sofia, Bulgaria"
+            },
+            {
+              "title": "Email",
+              "text": "asenangelov.cv@gmail.com"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "name": "Experience",
+      "props": {
+        "id": "experience",
+        "title": "Experience",
+        "experience": [
+          {
+            "title": "Indepth Solutions",
+            "subTitle": "Co-Founder & Lead Software Engineer | July, 2023 - PRESENT",
+            "text": [
+              "Led a team of engineers in the development of 2 company products and 3 separate implementations with clients.",
+              "Developed a server architecture for handling sensitive information through API requests and SMPT requests.",
+              "Designed a package management system that allows the team to store more than 80% of the code as reusable packages and optimizes the work of the developers by at least 50%.",
+              "Designed and developed a Front-end architecture and procedures that stimulate the developers to write cohesive code and eliminate the complexity of maintaining the code base.",
+              "Javascript, Typescript, React, Svelte, Storybook, Jest, GraphQL, Node.js, Express, Neo4j, dGraph, Google App Scripts, C#, Linux Server Administration"
+            ]
+          },
+          {
+            "title": "Clustermarket",
+            "subTitle": "Senior Software Engineer | February, 2022 - July, 2023",
+            "text": [
+              "Clustermarket is a startup that develops booking software, which is used in laboratories at universities and pharmaceutical companies.",
+              "Among the front-end team of 3 engineers, I had a fundamental role in the transitioning of the software from its initial Ruby-based structure to a Svelte and GraphQL framework.",
+              "In this process, I actively participated in the development of the front-end architecture, I broke down the features into reusable components and implemented Storybook and Unit testing with Jest, and introduced some design patterns for building components.",
+              "I extended the software with 2 complex features which were reused in approximately 30% of the entire software and developed 3 low-level tools that deal with handling url parameters, data filtration, and search.",
+              "Svelte, GraphQL, Storybook, Jest, Gitlab, Ruby"
+            ]
+          },
+          {
+            "title": "LimeChain",
+            "subTitle": "Blockchain Developer | November, 2020 - November, 2021",
+            "text": [
+              "At LimeChain, our focus was pioneering web3 solutions.",
+              "My core responsibilities involved the development of Progressive Web Apps by adopting blockchain technology.",
+              "The nature of this technology required me to pay special attention and perfect the UX implementations of the designs to provide the users with the necessary information about the ongoing requests to the blockchain network. For that reason, I delved more into studying UX principles and applied them in our projects, and by these advancements, I've set a higher standard for front-end development in the company.",
+              "I was appointed as the only front-end developer in 3 challenging projects. I also collaborated with other front-end developers on 2 other projects and participated in the development of smart contracts.",
+              "JavaScript, React, Solidity, Sass"
+            ]
+          },
+          {
+            "title": "Grind Web Studio",
+            "subTitle": "Front-end Developer | November, 2019 - November, 2020",
+            "text": [
+              "My position at Grind Web Studio was to develop the front end of e-commerce websites.",
+              "The responsibilities of the position included building pixel-perfect pages, providing needed custom data fields in the admin panel of WordPress, optimizing device and browser compatibility, and creating custom functionalities using vanilla JavaScript.",
+              "I participated in the development of 5 separate projects. During this time I've built over 10 custom features with vanilla Javascript, which I also converted to NPM packages.",
+              "The founders of the company assigned me to lead the development of a platform for the company that helps with optimizing the required time to build the interfaces of our websites.",
+              "Javascript, Wordpress, Laravel, Sass"
+            ]
+          },
+          {
+            "title": "Max Win Gaming",
+            "subTitle": "2D Animation Developer | December, 2017 - October, 2019",
+            "text": [
+              "At Max Win Gaming I was working on slot game mechanics and animations.",
+              "The games were developed using HTML Canvas and EaselJS - a JS library for animations. In order to guarantee captivating game graphics, my position required proficiency with Adobe Photoshop, After Effects, and Animate.",
+              "All team members, including myself, participated in every phase of the game production process - from the product development stage to digital marketing design, and localization.",
+              "After I gained expertise in the technology, I introduced new methods for the development of the games which greatly improved the productivity of the team. Some of these techniques are still used by the organization as standard operating procedures.",
+              "Javascript, EaselJS, Adobe Suite"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Portfolio",
+      "props": {
+        "id": "portfolio",
+        "portfolio": [
+          {
+            "title": "Software and App Development",
+            "content": [
+              {
+                "title": "Indepth Solutions - Data structure for AI powered CMS",
+                "external": "https://gitfront.io/r/entrpyc/9MCA9pUcTn6G/dom-shadow-graph/tree/src/DOMShadowGraph/",
+                "techStack": [
+                  { "title": "Typescript" },
+                  { "title": "Jest" }
+                ]
+              },
+              {
+                "title": "Indepth Solutions - API for AI integrations",
+                "external": "https://gitfront.io/r/entrpyc/eX7EMiuSKjEi/indepth-apis/tree/apis/shopify/",
+                "techStack": [
+                  { "title": "Node.js" }
+                ]
+              },
+              {
+                "title": "Indepth Solutions - Front-end architecture for rendering AI generated code",
+                "external": "https://gitfront.io/r/entrpyc/HWHWo8rR9XFA/svelte-generator/",
+                "techStack": [
+                  { "title": "Typescript" },
+                  { "title": "Svelte" },
+                  { "title": "Jest" },
+                  { "title": "Storybook" }
+                ]
+              },
+              {
+                "title": "Clustermarket - Overview Table with Tabs, Pagination, Search and Filters, Loading placeholders, and Bulk Actions",
+                "href": "https://youtu.be/u24LkRtqNx0?si=WDfTMInnzrf7ZruH&t=390",
+                "techStack": [
+                  { "title": "Javascript (Vanilla)" },
+                  { "title": "Svelte" },
+                  { "title": "GraphQL" },
+                  { "title": "Storybook" },
+                  { "title": "Jest" }
+                ]
+              },
+              {
+                "title": "Clustermarket - Interactive Calendar for bookings with Bulk Actions and Validations",
+                "href": "https://www.youtube.com/watch?v=jcodcwIf6Jw",
+                "techStack": [
+                  { "title": "Javascript (Vanilla)" },
+                  { "title": "Svelte" },
+                  { "title": "GraphQL" },
+                  { "title": "Storybook" },
+                  { "title": "Jest" }
+                ]
+              },
+              {
+                "title": "Biotrade - File management platform",
+                "href": "https://drive.google.com/file/d/1J_AFyDkNsjrEuE2LcJGGBr90nyQk3-b8/view?usp=sharing",
+                "techStack": [
+                  { "title": "Javascript (Vanilla)" },
+                  { "title": "Sass" }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Web Development",
+            "content": [
+              {
+                "title": "Leptonite - Decentralized marketplace",
+                "href": "https://drive.google.com/file/d/1kcHqZaJ0nFAv81cahQx-CjeledTU6Tsm/view?usp=sharing",
+                "techStack": [
+                  { "title": "React" },
+                  { "title": "Solidity" },
+                  { "title": "MongoDB" }
+                ]
+              },
+              {
+                "title": "AllianceBlock - Crypto currency bridge",
+                "href": "https://drive.google.com/file/d/1l4rGgV1Skud4TS-MiNqymRd_A12YnIS4/view?usp=sharing",
+                "techStack": [
+                  { "title": "React" },
+                  { "title": "Solidity" },
+                  { "title": "MongoDB" }
+                ]
+              },
+              {
+                "title": "Universe.xyz - NFT minting and marketplace",
+                "href": "https://drive.google.com/file/d/1JSi48k3WFX5v_BQLM903Jbr5CYJDWIri/view?usp=sharing",
+                "techStack": [
+                  { "title": "React" },
+                  { "title": "Solidity" },
+                  { "title": "MongoDB" }
+                ]
+              },
+              {
+                "title": "Hippoland - Mobile menu with filters",
+                "href": "https://drive.google.com/file/d/1C4lb9z_nmg0VIOpG4iihr34eJGPDzqpQ/view?usp=sharing",
+                "techStack": [
+                  { "title": "Javascript (Vanilla)" },
+                  { "title": "Next.js" },
+                  { "title": "Typescript" }
+                ]
+              },
+              {
+                "title": "Biotrade Corporate website - Interactive Map",
+                "href": "https://drive.google.com/file/d/1riZ-2vvcyhDlqQdtQ-I9VqiYf_Un42P1/view?usp=sharing",
+                "external": "https://biotrade.global/",
+                "techStack": [
+                  { "title": "Javascript (Vanilla)" },
+                  { "title": "Laravel" },
+                  { "title": "Wordpress (with ACF)" }
+                ]
+              },
+              {
+                "title": "Biotrade Corporate website - Interactive Navigation",
+                "href": "https://drive.google.com/file/d/1zCEEWuQOZtQA5gN4mETEdBCRwgmdb5fT/view?usp=sharing",
+                "external": "https://biotrade.global/",
+                "techStack": [
+                  { "title": "Javascript (Vanilla)" },
+                  { "title": "Laravel" },
+                  { "title": "Wordpress (with ACF)" }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Skills",
+      "props": {
+        "id": "skills",
+        "list": [
+          {
+            "level": "Expert - Technical Skills",
+            "list": [
+              "Javascript",
+              "Typescript",
+              "React",
+              "Svelte",
+              "SASS",
+              "Adobe Photoshop"
+            ]
+          },
+          {
+            "level": "Advanced - Technical Skills",
+            "list": [
+              "Tailwind",
+              "Storybook",
+              "Wordpress"
+            ]
+          },
+          {
+            "level": "Intermediate - Technical Skills",
+            "list": [
+              "Jest",
+              "Mocha",
+              "Next.js",
+              "EaselJS",
+              "Adobe Animate CC",
+              "Figma (Design)",
+              "Adobe Xd (Design)"
+            ]
+          },
+          {
+            "level": "Beginner - Technical Skills",
+            "list": [
+              "Node.js",
+              "Express",
+              "GraphQL",
+              "MongoDB",
+              "Laravel",
+              "Neo4j",
+              "dGraph",
+              "Google App Scripts",
+              "C#",
+              "Windows Forms (.NET)" ,
+              "Linux Server Development and Administration",
+              "Ruby",
+              "Solidity"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
