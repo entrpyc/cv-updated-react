@@ -8,7 +8,7 @@ function DynamicComponent({ component, props }) {
   useEffect(() => {
     // Dynamically import the module/component
     const importDynamicModule = async () => {
-      const module = await asyncComponentImport(() => import(`../../components/${component}/${component}`))
+      const module = await asyncComponentImport(() => import(`../../modules/${component}/${component}`))
       setDynamicModule(module);
     };
 

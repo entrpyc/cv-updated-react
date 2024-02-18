@@ -4,49 +4,18 @@
 
 $picture-overlay: #312424;
 
-// temp
-:global {
-  .message {
-    display: none !important;
-  }
-}
-
 .picture {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   
   width: 165px;
   height: 165px;
   margin: 0 auto;
-  position: relative;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
-  cursor: pointer;
-
-  &.active {
-    :global {
-      .message {
-        left: calc(100% + 20px);
-        opacity: 1;
-      }
-  
-      .img-container {
-        transform: scale(1.06);
-        box-shadow: 4px 4px 50px rgb(3, 11, 22, 0.8);
-        
-        &::before {
-          animation: rotate 60s infinite linear;
-          opacity: 0.7;
-        }
-    
-        &::after {
-          opacity: 1;
-        }
-      }
-    }
-  }
 
   :global {
     .img-container {
@@ -57,86 +26,12 @@ $picture-overlay: #312424;
       width: 100%;
       height: 100%;
       border-radius: grid.$radius-2;
-      overflow: hidden;
-      position: relative;
-  
       background-color: color.$border-secondary;
-      
-      box-shadow: 4px 4px 41px 3px rgba(3, 11, 22, 0);
-      transform: scale(1);
-      @include util.transition(0.3s);
-  
-      &::before {
-        content: '';
-        background: color.$border-third;
-        width: 100%;
-        height: 100px;
-        position: absolute;
-        left: 0;
-        opacity: 0;
-        animation: rotate 60s infinite linear;
-        @include util.transition(0.1s);
-      }
-  
-      &::after {
-        content: "";
-        background: $picture-overlay;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 3;
-        mix-blend-mode: color-dodge;
-        opacity: 0;
-        @include util.transition(0.1s);
-      }
-  
-      &:hover {
-        &::after {
-          opacity: 1;
-        }
-      }
     }
   
     .message {
-      position: absolute;
-      opacity: 0;
-      left: calc(100% + 12px);
-      top: 10px;
-      width: 260px;
-      background-color: color.$bg-secondary;
-      color: color.$primary;
-      padding: grid.$space-1;
-      border-radius: grid.$radius-1;
-      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
-      min-height: 70px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      animation: zoomInOut 3s infinite;
-      @include util.transition(0.3s);
-      pointer-events: none;
-  
-      z-index: 10;
-  
-      p {
-        font-weight: 400;
-      }
-  
-      &::before {
-        content: '';
-        position: absolute;
-        top: 25px;
-        left: -18px;
-        margin-right: -10px;
-        border-width: 10px;
-        border-style: solid;
-        border-color: transparent color.$bg-secondary transparent transparent;
-      }
+      display: none;
     }
-  
-
   
     img {
       max-width: calc(100% - 10px);
@@ -146,6 +41,114 @@ $picture-overlay: #312424;
       z-index: 2;
   
       border-radius: grid.$radius-2;
+    }
+  }
+  
+  &.chatBubble {
+    position: relative;
+    cursor: pointer;
+
+    &.active {
+      :global {
+        .message {
+          left: calc(100% + 20px);
+          opacity: 1;
+        }
+    
+        .img-container {
+          transform: scale(1.06);
+          box-shadow: 4px 4px 50px rgb(3, 11, 22, 0.8);
+          
+          &::before {
+            animation: rotate 60s infinite linear;
+            opacity: 0.7;
+          }
+      
+          &::after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    :global {
+      .img-container {
+        overflow: hidden;
+        position: relative;
+    
+        box-shadow: 4px 4px 41px 3px rgba(3, 11, 22, 0);
+        transform: scale(1);
+        @include util.transition(0.3s);
+    
+        &::before {
+          content: '';
+          background: color.$border-third;
+          width: 100%;
+          height: 100px;
+          position: absolute;
+          left: 0;
+          opacity: 0;
+          animation: rotate 60s infinite linear;
+          @include util.transition(0.1s);
+        }
+    
+        &::after {
+          content: "";
+          background: $picture-overlay;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: 3;
+          mix-blend-mode: color-dodge;
+          opacity: 0;
+          @include util.transition(0.1s);
+        }
+    
+        &:hover {
+          &::after {
+            opacity: 1;
+          }
+        }
+      }
+    
+      .message {
+        position: absolute;
+        opacity: 0;
+        left: calc(100% + 12px);
+        top: 10px;
+        width: 260px;
+        background-color: color.$bg-secondary;
+        color: color.$primary;
+        padding: grid.$space-1;
+        border-radius: grid.$radius-1;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+        min-height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: zoomInOut 3s infinite;
+        @include util.transition(0.3s);
+        pointer-events: none;
+    
+        z-index: 10;
+    
+        p {
+          font-weight: 400;
+        }
+    
+        &::before {
+          content: '';
+          position: absolute;
+          top: 25px;
+          left: -18px;
+          margin-right: -10px;
+          border-width: 10px;
+          border-style: solid;
+          border-color: transparent color.$bg-secondary transparent transparent;
+        }
+      }
     }
   }
 }

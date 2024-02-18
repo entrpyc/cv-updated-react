@@ -23,5 +23,23 @@
       { "name": "Resume", "to": "/resume", "icon": "link", "id": "resume" },
       { "name": "CV", "to": "/", "icon": "link" }
     ]
+  },
+  "about": {
+    "data": [
+      [
+        {
+          "title": "Birthday",
+          "text": "June 10, 1999"
+        },
+        {
+          "title": "Location",
+          "text": "Sofia, Bulgaria"
+        },
+        {
+          "title": "Email",
+          "text": "asenangelov.cv@gmail.com"
+        }
+      ]
+    ]
   }
 }

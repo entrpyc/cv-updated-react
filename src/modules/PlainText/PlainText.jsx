@@ -1,7 +1,7 @@
 
 import css from './PlainText.module.scss';
 
-import Block from 'components/Block/Block';
+import PlainTextBlock from 'modules/Blocks/PlainTextBlock/PlainTextBlock';
 import Title from 'elements/Title/Title';
 
 function PlainText({ text, title, id }) {
@@ -10,7 +10,7 @@ function PlainText({ text, title, id }) {
       <Title>{title}</Title>
       {text.map((item, index) => (
         <div className="block-container" key={index} >
-          <Block {...item} />
+          <PlainTextBlock {...item} />
         </div>
       ))}
     </section>

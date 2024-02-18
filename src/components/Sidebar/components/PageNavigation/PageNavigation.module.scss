@@ -3,6 +3,24 @@
 @use 'style/util.scss';
 
 .navigation {
+  overflow-y: scroll;
+  max-height: 100%;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      color-stop(0, rgba(color.$bg-seventh, 0)),
+      color-stop(0.5, rgba(color.$bg-sixth, 0.5)),
+      color-stop(1, rgba(color.$bg-seventh, 0)),
+    );
+  }
+
   :global {
     .website-navigation,
     .page-navigation {

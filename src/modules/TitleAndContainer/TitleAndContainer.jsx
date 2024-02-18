@@ -1,9 +1,9 @@
-import css from './Skills.module.scss';
+import css from './TitleAndContainer.module.scss';
 
 import Title from 'elements/Title/Title';
 
 import SkillBlock from './components/SkillBlock/SkillBlock';
-import PortfolioBlock from 'components/Portfolio/components/PortfolioBlock/PortfolioBlock';
+import PortfolioBlock from 'modules/Portfolio/components/PortfolioBlock/PortfolioBlock';
 
 function Skills({ skills, list, id }) {
   const remapSkillListForPortfolioBlock = (skillList) => ({

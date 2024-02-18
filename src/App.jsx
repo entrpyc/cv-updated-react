@@ -9,27 +9,30 @@ import Resume from './pages/Resume/Resume';
 
 import Sidebar from './components/Sidebar/Sidebar';
 
-import { GlobalProvider } from "./context/GlobalContext";
+import { InterfaceProvider } from "./context/InterfaceContext";
+import { FeatureProvider } from "./context/FeatureContext";
 
 function App() {
   return (
-    <GlobalProvider>
-      <Router>
-      <div className="App">
-        <div className="container">
-          <div className="page-content">
-            <main>
-              <Routes>
-                <Route path="/" element={<CV />} />
-                <Route path="/resume" element={<Resume />} />
-              </Routes>
-            </main>
-            <Sidebar />
+    <InterfaceProvider>
+      <FeatureProvider>
+        <Router>
+        <div className="App">
+          <div className="container">
+            <div className="page-content">
+              <main>
+                <Routes>
+                  <Route path="/" element={<CV />} />
+                  <Route path="/resume" element={<Resume />} />
+                </Routes>
+              </main>
+              <Sidebar />
+            </div>
           </div>
         </div>
-      </div>
-      </Router>
-    </GlobalProvider>
+        </Router>
+      </FeatureProvider>
+    </InterfaceProvider>
   );
 }
 

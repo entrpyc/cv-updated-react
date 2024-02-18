@@ -2,19 +2,25 @@
 import css from './Resume.module.scss';
 
 import React, { useEffect, useContext, useState } from 'react';
-import { GlobalContext } from '../../context/GlobalContext';
+import { InterfaceContext } from '../../context/InterfaceContext';
+import { FeatureContext } from '../../context/FeatureContext';
 
 import { getCompanyNameFromURL } from 'helpers/uri-resolver';
-import { mergeObjects } from 'helpers/data-aggregation';
 
 import DynamicComponent from 'components/DynamicComponent/DynamicComponent';
+import About from 'components/About/About';
+
 import { asyncJSONImport } from 'helpers/file-system';
-import { getCompanyNameFromLocalStorage, saveCompanyNameToLocalStorage, deleteCompanyNameFromLocalStorage } from 'helpers/adapters/localstorage-adapter';
+import {
+  getCompanyNameFromLocalStorage,
+  saveCompanyNameToLocalStorage,
+  deleteCompanyNameFromLocalStorage
+} from 'helpers/adapters/localstorage-adapter';
 
 function Resume() {
-  const [companyData, setCompanyData] = useState(false);
-  const [validApplication, setValidApplication] = useState(false);
-  const { pageData, setPageData } = useContext(GlobalContext);
+  const { pageInterface, mergeInterface } = useContext(InterfaceContext);
+  const { setChatBubbleEnabled } = useContext(FeatureContext);
+  const [ pageContent, setPageContent ] = useState([]);
 
   useEffect(() => {
     const companyNameFromURL = getCompanyNameFromURL();
@@ -25,33 +31,26 @@ function Resume() {
     if(companyNameFromURL &&companyNameFromURL !== companyName) saveCompanyNameToLocalStorage(companyNameFromURL);
 
     const importAndSetData = async () => {
-      const importedPageData = await asyncJSONImport(() => import(`./${companyNameFromURL || companyName}.json`));
+      const importedPageData = await asyncJSONImport(() => import(`./api/${companyNameFromURL || companyName}.json`));
       if(!importedPageData) deleteCompanyNameFromLocalStorage();
 
-      setCompanyData(importedPageData);
+      mergeInterface(importedPageData.pageInterface);
+      setPageContent(importedPageData.components);
     }
 
     importAndSetData();
   }, []);
 
   useEffect(() => {
-    async function fetchAndSetPageData() {  
-      setValidApplication(true);
-
-
-      setPageData(mergeObjects(
-        [pageData, companyData], ['navigation']
-      ));
-    }
-
-    if(companyData) fetchAndSetPageData();
-  }, [companyData]);
+    setChatBubbleEnabled(false);
+  }, []);
 
   return (
     <div>
-      {validApplication ? (
+      {pageContent?.length ? (
         <div className={css.Cv}>
-          {pageData?.components?.map((comp, i) =>
+          <About data={pageInterface.about.data} />
+          {pageContent.map((comp, i) =>
             <DynamicComponent key={i} component={comp.name} props={comp.props} />
           )}
         </div>

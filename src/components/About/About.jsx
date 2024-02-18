@@ -3,21 +3,21 @@ import { useContext } from 'react';
 import css from './About.module.scss';
 
 import Avatar from 'components/Avatar/Avatar';
-import TextListBlock from 'components/Blocks/TextListBlock/TextListBlock';
+import TextListBlock from 'modules/Blocks/TextListBlock/TextListBlock';
 import Text from 'elements/Text/Text';
 
-import { GlobalContext } from 'context/GlobalContext';
+import { InterfaceContext } from 'context/InterfaceContext';
 
-function About({ about, id }) {
-  const { pageData } = useContext(GlobalContext);
-  const { navigation } = pageData;
+function About({ data }) {
+  const { pageInterface } = useContext(InterfaceContext);
+  const { navigation } = pageInterface;
 
   const {
     info,
   } = navigation || {};
 
-  return ((info && about?.length) &&
-    <section id={id} className={css.about}>
+  return ((info && data?.length) &&
+    <section id="about" className={css.about}>
       <div className="about-me">
         <Avatar picture={info.picture} name={info.name} />
       </div>
@@ -25,7 +25,7 @@ function About({ about, id }) {
         <div className="row mobile">
           <Text>{info.name}</Text>
         </div>
-        <TextListBlock text={about} />
+        <TextListBlock text={data} />
       </div>
     </section>
   )

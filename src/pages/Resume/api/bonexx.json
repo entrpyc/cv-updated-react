@@ -1,35 +1,15 @@
 {
-  "navigation": {
-    "pageNavigation": [
-      { "name": "About", "href": "#about" },
-      { "name": "Experience", "href": "#experience" },
-      { "name": "Portfolio", "href": "#portfolio" },
-      { "name": "Skills", "href": "#skills" }
-    ]
+  "pageInterface": {
+    "navigation": {
+      "pageNavigation": [
+        { "name": "About", "href": "#about" },
+        { "name": "Experience", "href": "#experience" },
+        { "name": "Portfolio", "href": "#portfolio" },
+        { "name": "Skills", "href": "#skills" }
+      ]
+    }
   },
   "components": [
-    {
-      "name": "About",
-      "props": {
-        "id": "about",
-        "about": [
-          [
-            {
-              "title": "Birthday",
-              "text": "June 10, 1999"
-            },
-            {
-              "title": "Location",
-              "text": "Sofia, Bulgaria"
-            },
-            {
-              "title": "Email",
-              "text": "asenangelov.cv@gmail.com"
-            }
-          ]
-        ]
-      }
-    },
     {
       "name": "PlainText",
       "props": {
@@ -224,7 +204,7 @@
       }
     },
     {
-      "name": "Skills",
+      "name": "TitleAndContainer",
       "props": {
         "id": "skills",
         "list": [

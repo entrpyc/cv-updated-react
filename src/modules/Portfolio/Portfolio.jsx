@@ -4,7 +4,7 @@ import Title from 'elements/Title/Title';
 
 import PortfolioBlock  from './components/PortfolioBlock/PortfolioBlock';
 
-function Portfolio({ portfolio, type, id }) {
+function Portfolio({ portfolio, id }) {
   return (portfolio &&
     <section id={id} className={css.portfolio}>
       <Title>Portfolio</Title>

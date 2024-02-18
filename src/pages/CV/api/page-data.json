@@ -1,33 +1,32 @@
 {
-  "navigation": {
-    "pageNavigation": [
-      { "name": "About", "href": "#about" },
-      { "name": "Experience", "href": "#experience" },
-      { "name": "Portfolio", "href": "#portfolio" },
-      { "name": "Skills", "href": "#skills" },
-      { "name": "Recommendations", "href": "#recommendations" }
-    ]
+  "pageInterface": {
+    "navigation": {
+      "pageNavigation": [
+        { "name": "About", "href": "#about" },
+        { "name": "Summary", "href": "#summary" },
+        { "name": "Experience", "href": "#experience" },
+        { "name": "Portfolio", "href": "#portfolio" },
+        { "name": "Skills", "href": "#skills" },
+        { "name": "Recommendations", "href": "#recommendations" },
+        { "name": "Methodologies", "href": "#methodologies" }
+      ]
+    }
   },
   "components": [
     {
-      "name": "About",
+      "name": "PlainText",
       "props": {
-        "id": "about",
-        "about": [
-          [
-            {
-              "title": "Birthday",
-              "text": "June 10, 1999"
-            },
-            {
-              "title": "Location",
-              "text": "Sofia, Bulgaria"
-            },
-            {
-              "title": "Email",
-              "text": "asenangelov.cv@gmail.com"
-            }
-          ]
+        "id": "summary",
+        "title": "Summary",
+        "text": [
+          {
+            "text": [
+              "Innovative and driven Software Engineer with a proven track record of spearheading successful product development initiatives and client implementations.",
+              "Having a strong foundation in front-end engineering, package management systems, and server architecture design, I have optimized team workflows, increased code reusability, and enhanced overall project efficiency.",
+              "Proficient in a wide array of technologies including JavaScript, TypeScript, React, Svelte, and more, I bring over 5 years of experience in software engineering and a passion for continuous learning and improvement.",
+              "By joining a team that values creativity, craftsmanship, and continuous improvement, I aim to make meaningful contributions and further elevate the standards of software development within the organization."
+            ]
+          }
         ]
       }
     },
@@ -90,6 +89,20 @@
               "All team members, including myself, participated in every phase of the game production process - from the product development stage to digital marketing design, and localization.",
               "After I gained expertise in the technology, I introduced new methods for the development of the games which greatly improved the productivity of the team. Some of these techniques are still used by the organization as standard operating procedures.",
               "Javascript, EaselJS, Adobe Suite"
+            ]
+          },
+          {
+            "title": "Self-employeed",
+            "subTitle": "Freelance Digital Designer | October, 2014 - November, 2021",
+            "text": [
+              "My experience in design spans through multiple fields.",
+              "I started working as a freelance graphic designer for about 5 years, where I took on projects for book covers, posters, marketing materials for physical advertising, and social media.",
+              "Through my clients' recommendations, I was approached for digital design work, which I took upon and expanded my experience in this field too. I've developed the designs of several websites and apps.",
+              "For the development of an e-commerce website, I was responsible for the management of the design team as well as monitoring other processes in the project.",
+              "I was also hired by a client to maintain social media accounts by creating advertisements, videos, animations, and graphics for blog posts and marketing campaigns.",
+              "Some projects required work on animations for custom loading screens, advanced UI interactions, and illustrations.",
+              "I've participated in the production of short videos for digital marketing campaigns both in pre-production and post-production.",
+              "Figma, Adobe Xd, Photoshop, Illustrator, Premiere Pro, Animate CC, After Effects, DaVinci Resolve, 3ds Max, Blender"
             ]
           }
         ]
@@ -292,7 +305,7 @@
       }
     },
     {
-      "name": "Skills",
+      "name": "TitleAndContainer",
       "props": {
         "id": "skills",
         "list": [
@@ -377,7 +390,7 @@
           {
             "title": "Software Design & Architecture - 1 year",
             "text": [
-              "Designing my own systems taught me systematic approaches in software design and architecture, aiding in recognizing high and low-level bottlenecks within the software I develop.",
+              "Designing my own systems taught me very useful approaches in software design and architecture, aiding in recognizing high and low-level bottlenecks within the software I develop.",
               "During code reviews, I assess scalability, conduct performance profiling, and pinpoint opportunities to implement caching strategies, aligning code modifications with the software's overarching architecture.",
               "Though relatively new to extending these skills, I'm swiftly gaining proficiency, noticeably enhancing my overall performance in software development."
             ]
@@ -385,14 +398,14 @@
           {
             "title": "Server Design & Architecture - 1 year",
             "text": [
-              "At my company, I delved into designing Linux servers and APIs, honing my skills in this area. I concentrated on making server components reusable by using NPM with various backend services I built from the ground up. I implemented a monolithic structure for our APIs, following commonly used practices for this type of setup.",
+              "At my company, I delved into designing Linux servers and APIs, expanding my skills in this area. I put focus on making server components reusable by using NPM with various backend services I built from the ground up. I implemented a monolithic structure for our APIs, following commonly used practices for this type of setup.",
               "This experience expanded my comprehension of web security and motivated me to further deepen my expertise in this field."
             ]
           },
           {
             "title": "Computer science - 3 years",
             "text": [
-              "Frequently, I've tackled lower-level technical challenges, delving into the implementation of more efficient, faster, and lighter code. My grasp of algorithms, data structures, and performance metrics has been instrumental in resolving these issues.",
+              "I've tackled lower-level technical challenges, delving into the implementation of more efficient, faster, and lighter code. My grasp of algorithms, data structures, and performance metrics has been instrumental in resolving these issues.",
               "While I lean towards OOP for software development, I've also crafted highly effective implementations using functional approaches. In my experience, OOP excels in providing declarative code, whereas functional programming methods often prove more efficient for developing imperative code."
             ]
           },
@@ -427,10 +440,18 @@
           {
             "title": "Coaching & Teaching - 3 years",
             "text": [
-              "For the past three years, I've been building online communities for studying software engineering. I've led groups of 6 to 15 members from various backgrounds, helping them pave their paths toward successful programming careers. I created detailed plans and career guides, hosting frequent 1-2 weekly meetings to dive into the core principles of software development.",
-              "I've switched from hosting groups to individual mentoring, adapting my methods to fit each student's specific needs. I specialize in guiding beginners toward landing junior developer roles. Additionally, I work closely with some students, helping them advance from junior to senior positions and even move up from developer to architect roles.",
+              "For the past three years, I've been building online communities for studying software engineering. I've led groups of 6 to 15 members from various backgrounds, helping by navigating them toward successful programming careers. I created detailed plans and career guides, hosting frequent 1-2 weekly meetings to dive into the core principles of software development.",
+              "Later, I switched from hosting groups to individual mentoring, adapting my methods to fit each student's specific needs. I specialize in guiding beginners toward landing junior developer roles. Additionally, I work closely with some students, helping them advance from junior to senior positions and even move up from developer to architect roles.",
               "Also, at Softuni I earned a scholarship after achieving a perfect score, allowing me to mentor and teach in courses I've already completed. There I had the opportunity to teach larger groups of students for a short period of time."
             ]
+          },
+          {
+            "title": "Design, Animation, and Visual Effects - 7 years",
+            "text": [
+              "During my experience as a freelance digital designer, I've dealt with a variety of challenging projects. Due to my motivation to satisfy my clients' expectations, I've been quick to find solutions and adapt to requirements.",
+              "Because of this, I was able to undertake any creative task and provide a really high quality result. This has led to more interest from clients, and I was able to expand my skills in this field even further.",
+              "This experience gave me the platform to showcase unique skills in my web development career and granted me incredible opportunities as an engineer too. In every workplace, I've received great feedback from my employers for the outstanding visual implementations I've developed",
+              "During my creative work, I've been really curious about studying branding, marketing strategies, and principles. With this knowledge, I was able to develop an instinct for better UX solutions too."            ]
           }
         ]
       }

@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 
 import css from './Sidebar.module.scss';
 
@@ -10,12 +10,14 @@ import Text from 'elements/Text/Text';
 import Icon from 'elements/Icon/Icon';
 import Link from 'elements/Link/Link';
 
-import { GlobalContext } from 'context/GlobalContext';
+import { InterfaceContext } from 'context/InterfaceContext';
+import { FeatureContext } from 'context/FeatureContext';
 
 
 function Sidebar() {
-  const { message, pageData } = useContext(GlobalContext);
-  const { navigation } = pageData;
+  const { message } = useContext(FeatureContext);
+  const { pageInterface } = useContext(InterfaceContext);
+  const { navigation } = pageInterface;
 
   const {
     info,
