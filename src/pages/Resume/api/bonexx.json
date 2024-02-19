@@ -3,6 +3,7 @@
     "navigation": {
       "pageNavigation": [
         { "name": "About", "href": "#about" },
+        { "name": "Summary", "href": "#summary" },
         { "name": "Experience", "href": "#experience" },
         { "name": "Portfolio", "href": "#portfolio" },
         { "name": "Skills", "href": "#skills" }
@@ -75,127 +76,137 @@
       }
     },
     {
-      "name": "Portfolio",
+      "name": "TitleAndContainer",
       "props": {
         "id": "portfolio",
-        "portfolio": [
+        "title": "Portfolio",
+        "blocks": [
           {
+            "type": "LabelsBlock",
             "title": "Software and App Development",
+            "class": "parent",
             "content": [
               {
                 "title": "Indepth Solutions - Data structure for AI powered CMS",
-                "external": "https://gitfront.io/r/entrpyc/9MCA9pUcTn6G/dom-shadow-graph/tree/src/DOMShadowGraph/",
-                "techStack": [
-                  { "title": "Typescript" },
-                  { "title": "Jest" }
+                "links": [
+                  {
+                    "link": "https://gitfront.io/r/entrpyc/9MCA9pUcTn6G/dom-shadow-graph/tree/src/DOMShadowGraph/",
+                    "icon": "external-link"
+                  }
                 ]
               },
               {
                 "title": "Indepth Solutions - API for AI integrations",
-                "external": "https://gitfront.io/r/entrpyc/eX7EMiuSKjEi/indepth-apis/tree/apis/shopify/",
-                "techStack": [
-                  { "title": "Node.js" }
+                "links": [
+                  {
+                    "link": "https://gitfront.io/r/entrpyc/eX7EMiuSKjEi/indepth-apis/tree/apis/shopify/",
+                    "icon": "external-link"
+                  }
                 ]
               },
               {
                 "title": "Indepth Solutions - Front-end architecture for rendering AI generated code",
-                "external": "https://gitfront.io/r/entrpyc/HWHWo8rR9XFA/svelte-generator/",
-                "techStack": [
-                  { "title": "Typescript" },
-                  { "title": "Svelte" },
-                  { "title": "Jest" },
-                  { "title": "Storybook" }
+                "links": [
+                  {
+                    "link": "https://gitfront.io/r/entrpyc/HWHWo8rR9XFA/svelte-generator/",
+                    "icon": "external-link"
+                  }
                 ]
               },
               {
                 "title": "Clustermarket - Overview Table with Tabs, Pagination, Search and Filters, Loading placeholders, and Bulk Actions",
-                "href": "https://youtu.be/u24LkRtqNx0?si=WDfTMInnzrf7ZruH&t=390",
-                "techStack": [
-                  { "title": "Javascript (Vanilla)" },
-                  { "title": "Svelte" },
-                  { "title": "GraphQL" },
-                  { "title": "Storybook" },
-                  { "title": "Jest" }
+                "links": [
+                  {
+                    "link": "https://youtu.be/u24LkRtqNx0?si=WDfTMInnzrf7ZruH&t=390",
+                    "icon": "video"
+                  }
                 ]
               },
               {
                 "title": "Clustermarket - Interactive Calendar for bookings with Bulk Actions and Validations",
-                "href": "https://www.youtube.com/watch?v=jcodcwIf6Jw",
-                "techStack": [
-                  { "title": "Javascript (Vanilla)" },
-                  { "title": "Svelte" },
-                  { "title": "GraphQL" },
-                  { "title": "Storybook" },
-                  { "title": "Jest" }
+                "links": [
+                  {
+                    "link": "https://www.youtube.com/watch?v=jcodcwIf6Jw",
+                    "icon": "video"
+                  }
                 ]
               },
               {
                 "title": "Biotrade - File management platform",
-                "href": "https://drive.google.com/file/d/1J_AFyDkNsjrEuE2LcJGGBr90nyQk3-b8/view?usp=sharing",
-                "techStack": [
-                  { "title": "Javascript (Vanilla)" },
-                  { "title": "Sass" }
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1J_AFyDkNsjrEuE2LcJGGBr90nyQk3-b8/view?usp=sharing",
+                    "icon": "video"
+                  }
                 ]
               }
             ]
           },
           {
+            "type": "LabelsBlock",
             "title": "Web Development",
+            "class": "parent",
             "content": [
               {
                 "title": "Leptonite - Decentralized marketplace",
-                "href": "https://drive.google.com/file/d/1kcHqZaJ0nFAv81cahQx-CjeledTU6Tsm/view?usp=sharing",
-                "techStack": [
-                  { "title": "React" },
-                  { "title": "Solidity" },
-                  { "title": "MongoDB" }
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1kcHqZaJ0nFAv81cahQx-CjeledTU6Tsm/view?usp=sharing",
+                    "icon": "video"
+                  }
                 ]
               },
               {
                 "title": "AllianceBlock - Crypto currency bridge",
-                "href": "https://drive.google.com/file/d/1l4rGgV1Skud4TS-MiNqymRd_A12YnIS4/view?usp=sharing",
-                "techStack": [
-                  { "title": "React" },
-                  { "title": "Solidity" },
-                  { "title": "MongoDB" }
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1l4rGgV1Skud4TS-MiNqymRd_A12YnIS4/view?usp=sharing",
+                    "icon": "video"
+                  }
                 ]
               },
               {
                 "title": "Universe.xyz - NFT minting and marketplace",
-                "href": "https://drive.google.com/file/d/1JSi48k3WFX5v_BQLM903Jbr5CYJDWIri/view?usp=sharing",
-                "techStack": [
-                  { "title": "React" },
-                  { "title": "Solidity" },
-                  { "title": "MongoDB" }
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1JSi48k3WFX5v_BQLM903Jbr5CYJDWIri/view?usp=sharing",
+                    "icon": "video"
+                  }
                 ]
               },
               {
                 "title": "Hippoland - Mobile menu with filters",
-                "href": "https://drive.google.com/file/d/1C4lb9z_nmg0VIOpG4iihr34eJGPDzqpQ/view?usp=sharing",
-                "techStack": [
-                  { "title": "Javascript (Vanilla)" },
-                  { "title": "Next.js" },
-                  { "title": "Typescript" }
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1C4lb9z_nmg0VIOpG4iihr34eJGPDzqpQ/view?usp=sharing",
+                    "icon": "video"
+                  }
                 ]
               },
               {
                 "title": "Biotrade Corporate website - Interactive Map",
-                "href": "https://drive.google.com/file/d/1riZ-2vvcyhDlqQdtQ-I9VqiYf_Un42P1/view?usp=sharing",
-                "external": "https://biotrade.global/",
-                "techStack": [
-                  { "title": "Javascript (Vanilla)" },
-                  { "title": "Laravel" },
-                  { "title": "Wordpress (with ACF)" }
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1riZ-2vvcyhDlqQdtQ-I9VqiYf_Un42P1/view?usp=sharing",
+                    "icon": "video"
+                  },
+                  {
+                    "link": "https://biotrade.global/",
+                    "icon": "external-link"
+                  }
                 ]
               },
               {
                 "title": "Biotrade Corporate website - Interactive Navigation",
-                "href": "https://drive.google.com/file/d/1zCEEWuQOZtQA5gN4mETEdBCRwgmdb5fT/view?usp=sharing",
-                "external": "https://biotrade.global/",
-                "techStack": [
-                  { "title": "Javascript (Vanilla)" },
-                  { "title": "Laravel" },
-                  { "title": "Wordpress (with ACF)" }
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1zCEEWuQOZtQA5gN4mETEdBCRwgmdb5fT/view?usp=sharing",
+                    "icon": "video"
+                  },
+                  {
+                    "link": "https://biotrade.global/",
+                    "icon": "external-link"
+                  }
                 ]
               }
             ]
@@ -207,54 +218,60 @@
       "name": "TitleAndContainer",
       "props": {
         "id": "skills",
-        "list": [
+        "title": "Skills",
+        "blocks": [
           {
-            "level": "Expert - Technical Skills",
-            "list": [
-              "Javascript",
-              "Typescript",
-              "React",
-              "Svelte",
-              "SASS",
-              "Adobe Photoshop"
-            ]
-          },
-          {
-            "level": "Advanced - Technical Skills",
-            "list": [
-              "Tailwind",
-              "Storybook",
-              "Wordpress"
-            ]
-          },
-          {
-            "level": "Intermediate - Technical Skills",
-            "list": [
-              "Jest",
-              "Mocha",
-              "Next.js",
-              "EaselJS",
-              "Adobe Animate CC",
-              "Figma (Design)",
-              "Adobe Xd (Design)"
-            ]
-          },
-          {
-            "level": "Beginner - Technical Skills",
-            "list": [
-              "Node.js",
-              "Express",
-              "GraphQL",
-              "MongoDB",
-              "Laravel",
-              "Neo4j",
-              "dGraph",
-              "Google App Scripts",
-              "C#",
-              "Windows Forms (.NET)" ,
-              "Linux Server Development and Administration",
-              "Ruby",
-              "Solidity"
+            "type": "LabelsBlock",
+            "content": [
+              {
+                "title": "Expert - Technical Skills",
+                "labels": [
+                  { "title": "Javascript" },
+                  { "title": "Typescript" },
+                  { "title": "React" },
+                  { "title": "Svelte" },
+                  { "title": "SASS" },
+                  { "title": "Adobe Photoshop" }
+                ]
+              },
+              {
+                "title": "Advanced - Technical Skills",
+                "labels": [
+                  { "title": "Tailwind" },
+                  { "title": "Storybook" },
+                  { "title": "Wordpress" }
+                ]
+              },
+              {
+                "title": "Intermediate - Technical Skills",
+                "labels": [
+                  { "title": "Jest" },
+                  { "title": "Mocha" },
+                  { "title": "Next.js" },
+                  { "title": "EaselJS" },
+                  { "title": "Adobe Animate CC" },
+                  { "title": "Figma (Design)" },
+                  { "title": "Adobe Xd (Design)" }
+                ]
+              },
+              {
+                "title": "Beginner - Technical Skills",
+                "labels": [
+                  { "title": "Node.js" },
+                  { "title": "Express" },
+                  { "title": "GraphQL" },
+                  { "title": "MongoDB" },
+                  { "title": "Laravel" },
+                  { "title": "Neo4j" },
+                  { "title": "dGraph" },
+                  { "title": "Google App Scripts" },
+                  { "title": "C#" },
+                  { "title": "Windows Forms (.NET)" },
+                  { "title": "Linux Server Development and Administration" },
+                  { "title": "Ruby" },
+                  { "title": "Solidity" }
+                ]
+              }
             ]
           }
         ]

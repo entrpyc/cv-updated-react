@@ -7,8 +7,7 @@
         { "name": "Experience", "href": "#experience" },
         { "name": "Portfolio", "href": "#portfolio" },
         { "name": "Skills", "href": "#skills" },
-        { "name": "Recommendations", "href": "#recommendations" },
-        { "name": "Methodologies", "href": "#methodologies" }
+        { "name": "Recommendations", "href": "#recommendations" }
       ]
     }
   },
@@ -306,48 +305,6 @@
           },
           {
             "type": "LabelsBlock",
-            "title": "Javascript Animations",
-            "class": "parent",
-            "content": [
-              {
-                "title": "Javascript & CSS animations",
-                "labels": [
-                  { "title": "Javascript (Canvas)" },
-                  { "title": "EaselJS" },
-                  { "title": "Adobe: Animate, AE, PS" }
-                ]
-              },
-              {
-                "title": "Javascript & CSS animations",
-                "links": [
-                  {
-                    "link": "https://drive.google.com/file/d/1ToqxvFfgmMM5HZrWVXtOLZerZdW-PVyC/view?usp=sharing",
-                    "icon": "video"
-                  }
-                ]
-              },
-              {
-                "title": "Javascript & CSS animations 2",
-                "links": [
-                  {
-                    "link": "https://drive.google.com/file/d/139BrhZGyf1Hi_h1CDeMoa5wwwz_zm7ZT/view?usp=sharing",
-                    "icon": "video"
-                  }
-                ]
-              },
-              {
-                "title": "Javascript animation sequence",
-                "links": [
-                  {
-                    "link": "https://drive.google.com/file/d/1MqaFu4E_QRXAmgt26JuqNywTbvjrMplo/view?usp=sharing",
-                    "icon": "video"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "LabelsBlock",
             "title": "Game Development",
             "class": "parent",
             "content": [
@@ -401,6 +358,48 @@
                   {
                     "link": "https://www.maxwingaming.com/projects-archive/lucky-carnival/",
                     "icon": "external-link"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "LabelsBlock",
+            "title": "Javascript Animations",
+            "class": "parent",
+            "content": [
+              {
+                "title": "Javascript & CSS animations",
+                "labels": [
+                  { "title": "Javascript (Canvas)" },
+                  { "title": "EaselJS" },
+                  { "title": "Adobe: Animate, AE, PS" }
+                ]
+              },
+              {
+                "title": "Javascript & CSS animations",
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1ToqxvFfgmMM5HZrWVXtOLZerZdW-PVyC/view?usp=sharing",
+                    "icon": "video"
+                  }
+                ]
+              },
+              {
+                "title": "Javascript & CSS animations 2",
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/139BrhZGyf1Hi_h1CDeMoa5wwwz_zm7ZT/view?usp=sharing",
+                    "icon": "video"
+                  }
+                ]
+              },
+              {
+                "title": "Javascript animation sequence",
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1MqaFu4E_QRXAmgt26JuqNywTbvjrMplo/view?usp=sharing",
+                    "icon": "video"
                   }
                 ]
               }
