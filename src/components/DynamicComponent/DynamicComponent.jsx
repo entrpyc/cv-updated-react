@@ -2,13 +2,21 @@ import React, { useState, useEffect } from 'react'
 
 import { asyncComponentImport } from 'helpers/file-system';
 
-function DynamicComponent({ component, props }) {
+export const DYNAMIC_MODULES_TYPES = {
+  "block": "block",
+  "component": "component",
+}
+
+function DynamicComponent({ component, props, type = DYNAMIC_MODULES_TYPES.component }) {
   const [dynamicModule, setDynamicModule] = useState(null);
 
   useEffect(() => {
     // Dynamically import the module/component
     const importDynamicModule = async () => {
-      const module = await asyncComponentImport(() => import(`../../modules/${component}/${component}`))
+      const module = await asyncComponentImport(() => {
+        if(type === DYNAMIC_MODULES_TYPES.component) return import(`../../modules/${component}/${component}`);
+        if(type === DYNAMIC_MODULES_TYPES.block) return import(`../../modules/Blocks/${component}/${component}`);
+      })
       setDynamicModule(module);
     };
 

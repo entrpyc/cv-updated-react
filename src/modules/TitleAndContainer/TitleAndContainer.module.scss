@@ -1,17 +1,19 @@
 @use 'style/grid.scss';
 
-.skills {
-  
+.portfolio {
   :global {
-    .skill-lists {
-      display: flex;
-      flex-direction: column;
-      gap: grid.$space-4;
-    }
     .wrap {
       display: flex;
       flex-direction: column;
-      gap: grid.$space-2;
+      gap: grid.$space-3;
+
+      &.parent {
+        gap: grid.$space-1;
+      }
+    }
+  
+    .wrap + .wrap {
+      margin-top: grid.$space-4;
     }
   }
 }

@@ -1,9 +1,9 @@
-import css from './SkillBlock.module.scss';
+import css from './TitleTextBlock.module.scss';
 
 import Title from 'elements/Title/Title';
 import Text from 'elements/Text/Text';
 
-function TechSkillBlock({ title, text }) {
+function TitleTextBlock({ title, text }) {
   return (
     <div className={css.skillsBlock}>
       <div className="block">
@@ -18,4 +18,4 @@ function TechSkillBlock({ title, text }) {
   )
 }
 
-export default TechSkillBlock
+export default TitleTextBlock

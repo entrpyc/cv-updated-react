@@ -2,36 +2,24 @@ import css from './TitleAndContainer.module.scss';
 
 import Title from 'elements/Title/Title';
 
-import SkillBlock from './components/SkillBlock/SkillBlock';
-import PortfolioBlock from 'modules/Portfolio/components/PortfolioBlock/PortfolioBlock';
+import DynamicComponent, { DYNAMIC_MODULES_TYPES } from 'components/DynamicComponent/DynamicComponent';
 
-function Skills({ skills, list, id }) {
-  const remapSkillListForPortfolioBlock = (skillList) => ({
-    title: skillList.level,
-    techStack: skillList.list.map( skill => ({ title: skill }))
-  })
-
-  return (
-    <section id={id} className={css.skills}>
-      <Title>Skills</Title>
-      <div className="skill-lists">
-        {list ? (
-          <div className="wrap">
-            {list.map((skillList, i) => (
-              <PortfolioBlock key={i} {...remapSkillListForPortfolioBlock(skillList)} />
-            ))}
-          </div>
-        ): null}
-        {skills ? (
-          <div className="wrap">
-            {skills.map((skill, i) => (
-              <SkillBlock key={i} {...skill} />
-            ))}
-          </div>
-        ): null}
-      </div>
+function Portfolio({ title, blocks, id }) {
+  return (blocks &&
+    <section id={id} className={css.portfolio}>
+      <Title>{title}</Title>
+      {blocks.map((block, i) => (
+        <div className={`wrap ${block.class || ''}`} key={i}>
+          {block.title && (
+            <Title tag="h3">{block.title}</Title>
+          )}
+          {block.content.map((blockContent, i) => (
+            <DynamicComponent key={i} component={block.type} props={blockContent} type={DYNAMIC_MODULES_TYPES.block} />
+          ))}
+        </div>
+      ))}
     </section>
   )
 }
 
-export default Skills
+export default Portfolio
