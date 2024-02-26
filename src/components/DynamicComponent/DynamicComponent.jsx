@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
+import Loader from 'elements/Loader/Loader';
+
 import { asyncComponentImport } from 'helpers/file-system';
 
 export const DYNAMIC_MODULES_TYPES = {
@@ -25,7 +27,7 @@ function DynamicComponent({ component, props, type = DYNAMIC_MODULES_TYPES.compo
   }, []);
 
   if (!dynamicModule) {
-    return <div>Loading...</div>;
+    return <Loader />;
   }
 
   return <dynamicModule.default {...props} />;

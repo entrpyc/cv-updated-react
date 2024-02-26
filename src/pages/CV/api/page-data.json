@@ -20,9 +20,9 @@
         "text": [
           {
             "text": [
-              "Capable, Innovative, and driven Software Engineer with a proven track record of spearheading successful product development initiatives and client implementations.",
-              "Having a strong foundation in front-end engineering, package management systems, and server architecture design, I have optimized team workflows, increased code reusability, and enhanced overall project efficiency.",
-              "Proficient in a wide array of technologies including JavaScript, TypeScript, React, Svelte, and more, I bring over 5 years of experience in software engineering and a passion for continuous learning and improvement.",
+              "Capable and driven Software Engineer with a proven track record of spearheading successful product development initiatives and client implementations.",
+              "Proficient in JavaScript, TypeScript, React, and Svelte, with an emphasis on elegant UX implementations, exceptional custom motion design, and effective architectural solutions.",
+              "With a strong foundation and over 5 years of experience in front-end engineering, I have optimized team workflows, increased code reusability, and enhanced overall project efficiency.",
               "By joining a team that values creativity, craftsmanship, and continuous improvement, I aim to make meaningful contributions and further elevate the standards of software development within the organization."
             ]
           }
@@ -442,7 +442,6 @@
                   { "title": "Jest" },
                   { "title": "Mocha" },
                   { "title": "Next.js" },
-                  { "title": "EaselJS" },
                   { "title": "Adobe Animate CC" },
                   { "title": "Figma (Design)" },
                   { "title": "Adobe Xd (Design)" }
@@ -458,6 +457,7 @@
                   { "title": "Laravel" },
                   { "title": "Neo4j" },
                   { "title": "dGraph" },
+                  { "title": "EaselJS" },
                   { "title": "Google App Scripts" },
                   { "title": "C#" },
                   { "title": "Windows Forms (.NET)" },

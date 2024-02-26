@@ -2,14 +2,32 @@
   "pageInterface": {
     "navigation": {
       "pageNavigation": [
-        { "name": "About", "href": "#about" },
+        { "name": "Contact Info", "href": "#about" },
+        { "name": "Summary", "href": "#summary" },
         { "name": "Experience", "href": "#experience" },
-        { "name": "Portfolio", "href": "#portfolio" },
-        { "name": "Skills", "href": "#skills" }
+        { "name": "Skills", "href": "#skills" },
+        { "name": "Portfolio", "href": "#portfolio" }
       ]
     }
   },
   "components": [
+    {
+      "name": "PlainText",
+      "props": {
+        "id": "summary",
+        "title": "Summary",
+        "text": [
+          {
+            "text": [
+              "Capable and driven Software Engineer with a proven track record of spearheading successful product development initiatives and client implementations.",
+              "Proficient in JavaScript, TypeScript, React, and Svelte, with an emphasis on elegant UX implementations, exceptional custom motion design, and effective architectural solutions.",
+              "With a strong foundation and over 5 years of experience in front-end engineering, I have optimized team workflows, increased code reusability, and enhanced overall project efficiency.",
+              "By joining a team that values creativity, craftsmanship, and continuous improvement, I aim to make meaningful contributions and further elevate the standards of software development within the organization."
+            ]
+          }
+        ]
+      }
+    },
     {
       "name": "PlainText",
       "props": {
@@ -91,6 +109,64 @@
     {
       "name": "TitleAndContainer",
       "props": {
+        "id": "skills",
+        "title": "Skills",
+        "blocks": [
+          {
+            "type": "LabelsBlock",
+            "content": [
+              {
+                "title": "Expert - Technical Skills",
+                "labels": [
+                  { "title": "Javascript" },
+                  { "title": "Typescript" },
+                  { "title": "React" },
+                  { "title": "Svelte" },
+                  { "title": "SASS" }
+                ]
+              },
+              {
+                "title": "Advanced - Technical Skills",
+                "labels": [
+                  { "title": "Tailwind" },
+                  { "title": "Storybook" },
+                  { "title": "Wordpress" }
+                ]
+              },
+              {
+                "title": "Intermediate - Technical Skills",
+                "labels": [
+                  { "title": "Jest" },
+                  { "title": "Mocha" },
+                  { "title": "Next.js" }
+                ]
+              },
+              {
+                "title": "Beginner - Technical Skills",
+                "labels": [
+                  { "title": "Node.js" },
+                  { "title": "Express" },
+                  { "title": "GraphQL" },
+                  { "title": "MongoDB" },
+                  { "title": "Laravel" },
+                  { "title": "Neo4j" },
+                  { "title": "dGraph" },
+                  { "title": "Google App Scripts" },
+                  { "title": "C#" },
+                  { "title": "Windows Forms (.NET)" },
+                  { "title": "Linux Server Development and Administration" },
+                  { "title": "Ruby" },
+                  { "title": "Solidity" }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "TitleAndContainer",
+      "props": {
         "id": "portfolio",
         "title": "Portfolio",
         "blocks": [
@@ -104,7 +180,7 @@
                 "links": [
                   {
                     "link": "https://gitfront.io/r/entrpyc/9MCA9pUcTn6G/dom-shadow-graph/tree/src/DOMShadowGraph/",
-                    "icon": "external-link"
+                    "icon": "logo-github"
                   }
                 ]
               },
@@ -113,7 +189,7 @@
                 "links": [
                   {
                     "link": "https://gitfront.io/r/entrpyc/eX7EMiuSKjEi/indepth-apis/tree/apis/shopify/",
-                    "icon": "external-link"
+                    "icon": "logo-github"
                   }
                 ]
               },
@@ -122,7 +198,7 @@
                 "links": [
                   {
                     "link": "https://gitfront.io/r/entrpyc/HWHWo8rR9XFA/svelte-generator/",
-                    "icon": "external-link"
+                    "icon": "logo-github"
                   }
                 ]
               },
@@ -272,69 +348,6 @@
                     "link": "https://www.maxwingaming.com/projects-archive/lucky-carnival/",
                     "icon": "external-link"
                   }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "name": "TitleAndContainer",
-      "props": {
-        "id": "skills",
-        "title": "Skills",
-        "blocks": [
-          {
-            "type": "LabelsBlock",
-            "content": [
-              {
-                "title": "Expert - Technical Skills",
-                "labels": [
-                  { "title": "Javascript" },
-                  { "title": "Typescript" },
-                  { "title": "React" },
-                  { "title": "Svelte" },
-                  { "title": "SASS" },
-                  { "title": "Adobe Photoshop" }
-                ]
-              },
-              {
-                "title": "Advanced - Technical Skills",
-                "labels": [
-                  { "title": "Tailwind" },
-                  { "title": "Storybook" },
-                  { "title": "Wordpress" }
-                ]
-              },
-              {
-                "title": "Intermediate - Technical Skills",
-                "labels": [
-                  { "title": "Jest" },
-                  { "title": "Mocha" },
-                  { "title": "Next.js" },
-                  { "title": "EaselJS" },
-                  { "title": "Adobe Animate CC" },
-                  { "title": "Figma (Design)" },
-                  { "title": "Adobe Xd (Design)" }
-                ]
-              },
-              {
-                "title": "Beginner - Technical Skills",
-                "labels": [
-                  { "title": "Node.js" },
-                  { "title": "Express" },
-                  { "title": "GraphQL" },
-                  { "title": "MongoDB" },
-                  { "title": "Laravel" },
-                  { "title": "Neo4j" },
-                  { "title": "dGraph" },
-                  { "title": "Google App Scripts" },
-                  { "title": "C#" },
-                  { "title": "Windows Forms (.NET)" },
-                  { "title": "Linux Server Development and Administration" },
-                  { "title": "Ruby" },
-                  { "title": "Solidity" }
                 ]
               }
             ]

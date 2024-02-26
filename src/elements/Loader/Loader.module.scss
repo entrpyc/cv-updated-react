@@ -1,0 +1,46 @@
+@use 'style/color.scss';
+@use 'style/grid.scss';
+@use 'style/font.scss';
+
+.placeholder  {
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(
+      90deg,
+      rgba(255,255,255,0) 0%,
+      rgba(255,255,255,0.4) 50%,
+      rgba(255,255,255,0) 100%
+    );
+    animation: shimmer 1s infinite;
+  }
+
+  :global {
+    .faux-text {
+      background: rgba(color.$bg-sixth, 0.4);
+      border-radius: 4px;
+      height: 20px;
+      margin-bottom: 15px;
+  
+      &.short {
+        width: 30%;
+      }
+    }
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
