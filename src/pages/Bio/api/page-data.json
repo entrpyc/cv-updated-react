@@ -1,0 +1,149 @@
+{
+  "pageInterface": {
+    "navigation": {
+      "pageNavigation": [
+        { "name": "Engineering", "href": "#engineering" },
+        { "name": "Design", "href": "#design" },
+        { "name": "Business", "href": "#business" }
+      ]
+    }
+  },
+  "components": [
+    {
+      "name": "TitleAndContainer",
+      "props": {
+        "id": "engineering",
+        "title": "Engineering",
+        "blocks": [
+          {
+            "type": "TitleTextBlock",
+            "content": [
+              {
+                "title": "Javascript/Typescript - 6 years",
+                "text": [
+                  "JavaScript is my primary technology of choice. I possess experience in both front-end and back-end development using JS, although my focus has primarily been on front-end work.",
+                  "Regarding theoretical knowledge, I've studied both high-level and low-level concepts of the language. This includes understanding Hoisting, Closures, Event Loop, Heap and Stack, among others. Additionally, I've delved into compilation and interpretation, IR and AST parsing, transpilation, and more.",
+                  "I tend to favor shorter syntax, common in other languages, while avoiding ternary expressions or anything that might compromise code readability. My approach involves using simple methods, often employing pure function expressions for data aggregation and common design patterns for data storage. These techniques generally cover most technical cases. For more intricate solutions, I resort to OOP with ES6+ syntax, creating abstractions characterized by high cohesion and low coupling.",
+                  "I've developed numerous packages serving a wide range of purposes, all of which I continue to use to this day. You can review them on my NPM account."
+                ]
+              },
+              {
+                "title": "Front-end Engineering - 3 years",
+                "text": [
+                  "Front-end development is my primary specialization, with over 4 years of experience.",
+                  "I've explored a wide range of concepts and have adapted some of the best practices in the field through individual research and communication with other professionals.",
+                  "I'm most proficient at designing architectures suitable for continuous integration. By aiming for reusability and simplicity in software components, I contribute code that is easily maintainable, requires less refactoring, and can be utilized in other parts of the software, effectively saving development time.",
+                  "During the product design stages, I actively participate in the development of software features by offering a developer's perspective in the process. I recognize potential solutions for problems I've encountered in previous projects.",
+                  "While I am adept at being framework-agnostic, in my previous positions, I have gained extensive expertise in various frameworks, including React and Svelte. I quickly grasp the design patterns of diverse projects and efficiently extend or enhance them as necessary. My preferred approach with frameworks involves segregating logic and UI, a strategy I've found to be highly efficient and time-saving in the long term."
+                ]
+              },
+              {
+                "title": "Software Development - 2 years",
+                "text": [
+                  "I've navigated diverse work environments, gaining exposure to iterative development and waterfall methodologies. Each approach has enriched my problem-solving skills in areas like maintaining clean code, version control, testing strategies, managing technical debt, code refactoring, and documentation.",
+                  "Personally, I prioritize addressing technical debt early on to minimize costly refactoring later. I emphasize the importance of thorough unit testing to prevent regressions when implementing new features or modifications.",
+                  "Central to my process is allocating time to design solutions using recognizable design patterns, enhancing code reusability. Additionally, I prioritize assessing code cohesion and coupling during submissions and reviews, facilitating code extension rather than extensive refactoring."
+                ]
+              },
+              {
+                "title": "Software Design & Architecture - 1 year",
+                "text": [
+                  "Designing my own systems taught me very useful approaches in software design and architecture, aiding in recognizing high and low-level bottlenecks within the software I develop.",
+                  "During code reviews, I assess scalability, conduct performance profiling, and pinpoint opportunities to implement caching strategies, aligning code modifications with the software's overarching architecture.",
+                  "Though relatively new to extending these skills, I'm swiftly gaining proficiency, noticeably enhancing my overall performance in software development."
+                ]
+              },
+              {
+                "title": "Server Design & Architecture - 1 year",
+                "text": [
+                  "At my company, I delved into designing Linux servers and APIs, expanding my skills in this area. I put focus on making server components reusable by using NPM with various backend services I built from the ground up. I implemented a monolithic structure for our APIs, following commonly used practices for this type of setup.",
+                  "This experience expanded my comprehension of web security and motivated me to further deepen my expertise in this field."
+                ]
+              },
+              {
+                "title": "Computer science - 3 years",
+                "text": [
+                  "I've tackled lower-level technical challenges, delving into the implementation of more efficient, faster, and lighter code. My grasp of algorithms, data structures, and performance metrics has been instrumental in resolving these issues.",
+                  "While I lean towards OOP for software development, I've also crafted highly effective implementations using functional approaches. In my experience, OOP excels in providing declarative code, whereas functional programming methods often prove more efficient for developing imperative code."
+                ]
+              },
+              {
+                "title": "Internet Infrastructure & Network Protocols - 1 year",
+                "text": [
+                  "Understanding internet infrastructure was pivotal in my development of secure Linux servers and hosting multiple APIs containing sensitive data. This knowledge also deepened my comprehension of client-side, server-side, and alternative content rendering methodologies for the web.",
+                  "Ultimately, this experience significantly impacts my capacity to devise optimal solutions for maintaining and delivering web applications efficiently to end users."
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "TitleAndContainer",
+      "props": {
+        "id": "design",
+        "title": "Design",
+        "blocks": [
+          {
+            "type": "TitleTextBlock",
+            "content": [
+              {
+                "title": "UI & UX - 6 years",
+                "text": [
+                  "I've learned essential UI & UX principles and applied them at Max Win Gaming by creating UI solutions, becoming skilled in JS and CSS animation, and designing user-friendly software interfaces.",
+                  "This experience has trained me to anticipate potential design issues and offer solutions, enhancing both user interaction and the efficiency of asynchronous code for smoother user experiences."
+                ]
+              },
+              {
+                "title": "Design, Animation, and Visual Effects - 7 years",
+                "text": [
+                  "During my experience as a freelance digital designer, I've dealt with a variety of challenging projects. Due to my motivation to satisfy my clients' expectations, I've been quick to find solutions and adapt to requirements.",
+                  "Because of this, I was able to undertake any creative task and provide a really high quality result. This has led to more interest from clients, and I was able to expand my skills in this field even further.",
+                  "This experience gave me the platform to showcase unique skills in my web development career and granted me incredible opportunities as an engineer too. In every workplace, I've received great feedback from my employers for the outstanding visual implementations I've developed",
+                  "During my creative work, I've been really curious about studying branding, marketing strategies, and principles. With this knowledge, I was able to develop an instinct for better UX solutions too."
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "TitleAndContainer",
+      "props": {
+        "id": "business",
+        "title": "Business",
+        "blocks": [
+          {
+            "type": "TitleTextBlock",
+            "content": [
+              {
+                "title": "Business Solutions - 1 year",
+                "text": [
+                  "I use my business experience gained from co-founding a company to identify more efficient solutions for engineering challenges that directly affect the overall performance of the business.",
+                  "This experience has also sharpened my ability to prioritize tasks effectively and discern their levels of urgency. Also understanding the goals and challenges of colleagues across various departments has notably enhanced my communication skills within the team."
+                ]
+              },
+              {
+                "title": "Product design - 2 years",
+                "text": [
+                  "I can collaborate with product designers more effectively thanks to my comprehension of product design techniques, which I acquired while working at my own company. This allows me to offer valuable insights and preempt potential issues in feature implementation during later development stages.",
+                  "Additionally, it has significantly enhanced my decision-making in feature development, incorporating practices like using user personas, prototyping, and striking a balance between user needs and business objectives."
+                ]
+              },
+              {
+                "title": "Coaching & Teaching - 3 years",
+                "text": [
+                  "For the past three years, I've been building online communities for studying software engineering. I've led groups of 6 to 15 members from various backgrounds, helping by navigating them toward successful programming careers. I created detailed plans and career guides, hosting frequent 1-2 weekly meetings to dive into the core principles of software development.",
+                  "Later, I switched from hosting groups to individual mentoring, adapting my methods to fit each student's specific needs. I specialize in guiding beginners toward landing junior developer roles. Additionally, I work closely with some students, helping them advance from junior to senior positions and even move up from developer to architect roles.",
+                  "Also, at Softuni I earned a scholarship after achieving a perfect score, allowing me to mentor and teach in courses I've already completed. There I had the opportunity to teach larger groups of students for a short period of time."
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

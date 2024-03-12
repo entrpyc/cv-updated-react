@@ -23,7 +23,8 @@
 
   :global {
     .website-navigation,
-    .page-navigation {
+    .page-navigation,
+    .downloads {
       display: none;
       flex-direction: column;
       gap: grid.$space-0-2;

@@ -9,9 +9,19 @@ function Link({
   target = null,
   rel = null,
   className = '',
+  download,
+  downloadFileName
 }) {
   return (to ? (
     <ReactRouterLink className={className} to={to}>{children}</ReactRouterLink>
+  ): download ? (
+    <a
+      href={download}
+      className={className}
+      download={downloadFileName}
+    >
+      {children}
+    </a>
   ): (
     <a
       href={href}

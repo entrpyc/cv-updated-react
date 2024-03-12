@@ -6,7 +6,7 @@ import Icon from 'elements/Icon/Icon';
 import Link from 'elements/Link/Link';
 import { LocalStorage, keys } from 'helpers/adapters/localstorage-adapter';
 
-function PageNavigation({ websiteNavigation, pageNavigation }) {
+function PageNavigation({ websiteNavigation, pageNavigation, downloads }) {
   const [visiblePageNavigation, setVisiblePageNavigation] = useState([]);
   
   function showMenuItem(item) {
@@ -35,7 +35,7 @@ function PageNavigation({ websiteNavigation, pageNavigation }) {
                 to={item.to}
                 key={i}
               >
-                <Icon name={item.icon || "anchor"} /> {item.name}
+                <Icon name={item.icon || "link"} /> {item.name}
               </Link>
             ))}
           </div>
@@ -52,6 +52,22 @@ function PageNavigation({ websiteNavigation, pageNavigation }) {
                   key={i}
                 >
                   <Icon name={item.icon || "anchor"} /> {item.name}
+                </Link>
+              ))}
+            </div>
+        </div>
+      ): null}
+      {downloads ? (
+        <div className="menu">
+            <div className={`downloads active`}>
+              {downloads.map((item, i) => (
+                <Link
+                  className="link default"
+                  download={item.download}
+                  downloadFileName={item.downloadFileName}
+                  key={i}
+                >
+                  <Icon name={item.icon || "download"} /> {item.name}
                 </Link>
               ))}
             </div>

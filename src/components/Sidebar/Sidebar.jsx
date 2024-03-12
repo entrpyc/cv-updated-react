@@ -24,6 +24,7 @@ function Sidebar() {
     social,
     websiteNavigation,
     pageNavigation,
+    downloads,
   } = navigation || {};
   
   return (info && social &&
@@ -43,7 +44,7 @@ function Sidebar() {
                 </Link>
               ))}
             </div>
-            <PageNavigation {...{ websiteNavigation, pageNavigation }} />
+            <PageNavigation {...{ websiteNavigation, pageNavigation, downloads }} />
           </div>
         </div>
       </div>

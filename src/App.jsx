@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import CV from './pages/CV/CV';
 import Resume from './pages/Resume/Resume';
+import Bio from './pages/Bio/Bio';
 
 import Sidebar from './components/Sidebar/Sidebar';
 
@@ -24,6 +25,7 @@ function App() {
                 <Routes>
                   <Route path="/" element={<CV />} />
                   <Route path="/resume" element={<Resume />} />
+                  <Route path="/bio" element={<Bio />} />
                 </Routes>
               </main>
               <Sidebar />
