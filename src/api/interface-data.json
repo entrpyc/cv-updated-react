@@ -23,9 +23,6 @@
       { "name": "Resume", "to": "/resume", "id": "resume" },
       { "name": "CV", "to": "/" },
       { "name": "Bio", "to": "/bio" }
-    ],
-    "downloads": [
-      { "name": "Resume", "download": "/files/AsenAngelovResume.pdf", "downloadFileName": "Asen Angelov - Resume" }
     ]
   },
   "about": {
