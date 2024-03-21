@@ -160,6 +160,19 @@
                 ]
               },
               {
+                "title": "Indepth Solutions - SPA Architecture",
+                "links": [
+                  {
+                    "link": "https://github.com/entrpyc/cv-updated-react",
+                    "icon": "logo-github"
+                  }
+                ],
+                "labels": [
+                  { "title": "React" },
+                  { "title": "Sass" }
+                ]
+              },
+              {
                 "title": "Clustermarket - Overview Table with Tabs, Pagination, Search and Filters, Loading placeholders, and Bulk Actions",
                 "links": [
                   {
