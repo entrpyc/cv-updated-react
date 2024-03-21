@@ -23,7 +23,7 @@ function Block({ title, subTitle, text, span, link, download }) {
       {subTitle ? (
         <Text className="sub">{subTitle}</Text>
       ): null}
-      {text.length || download ? (
+      {text?.length || download ? (
         <div className="block-text">
           {text.map((row, i) => (
             <Text key={i}>{row}</Text>

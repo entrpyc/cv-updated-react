@@ -7,7 +7,8 @@
         { "name": "Experience", "href": "#experience" },
         { "name": "Portfolio", "href": "#portfolio" },
         { "name": "Skills", "href": "#skills" },
-        { "name": "Recommendations", "href": "#recommendations" }
+        { "name": "Recommendations", "href": "#recommendations" },
+        { "name": "Education", "href": "#education" }
       ]
     }
   },
@@ -551,6 +552,19 @@
               "Asen showed a wide range of expertise in numerous fields throughout our time together at Grind. By now, I'm sure his knowledge base has grown.",
               "(Translated with DeepL)"
             ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlainText",
+      "props": {
+        "id": "education",
+        "title": "Education",
+        "text": [
+          {
+            "title": "Softuni",
+            "subTitle": "Software Engineering, Javascript | October, 2014 - June, 2015"
           }
         ]
       }
