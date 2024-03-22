@@ -21,10 +21,9 @@
         "text": [
           {
             "text": [
-              "Capable and driven Software Engineer with a proven track record of spearheading successful product development initiatives and client implementations.",
-              "Proficient in JavaScript, TypeScript, React, and Svelte, with an emphasis on elegant UX implementations, exceptional custom motion design, and effective architectural solutions.",
-              "With a strong foundation and over 5 years of experience in front-end engineering, I have optimized team workflows, increased code reusability, and enhanced overall project efficiency.",
-              "By joining a team that values creativity, craftsmanship, and continuous improvement, I aim to make meaningful contributions and further elevate the standards of software development within the organization."
+              "I have 6 years of experience with Javascript, utilizing React, Express, Sass, Tailwind, Storybook, and other tools.",
+              "My experience is focused on the front-end, but I've also led the development of 2 products where I've designed the FE architecture, setup the database, designed the API, and deployed the apps on an Ubuntu server.",
+              "I am confident in my ability to design and develop software, and I'm looking to join a company where I can practice my knowledge and experience and further extend it. "
             ]
           }
         ]
@@ -40,7 +39,7 @@
             "title": "Indepth Solutions",
             "subTitle": "Lead Software Engineer | July, 2023 - PRESENT",
             "text": [
-              "We started a company that automates administrative tasks for local businesses by integrating AI into their workflow.",
+              "Indepth Solutions are developing products that automate administrative tasks for local businesses by integrating AI into their workflow.",
               "Led a team of engineers in the development of 2 company products and 3 separate implementations with clients.",
               "Designed a package management system that allows the team to store more than 80% of the code as reusable packages and optimizes the work of the developers by 50%.",
               "Developed a server architecture for handling sensitive information through API requests and SMPT requests for 3 client implementations",
