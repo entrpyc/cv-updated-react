@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import css from './Bio.module.scss';
+// import css from './Bio.module.scss';
 import pageDataJSON from './api/page-data.json';
 
 import React, { useEffect, useContext } from 'react';
@@ -19,7 +19,7 @@ function Bio() {
   }, []);
 
   return (
-    <div className={css.Bio}>
+    <div>
       {pageDataJSON?.components?.map((comp, i) =>
         <DynamicComponent key={i} component={comp.name} props={comp.props} />
       )}

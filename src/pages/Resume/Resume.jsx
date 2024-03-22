@@ -1,6 +1,4 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import css from './Resume.module.scss';
-
 import React, { useEffect, useContext, useState } from 'react';
 import { InterfaceContext } from '../../context/InterfaceContext';
 import { FeatureContext } from '../../context/FeatureContext';
@@ -48,7 +46,7 @@ function Resume() {
   return (
     <div>
       {pageContent?.length ? (
-        <div className={css.Cv}>
+        <div>
           <About data={pageInterface.about.data} />
           {pageContent.map((comp, i) =>
             <DynamicComponent key={i} component={comp.name} props={comp.props} />

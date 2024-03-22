@@ -2,61 +2,6 @@
 @use '../../style/grid.scss';
 @use '../../style/font.scss';
 
-.Cv :global {
-  @media print {  
-    p {
-      font-size: 1rem !important;
-    }
-  
-    #about {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-  
-      .about {
-        display: flex !important;
-      }
-  
-      .mobile {
-        display: block !important;
-      }
-    }
-  
-    #experience {
-      .block-container {
-        .block {
-          p:last-of-type {
-            font-weight: 500;
-          }
-        }
-      }
-    }
-  
-    #skills {
-      h3 {
-        @include font.heading-2;
-        margin-left: 0;
-      }
-  
-      .skills-wrapper + .skills-wrapper {
-        margin-top: 60px;
-      }
-  
-      .block, .content {
-        padding: 0;
-        background-color: transparent;
-  
-        p {
-          margin-left: 0;
-          margin-top: 15px;
-          color: color.$fourth;
-          font-size: 1rem;
-        }
-      }
-    }
-  }
-}
-
 :global {
   @media print {
     aside {
@@ -74,48 +19,6 @@
     
     main {
       width: 100% !important;
-    }
-
-    #portfolio {
-      .portfolio-block-content {
-        gap: 10px;
-        
-        .block {
-          margin-bottom: 10px;
-          border: 1px solid color.$secondary;
-        }
-        
-        .block.external {
-          border-radius: 5px;
-        }
-
-        .block.external + .block.video {
-          p {
-            margin-left: 10px;
-          }
-        }
-
-
-        p {
-          color: color.$secondary;
-          font-weight: 600;
-        }
-
-        svg {
-          fill: color.$secondary;
-        }
-      }
-
-      .tech-stack-item {
-        border: 1px solid color.$fourth;
-        color: color.$fourth;
-      }
-
-      .tech-stack {
-        padding-left: 0;
-        padding-top: 0;
-        margin-bottom: 10px;
-      }
     }
   }
 }
