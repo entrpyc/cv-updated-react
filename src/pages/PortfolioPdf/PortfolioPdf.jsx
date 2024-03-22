@@ -7,20 +7,18 @@ import { FeatureContext } from 'context/FeatureContext';
 
 
 import DynamicComponent from 'components/DynamicComponent/DynamicComponent';
-import About from 'components/About/About';
 
 function CV() {
-  const { pageInterface, mergeInterface } = useContext(InterfaceContext);
+  const { mergeInterface } = useContext(InterfaceContext);
   const { setChatBubbleEnabled } = useContext(FeatureContext);
 
   useEffect(() => {
-    mergeInterface(pageDataJSON.pageInterface);
+    if(pageDataJSON.pageInterface) mergeInterface(pageDataJSON.pageInterface);
     setChatBubbleEnabled(true);
   }, []);
 
   return (
-    <div>
-      <About data={pageInterface.about.data} />
+    <div className="pdf">
       {pageDataJSON?.components?.map((comp, i) =>
         <DynamicComponent key={i} component={comp.name} props={comp.props} />
       )}

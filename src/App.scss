@@ -126,4 +126,23 @@ img {
   .mobile {
     display: block;
   }
-} 
+}
+
+body:has(.pdf) {
+  aside {
+    display: none !important;
+  }
+  
+  .page-content {
+    max-width: 100%;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  main {
+    width: 100% !important;
+  }
+}

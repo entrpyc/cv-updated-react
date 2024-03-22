@@ -1,0 +1,318 @@
+{
+  "components": [
+    {
+      "name": "TitleAndContainer",
+      "props": {
+        "id": "portfolio",
+        "title": "Portfolio",
+        "blocks": [
+          {
+            "type": "LabelsBlock",
+            "title": "Software and App Development",
+            "content": [
+              {
+                "title": "Indepth Solutions - Data structure for AI powered CMS",
+                "links": [
+                  {
+                    "link": "https://gitfront.io/r/entrpyc/9MCA9pUcTn6G/dom-shadow-graph/tree/src/DOMShadowGraph/",
+                    "icon": "logo-github"
+                  }
+                ],
+                "labels": [
+                  { "title": "Typescript" },
+                  { "title": "Jest" }
+                ]
+              },
+              {
+                "title": "Indepth Solutions - API for AI integrations",
+                "links": [
+                  {
+                    "link": "https://gitfront.io/r/entrpyc/eX7EMiuSKjEi/indepth-apis/tree/apis/shopify/",
+                    "icon": "logo-github"
+                  }
+                ],
+                "labels": [
+                  { "title": "Node.js" },
+                  { "title": "Express" }
+                ]
+              },
+              {
+                "title": "Indepth Solutions - Front-end architecture for rendering AI generated code",
+                "links": [
+                  {
+                    "link": "https://gitfront.io/r/entrpyc/HWHWo8rR9XFA/svelte-generator/",
+                    "icon": "logo-github"
+                  }
+                ],
+                "labels": [
+                  { "title": "Typescript" },
+                  { "title": "Svelte" },
+                  { "title": "Jest" },
+                  { "title": "Storybook" }
+                ]
+              },
+              {
+                "title": "Indepth Solutions - SPA Architecture",
+                "links": [
+                  {
+                    "link": "https://github.com/entrpyc/cv-updated-react",
+                    "icon": "logo-github"
+                  }
+                ],
+                "labels": [
+                  { "title": "React" },
+                  { "title": "Sass" }
+                ]
+              },
+              {
+                "title": "Clustermarket - Overview Table with Tabs, Pagination, Search and Filters, Loading placeholders, and Bulk Actions",
+                "links": [
+                  {
+                    "link": "https://youtu.be/u24LkRtqNx0?si=WDfTMInnzrf7ZruH&t=390",
+                    "icon": "video"
+                  }
+                ],
+                "labels": [
+                  { "title": "Javascript (Vanilla)" },
+                  { "title": "Svelte" },
+                  { "title": "GraphQL" },
+                  { "title": "Storybook" },
+                  { "title": "Jest" }
+                ]
+              },
+              {
+                "title": "Clustermarket - Interactive Calendar for bookings with Bulk Actions and Validations",
+                "links": [
+                  {
+                    "link": "https://www.youtube.com/watch?v=jcodcwIf6Jw",
+                    "icon": "video"
+                  }
+                ],
+                "labels": [
+                  { "title": "Javascript (Vanilla)" },
+                  { "title": "Svelte" },
+                  { "title": "GraphQL" },
+                  { "title": "Storybook" },
+                  { "title": "Jest" }
+                ]
+              },
+              {
+                "title": "Biotrade - File management platform",
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1J_AFyDkNsjrEuE2LcJGGBr90nyQk3-b8/view?usp=sharing",
+                    "icon": "video"
+                  }
+                ],
+                "labels": [
+                  { "title": "Javascript (Vanilla)" },
+                  { "title": "Sass" }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "LabelsBlock",
+            "title": "Web Development",
+            "content": [
+              {
+                "title": "Leptonite - Decentralized marketplace",
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1kcHqZaJ0nFAv81cahQx-CjeledTU6Tsm/view?usp=sharing",
+                    "icon": "video"
+                  }
+                ],
+                "labels": [
+                  { "title": "React" },
+                  { "title": "Solidity" },
+                  { "title": "MongoDB" }
+                ]
+              },
+              {
+                "title": "AllianceBlock - Crypto currency bridge",
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1l4rGgV1Skud4TS-MiNqymRd_A12YnIS4/view?usp=sharing",
+                    "icon": "video"
+                  }
+                ],
+                "labels": [
+                  { "title": "React" },
+                  { "title": "Solidity" },
+                  { "title": "MongoDB" }
+                ]
+              },
+              {
+                "title": "Universe.xyz - NFT minting and marketplace",
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1JSi48k3WFX5v_BQLM903Jbr5CYJDWIri/view?usp=sharing",
+                    "icon": "video"
+                  }
+                ],
+                "labels": [
+                  { "title": "React" },
+                  { "title": "Solidity" },
+                  { "title": "MongoDB" }
+                ]
+              },
+              {
+                "title": "Hippoland - Mobile menu with filters",
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1C4lb9z_nmg0VIOpG4iihr34eJGPDzqpQ/view?usp=sharing",
+                    "icon": "video"
+                  }
+                ],
+                "labels": [
+                  { "title": "Javascript (Vanilla)" },
+                  { "title": "Next.js" },
+                  { "title": "Typescript" }
+                ]
+              },
+              {
+                "title": "Biotrade Corporate website - Interactive Map",
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1riZ-2vvcyhDlqQdtQ-I9VqiYf_Un42P1/view?usp=sharing",
+                    "icon": "video"
+                  },
+                  {
+                    "link": "https://biotrade.global/",
+                    "icon": "external-link"
+                  }
+                ],
+                "labels": [
+                  { "title": "Javascript (Vanilla)" },
+                  { "title": "Laravel" },
+                  { "title": "Wordpress (with ACF)" }
+                ]
+              },
+              {
+                "title": "Biotrade Corporate website - Interactive Navigation",
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1zCEEWuQOZtQA5gN4mETEdBCRwgmdb5fT/view?usp=sharing",
+                    "icon": "video"
+                  },
+                  {
+                    "link": "https://biotrade.global/",
+                    "icon": "external-link"
+                  }
+                ],
+                "labels": [
+                  { "title": "Javascript (Vanilla)" },
+                  { "title": "Laravel" },
+                  { "title": "Wordpress (with ACF)" }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "LabelsBlock",
+            "title": "Game Development",
+            "class": "parent",
+            "content": [
+              {
+                "title": "Slot games at Max Win Gaming",
+                "labels": [
+                  { "title": "Javascript (Canvas)" },
+                  { "title": "EaselJS" },
+                  { "title": "Adobe: Animate, AE, PS" }
+                ]
+              },
+              {
+                "title": "Asian Fortune - Slot game",
+                "links": [
+                  {
+                    "link": "https://www.maxwingaming.com/projects-archive/asian-fortune/",
+                    "icon": "external-link"
+                  }
+                ]
+              },
+              {
+                "title": "Splendour Forest - Slot game",
+                "links": [
+                  {
+                    "link": "https://www.maxwingaming.com/projects-archive/splendour-forest/",
+                    "icon": "external-link"
+                  }
+                ]
+              },
+              {
+                "title": "Leprechauns Magic - Slot game",
+                "links": [
+                  {
+                    "link": "https://www.maxwingaming.com/projects-archive/leprechauns-magic/",
+                    "icon": "external-link"
+                  }
+                ]
+              },
+              {
+                "title": "Fruit Strike - Asian Fortune",
+                "links": [
+                  {
+                    "link": "https://www.maxwingaming.com/projects-archive/fruit-strike/",
+                    "icon": "external-link"
+                  }
+                ]
+              },
+              {
+                "title": "Lucky Carnival - Slot game",
+                "links": [
+                  {
+                    "link": "https://www.maxwingaming.com/projects-archive/lucky-carnival/",
+                    "icon": "external-link"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "LabelsBlock",
+            "title": "Javascript Animations",
+            "class": "parent",
+            "content": [
+              {
+                "title": "Javascript & CSS animations",
+                "labels": [
+                  { "title": "Javascript (Canvas)" },
+                  { "title": "EaselJS" },
+                  { "title": "Adobe: Animate, AE, PS" }
+                ]
+              },
+              {
+                "title": "Javascript & CSS animations",
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1ToqxvFfgmMM5HZrWVXtOLZerZdW-PVyC/view?usp=sharing",
+                    "icon": "video"
+                  }
+                ]
+              },
+              {
+                "title": "Javascript & CSS animations 2",
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/139BrhZGyf1Hi_h1CDeMoa5wwwz_zm7ZT/view?usp=sharing",
+                    "icon": "video"
+                  }
+                ]
+              },
+              {
+                "title": "Javascript animation sequence",
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1MqaFu4E_QRXAmgt26JuqNywTbvjrMplo/view?usp=sharing",
+                    "icon": "video"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

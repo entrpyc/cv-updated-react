@@ -1,0 +1,88 @@
+{
+  "components": [
+    {
+      "name": "PlainText",
+      "props": {
+        "id": "recommendations",
+        "title": "Recommendations",
+        "text": [
+          {
+            "title": "Johannes Solzbach",
+            "span": "Co-Founder at Clustermarket",
+            "subTitle": "I reported directly to Johannes Solzbach",
+            "link": "https://www.linkedin.com/in/johannessolzbach",
+            "text": [
+              "Despite unfortunate circumstances leading to Asen's departure, he consistently demonstrated remarkable dedication, motivation, and reliability.",
+              "His rapid learning abilities, coupled with strong technical knowledge, made him an invaluable asset to our team. Asen is not only a skilled developer but also a genuinely nice person.",
+              "I highly recommend him and am confident he will excel in his future endeavors. Please contact me if you need a reference: jsolzbach@clustermarket.com"
+            ]
+          },
+          {
+            "title": "Emil Belyov",
+            "span": "Senior Game Developer at Max Win Gaming",
+            "subTitle": "Emil Belyov managed me directly",
+            "link": "https://www.linkedin.com/in/emil-belyov-581062102",
+            "text": [
+              "Asen is a highly skilled and motivated developer with whom I have had the pleasure of working on several challenging games.",
+              "His passion for his craft is evident in every task he undertakes, resulting in consistently high quality results. He has always shown a passion for his craft which has always resulted in high quality results.",
+              "His contributions to the company set the tone for development principles that we still follow today, where his solutions have significantly improved the production time and end results of our games.",
+              "I highly recommend Asen for his professionalism and attention to detail in his work, as his problem solving skills make him an invaluable asset to any team."
+            ]
+          },
+          {
+            "title": "Itay Grudev",
+            "span": "CTO at Clustermarket",
+            "link": "https://www.linkedin.com/in/itaygrudev/",
+            "subTitle": "Itay Grudev managed me directly",
+            "text": [
+              "I highly recommend Asen for any Front End Engineering role.",
+              "During his time at Clustermarket, he consistently delivered outstanding work, showcasing a strong command of software engineering principles.",
+              "Asen not only adapted quickly to our dynamic environment and technology stack, but also excelled in tackling challenging tasks with efficiency. His talent, combined with a deep understanding of advanced software practices, makes him a valuable addition to any software engineering team.",
+              "I am confident that Asen's contributions will exceed expectations, and he will be a tremendous asset to your organization."
+            ]
+          },
+          {
+            "title": "Ivan Dzholev",
+            "span": "Senior Developer at Clustermarket",
+            "link": "https://www.linkedin.com/in/ivan-dzholev-805720151",
+            "subTitle": "Ivan Dzholev managed me directly",
+            "text": [
+              "My name is Ivan Dzholev, and for a year I was directly responsible for Asen.",
+              "Asen is self-motivated constantly learning in his free time, and diligent in his work.",
+              "While we worked together, he had many brilliant suggestions on how to improve the code and processes. He also never stopped getting better.",
+              "Any team would be lucky to have him."
+            ]
+          },
+          {
+            "title": "Stoyan Statev",
+            "span": "Мanager at Max Win Gaming",
+            "link": "https://www.linkedin.com/company/max-win-gaming",
+            "subTitle": "I reported directly to Stoyan Statev",
+            "download": {
+              "text": "View full recomemndation",
+              "link": "https://drive.google.com/file/d/1flvxnoFueh-TbzHidGy_QJ8RCo119DPa/view?usp=sharing"
+            },
+            "text": [
+              "It is with pleasure that I write this letter to recommend Asen Angelov for the position of Software Developer. During the period from December 2017 to October 2019, I had the privilege to work with Asen as his company manager at 'Max Win Gaming' LTD.",
+              "During this period, Asen demonstrated exceptional programming skills and software development, as well as an unwavering commitment to the quality of our products. The employee flawlessly performed all functions typical of developing games and applications, contributing significantly to our projects.",
+              "Asen Angelov has excellent professional knowledge and skills. He knows how to work in a team, shows creativity in problem solving as well as the ability to deal with given tasks.",
+              "I confidently recommend Asen Angelov for the position of software programmer, as I am convinced, that he will do an excellent job with any task and any project he is assigned. I hope that my recommendation will be useful for you.",
+              "(Translated with DeepL)"
+            ]
+          },
+          {
+            "title": "Yavor Varbanov",
+            "span": "Software Architect at Grind Web Studio",
+            "link": "https://www.linkedin.com/in/yavor-varbanov",
+            "subTitle": "Yavor Varbanov managed me directly",
+            "text": [
+              "Asen has the drive and curiosity to succeed. Any company that does not have people with such curiosity will undoubtedly fall into mediocrity.",
+              "Asen showed a wide range of expertise in numerous fields throughout our time together at Grind. By now, I'm sure his knowledge base has grown.",
+              "(Translated with DeepL)"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

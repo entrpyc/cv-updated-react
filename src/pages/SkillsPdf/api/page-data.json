@@ -1,0 +1,67 @@
+{
+  "components": [
+    {
+      "name": "TitleAndContainer",
+      "props": {
+        "id": "skills",
+        "title": "Skills",
+        "blocks": [
+          {
+            "type": "LabelsBlock",
+            "content": [
+              {
+                "title": "Expert - Technical Skills",
+                "labels": [
+                  { "title": "Javascript" },
+                  { "title": "Typescript" },
+                  { "title": "React" },
+                  { "title": "Svelte" },
+                  { "title": "SASS" },
+                  { "title": "Adobe Photoshop" }
+                ]
+              },
+              {
+                "title": "Advanced - Technical Skills",
+                "labels": [
+                  { "title": "Tailwind" },
+                  { "title": "Storybook" },
+                  { "title": "Wordpress" }
+                ]
+              },
+              {
+                "title": "Intermediate - Technical Skills",
+                "labels": [
+                  { "title": "Jest" },
+                  { "title": "Mocha" },
+                  { "title": "Next.js" },
+                  { "title": "Adobe Animate CC" },
+                  { "title": "Figma (Design)" },
+                  { "title": "Adobe Xd (Design)" }
+                ]
+              },
+              {
+                "title": "Beginner - Technical Skills",
+                "labels": [
+                  { "title": "Node.js" },
+                  { "title": "Express" },
+                  { "title": "GraphQL" },
+                  { "title": "MongoDB" },
+                  { "title": "Laravel" },
+                  { "title": "Neo4j" },
+                  { "title": "dGraph" },
+                  { "title": "EaselJS" },
+                  { "title": "Google App Scripts" },
+                  { "title": "C#" },
+                  { "title": "Windows Forms (.NET)" },
+                  { "title": "Linux Server Development and Administration" },
+                  { "title": "Ruby" },
+                  { "title": "Solidity" }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

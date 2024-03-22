@@ -14,12 +14,12 @@ function CV() {
   const { setChatBubbleEnabled } = useContext(FeatureContext);
 
   useEffect(() => {
-    mergeInterface(pageDataJSON.pageInterface);
+    if(pageDataJSON.pageInterface) mergeInterface(pageDataJSON.pageInterface);
     setChatBubbleEnabled(true);
   }, []);
 
   return (
-    <div>
+    <div className="pdf">
       <About data={pageInterface.about.data} />
       {pageDataJSON?.components?.map((comp, i) =>
         <DynamicComponent key={i} component={comp.name} props={comp.props} />

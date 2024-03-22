@@ -7,6 +7,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import CV from './pages/CV/CV';
 import Resume from './pages/Resume/Resume';
 import Bio from './pages/Bio/Bio';
+import CVPdf from './pages/CVPdf/CVPdf';
+import RecommendationsPdf from './pages/RecommendationsPdf/RecommendationsPdf';
+import ExperiencePdf from './pages/ExperiencePdf/ExperiencePdf';
+import PortfolioPdf from './pages/PortfolioPdf/PortfolioPdf';
+import SkillsPdf from './pages/SkillsPdf/SkillsPdf';
 
 import Sidebar from './components/Sidebar/Sidebar';
 
@@ -26,6 +31,11 @@ function App() {
                   <Route path="/" element={<CV />} />
                   <Route path="/resume" element={<Resume />} />
                   <Route path="/bio" element={<Bio />} />
+                  <Route path="/cv" element={<CVPdf />} />
+                  <Route path="/recommendations" element={<RecommendationsPdf />} />
+                  <Route path="/experience" element={<ExperiencePdf />} />
+                  <Route path="/portfolio" element={<PortfolioPdf />} />
+                  <Route path="/skills" element={<SkillsPdf />} />
                 </Routes>
               </main>
               <Sidebar />

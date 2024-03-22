@@ -1,0 +1,572 @@
+{
+  "components": [
+    {
+      "name": "PlainText",
+      "props": {
+        "id": "summary",
+        "title": "Summary",
+        "text": [
+          {
+            "text": [
+              "I have 6 years of experience with Javascript, utilizing React, Express, Sass, Tailwind, Storybook, and other tools.",
+              "My experience is focused on the front-end, but I've also led the development of 2 products where I've designed the FE architecture, setup the database, designed the API, and deployed the apps on an Ubuntu server.",
+              "I am confident in my ability to design and develop software, and I'm looking to join a company where I can practice my knowledge and experience and further extend it. "
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlainText",
+      "props": {
+        "id": "experience",
+        "title": "Experience",
+        "text": [
+          {
+            "title": "Indepth Solutions",
+            "subTitle": "Lead Software Engineer | July, 2023 - PRESENT",
+            "text": [
+              "Indepth Solutions are developing products that automate administrative tasks for local businesses by integrating AI into their workflow.",
+              "Led a team of engineers in the development of 2 company products and 3 separate implementations with clients.",
+              "Designed a package management system that allows the team to store more than 80% of the code as reusable packages and optimizes the work of the developers by 50%.",
+              "Developed a server architecture for handling sensitive information through API requests and SMPT requests for 3 client implementations",
+              "Javascript, Typescript, React, Svelte, Storybook, Jest, GraphQL, Node.js, Express, Neo4j, dGraph, Google App Scripts, C#, Linux Server Administration"
+            ]
+          },
+          {
+            "title": "Clustermarket",
+            "subTitle": "Software Engineer | February, 2022 - July, 2023",
+            "text": [
+              "Clustermarket is a startup that develops booking software, which is used in laboratories at universities and pharmaceutical companies.",
+              "Migrated a booking software from its initial Ruby-based structure to a Svelte and GraphQL framework, scaling up the product to 40k active users per day in 5k labs.",
+              "Implemented 2 new features, on which 30% of the software's functionality relies. Developed 3 low-level tools to handle URL parameters, data filtration, and search querying.",
+              "Participated in the development of 30% of the front-end architecture, implemented Storybook and unit testing with Jest, and introduced common design patterns for building components.",
+              "Svelte, GraphQL, Storybook, Jest, Gitlab, Ruby"
+            ]
+          },
+          {
+            "title": "LimeChain",
+            "subTitle": "Software Engineer | November, 2020 - November, 2021",
+            "text": [
+              "At LimeChain, our focus was pioneering web3 solutions.",
+              "Developed the interface of 5 separate client implementations utilizing blockchain technology with React.js.",
+              "Contributed to elevating the standard for FE implementations in the company by introducing advanced animations and transitions designed to improve the user experience in 3 projects.",
+              "Developed the architecture for the user flow of a platform with over $2'000'000 of total value locked, allowing the support of social media, NFT minting, and auctions.",
+              "JavaScript, React, Solidity, Sass"
+            ]
+          },
+          {
+            "title": "Grind Web Studio",
+            "subTitle": "Front-end Developer | November, 2019 - November, 2020",
+            "text": [
+              "My position at Grind Web Studio was to develop the front end of e-commerce websites.",
+              "Participated in the development of the interface in 5 separate projects. Developed and maintained a file management system for a company's client.",
+              "Developed over 10 custom features with vanilla Javascript and converted them to NPM packages.",
+              "Led the development of a platform with preconfigured reusable components, enabling the company to reduce the time needed for the development of e-commerce websites by 50%.",
+              "Javascript, Wordpress, Laravel, Sass"
+            ]
+          },
+          {
+            "title": "Max Win Gaming",
+            "subTitle": "Software Developer | December, 2017 - October, 2019",
+            "text": [
+              "At Max Win Gaming I was working on slot game mechanics and animations.",
+              "The games were developed using HTML Canvas and EaselJS - a JS library for animations. In order to guarantee captivating game graphics, my position required proficiency with Adobe Photoshop, After Effects, and Animate.",
+              "All team members, including myself, participated in every phase of the game production process - from the product development stage to digital marketing design, and localization.",
+              "After I gained expertise in the technology, I introduced new methods for the development of the games which greatly improved the productivity of the team. Some of these techniques are still used by the organization as standard operating procedures.",
+              "Javascript, EaselJS, Adobe Suite"
+            ]
+          },
+          {
+            "title": "Self-employeed",
+            "subTitle": "Freelance Digital Designer | October, 2014 - November, 2021",
+            "text": [
+              "My experience in design spans through multiple fields.",
+              "I started working as a freelance graphic designer for about 5 years, where I took on projects for book covers, posters, marketing materials for physical advertising, and social media.",
+              "Through my clients' recommendations, I was approached for digital design work, which I took upon and expanded my experience in this field too. I've developed the designs of several websites and apps.",
+              "For the development of an e-commerce website, I was responsible for the management of the design team as well as monitoring other processes in the project.",
+              "I was also hired by a client to maintain social media accounts by creating advertisements, videos, animations, and graphics for blog posts and marketing campaigns.",
+              "Some projects required work on animations for custom loading screens, advanced UI interactions, and illustrations.",
+              "I've participated in the production of short videos for digital marketing campaigns both in pre-production and post-production.",
+              "Figma, Adobe Xd, Photoshop, Illustrator, Premiere Pro, Animate CC, After Effects, DaVinci Resolve, 3ds Max, Blender"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "TitleAndContainer",
+      "props": {
+        "id": "portfolio",
+        "title": "Portfolio",
+        "blocks": [
+          {
+            "type": "LabelsBlock",
+            "title": "Software and App Development",
+            "content": [
+              {
+                "title": "Indepth Solutions - Data structure for AI powered CMS",
+                "links": [
+                  {
+                    "link": "https://gitfront.io/r/entrpyc/9MCA9pUcTn6G/dom-shadow-graph/tree/src/DOMShadowGraph/",
+                    "icon": "logo-github"
+                  }
+                ],
+                "labels": [
+                  { "title": "Typescript" },
+                  { "title": "Jest" }
+                ]
+              },
+              {
+                "title": "Indepth Solutions - API for AI integrations",
+                "links": [
+                  {
+                    "link": "https://gitfront.io/r/entrpyc/eX7EMiuSKjEi/indepth-apis/tree/apis/shopify/",
+                    "icon": "logo-github"
+                  }
+                ],
+                "labels": [
+                  { "title": "Node.js" },
+                  { "title": "Express" }
+                ]
+              },
+              {
+                "title": "Indepth Solutions - Front-end architecture for rendering AI generated code",
+                "links": [
+                  {
+                    "link": "https://gitfront.io/r/entrpyc/HWHWo8rR9XFA/svelte-generator/",
+                    "icon": "logo-github"
+                  }
+                ],
+                "labels": [
+                  { "title": "Typescript" },
+                  { "title": "Svelte" },
+                  { "title": "Jest" },
+                  { "title": "Storybook" }
+                ]
+              },
+              {
+                "title": "Indepth Solutions - SPA Architecture",
+                "links": [
+                  {
+                    "link": "https://github.com/entrpyc/cv-updated-react",
+                    "icon": "logo-github"
+                  }
+                ],
+                "labels": [
+                  { "title": "React" },
+                  { "title": "Sass" }
+                ]
+              },
+              {
+                "title": "Clustermarket - Overview Table with Tabs, Pagination, Search and Filters, Loading placeholders, and Bulk Actions",
+                "links": [
+                  {
+                    "link": "https://youtu.be/u24LkRtqNx0?si=WDfTMInnzrf7ZruH&t=390",
+                    "icon": "video"
+                  }
+                ],
+                "labels": [
+                  { "title": "Javascript (Vanilla)" },
+                  { "title": "Svelte" },
+                  { "title": "GraphQL" },
+                  { "title": "Storybook" },
+                  { "title": "Jest" }
+                ]
+              },
+              {
+                "title": "Clustermarket - Interactive Calendar for bookings with Bulk Actions and Validations",
+                "links": [
+                  {
+                    "link": "https://www.youtube.com/watch?v=jcodcwIf6Jw",
+                    "icon": "video"
+                  }
+                ],
+                "labels": [
+                  { "title": "Javascript (Vanilla)" },
+                  { "title": "Svelte" },
+                  { "title": "GraphQL" },
+                  { "title": "Storybook" },
+                  { "title": "Jest" }
+                ]
+              },
+              {
+                "title": "Biotrade - File management platform",
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1J_AFyDkNsjrEuE2LcJGGBr90nyQk3-b8/view?usp=sharing",
+                    "icon": "video"
+                  }
+                ],
+                "labels": [
+                  { "title": "Javascript (Vanilla)" },
+                  { "title": "Sass" }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "LabelsBlock",
+            "title": "Web Development",
+            "content": [
+              {
+                "title": "Leptonite - Decentralized marketplace",
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1kcHqZaJ0nFAv81cahQx-CjeledTU6Tsm/view?usp=sharing",
+                    "icon": "video"
+                  }
+                ],
+                "labels": [
+                  { "title": "React" },
+                  { "title": "Solidity" },
+                  { "title": "MongoDB" }
+                ]
+              },
+              {
+                "title": "AllianceBlock - Crypto currency bridge",
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1l4rGgV1Skud4TS-MiNqymRd_A12YnIS4/view?usp=sharing",
+                    "icon": "video"
+                  }
+                ],
+                "labels": [
+                  { "title": "React" },
+                  { "title": "Solidity" },
+                  { "title": "MongoDB" }
+                ]
+              },
+              {
+                "title": "Universe.xyz - NFT minting and marketplace",
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1JSi48k3WFX5v_BQLM903Jbr5CYJDWIri/view?usp=sharing",
+                    "icon": "video"
+                  }
+                ],
+                "labels": [
+                  { "title": "React" },
+                  { "title": "Solidity" },
+                  { "title": "MongoDB" }
+                ]
+              },
+              {
+                "title": "Hippoland - Mobile menu with filters",
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1C4lb9z_nmg0VIOpG4iihr34eJGPDzqpQ/view?usp=sharing",
+                    "icon": "video"
+                  }
+                ],
+                "labels": [
+                  { "title": "Javascript (Vanilla)" },
+                  { "title": "Next.js" },
+                  { "title": "Typescript" }
+                ]
+              },
+              {
+                "title": "Biotrade Corporate website - Interactive Map",
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1riZ-2vvcyhDlqQdtQ-I9VqiYf_Un42P1/view?usp=sharing",
+                    "icon": "video"
+                  },
+                  {
+                    "link": "https://biotrade.global/",
+                    "icon": "external-link"
+                  }
+                ],
+                "labels": [
+                  { "title": "Javascript (Vanilla)" },
+                  { "title": "Laravel" },
+                  { "title": "Wordpress (with ACF)" }
+                ]
+              },
+              {
+                "title": "Biotrade Corporate website - Interactive Navigation",
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1zCEEWuQOZtQA5gN4mETEdBCRwgmdb5fT/view?usp=sharing",
+                    "icon": "video"
+                  },
+                  {
+                    "link": "https://biotrade.global/",
+                    "icon": "external-link"
+                  }
+                ],
+                "labels": [
+                  { "title": "Javascript (Vanilla)" },
+                  { "title": "Laravel" },
+                  { "title": "Wordpress (with ACF)" }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "LabelsBlock",
+            "title": "Game Development",
+            "class": "parent",
+            "content": [
+              {
+                "title": "Slot games at Max Win Gaming",
+                "labels": [
+                  { "title": "Javascript (Canvas)" },
+                  { "title": "EaselJS" },
+                  { "title": "Adobe: Animate, AE, PS" }
+                ]
+              },
+              {
+                "title": "Asian Fortune - Slot game",
+                "links": [
+                  {
+                    "link": "https://www.maxwingaming.com/projects-archive/asian-fortune/",
+                    "icon": "external-link"
+                  }
+                ]
+              },
+              {
+                "title": "Splendour Forest - Slot game",
+                "links": [
+                  {
+                    "link": "https://www.maxwingaming.com/projects-archive/splendour-forest/",
+                    "icon": "external-link"
+                  }
+                ]
+              },
+              {
+                "title": "Leprechauns Magic - Slot game",
+                "links": [
+                  {
+                    "link": "https://www.maxwingaming.com/projects-archive/leprechauns-magic/",
+                    "icon": "external-link"
+                  }
+                ]
+              },
+              {
+                "title": "Fruit Strike - Asian Fortune",
+                "links": [
+                  {
+                    "link": "https://www.maxwingaming.com/projects-archive/fruit-strike/",
+                    "icon": "external-link"
+                  }
+                ]
+              },
+              {
+                "title": "Lucky Carnival - Slot game",
+                "links": [
+                  {
+                    "link": "https://www.maxwingaming.com/projects-archive/lucky-carnival/",
+                    "icon": "external-link"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "LabelsBlock",
+            "title": "Javascript Animations",
+            "class": "parent",
+            "content": [
+              {
+                "title": "Javascript & CSS animations",
+                "labels": [
+                  { "title": "Javascript (Canvas)" },
+                  { "title": "EaselJS" },
+                  { "title": "Adobe: Animate, AE, PS" }
+                ]
+              },
+              {
+                "title": "Javascript & CSS animations",
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1ToqxvFfgmMM5HZrWVXtOLZerZdW-PVyC/view?usp=sharing",
+                    "icon": "video"
+                  }
+                ]
+              },
+              {
+                "title": "Javascript & CSS animations 2",
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/139BrhZGyf1Hi_h1CDeMoa5wwwz_zm7ZT/view?usp=sharing",
+                    "icon": "video"
+                  }
+                ]
+              },
+              {
+                "title": "Javascript animation sequence",
+                "links": [
+                  {
+                    "link": "https://drive.google.com/file/d/1MqaFu4E_QRXAmgt26JuqNywTbvjrMplo/view?usp=sharing",
+                    "icon": "video"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "TitleAndContainer",
+      "props": {
+        "id": "skills",
+        "title": "Skills",
+        "blocks": [
+          {
+            "type": "LabelsBlock",
+            "content": [
+              {
+                "title": "Expert - Technical Skills",
+                "labels": [
+                  { "title": "Javascript" },
+                  { "title": "Typescript" },
+                  { "title": "React" },
+                  { "title": "Svelte" },
+                  { "title": "SASS" },
+                  { "title": "Adobe Photoshop" }
+                ]
+              },
+              {
+                "title": "Advanced - Technical Skills",
+                "labels": [
+                  { "title": "Tailwind" },
+                  { "title": "Storybook" },
+                  { "title": "Wordpress" }
+                ]
+              },
+              {
+                "title": "Intermediate - Technical Skills",
+                "labels": [
+                  { "title": "Jest" },
+                  { "title": "Mocha" },
+                  { "title": "Next.js" },
+                  { "title": "Adobe Animate CC" },
+                  { "title": "Figma (Design)" },
+                  { "title": "Adobe Xd (Design)" }
+                ]
+              },
+              {
+                "title": "Beginner - Technical Skills",
+                "labels": [
+                  { "title": "Node.js" },
+                  { "title": "Express" },
+                  { "title": "GraphQL" },
+                  { "title": "MongoDB" },
+                  { "title": "Laravel" },
+                  { "title": "Neo4j" },
+                  { "title": "dGraph" },
+                  { "title": "EaselJS" },
+                  { "title": "Google App Scripts" },
+                  { "title": "C#" },
+                  { "title": "Windows Forms (.NET)" },
+                  { "title": "Linux Server Development and Administration" },
+                  { "title": "Ruby" },
+                  { "title": "Solidity" }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlainText",
+      "props": {
+        "id": "recommendations",
+        "title": "Recommendations",
+        "text": [
+          {
+            "title": "Johannes Solzbach",
+            "span": "Co-Founder at Clustermarket",
+            "subTitle": "I reported directly to Johannes Solzbach",
+            "link": "https://www.linkedin.com/in/johannessolzbach",
+            "text": [
+              "Despite unfortunate circumstances leading to Asen's departure, he consistently demonstrated remarkable dedication, motivation, and reliability.",
+              "His rapid learning abilities, coupled with strong technical knowledge, made him an invaluable asset to our team. Asen is not only a skilled developer but also a genuinely nice person.",
+              "I highly recommend him and am confident he will excel in his future endeavors. Please contact me if you need a reference: jsolzbach@clustermarket.com"
+            ]
+          },
+          {
+            "title": "Emil Belyov",
+            "span": "Senior Game Developer at Max Win Gaming",
+            "subTitle": "Emil Belyov managed me directly",
+            "link": "https://www.linkedin.com/in/emil-belyov-581062102",
+            "text": [
+              "Asen is a highly skilled and motivated developer with whom I have had the pleasure of working on several challenging games.",
+              "His passion for his craft is evident in every task he undertakes, resulting in consistently high quality results. He has always shown a passion for his craft which has always resulted in high quality results.",
+              "His contributions to the company set the tone for development principles that we still follow today, where his solutions have significantly improved the production time and end results of our games.",
+              "I highly recommend Asen for his professionalism and attention to detail in his work, as his problem solving skills make him an invaluable asset to any team."
+            ]
+          },
+          {
+            "title": "Itay Grudev",
+            "span": "CTO at Clustermarket",
+            "link": "https://www.linkedin.com/in/itaygrudev/",
+            "subTitle": "Itay Grudev managed me directly",
+            "text": [
+              "I highly recommend Asen for any Front End Engineering role.",
+              "During his time at Clustermarket, he consistently delivered outstanding work, showcasing a strong command of software engineering principles.",
+              "Asen not only adapted quickly to our dynamic environment and technology stack, but also excelled in tackling challenging tasks with efficiency. His talent, combined with a deep understanding of advanced software practices, makes him a valuable addition to any software engineering team.",
+              "I am confident that Asen's contributions will exceed expectations, and he will be a tremendous asset to your organization."
+            ]
+          },
+          {
+            "title": "Ivan Dzholev",
+            "span": "Senior Developer at Clustermarket",
+            "link": "https://www.linkedin.com/in/ivan-dzholev-805720151",
+            "subTitle": "Ivan Dzholev managed me directly",
+            "text": [
+              "My name is Ivan Dzholev, and for a year I was directly responsible for Asen.",
+              "Asen is self-motivated constantly learning in his free time, and diligent in his work.",
+              "While we worked together, he had many brilliant suggestions on how to improve the code and processes. He also never stopped getting better.",
+              "Any team would be lucky to have him."
+            ]
+          },
+          {
+            "title": "Stoyan Statev",
+            "span": "Мanager at Max Win Gaming",
+            "link": "https://www.linkedin.com/company/max-win-gaming",
+            "subTitle": "I reported directly to Stoyan Statev",
+            "download": {
+              "text": "View full recomemndation",
+              "link": "https://drive.google.com/file/d/1flvxnoFueh-TbzHidGy_QJ8RCo119DPa/view?usp=sharing"
+            },
+            "text": [
+              "It is with pleasure that I write this letter to recommend Asen Angelov for the position of Software Developer. During the period from December 2017 to October 2019, I had the privilege to work with Asen as his company manager at 'Max Win Gaming' LTD.",
+              "During this period, Asen demonstrated exceptional programming skills and software development, as well as an unwavering commitment to the quality of our products. The employee flawlessly performed all functions typical of developing games and applications, contributing significantly to our projects.",
+              "Asen Angelov has excellent professional knowledge and skills. He knows how to work in a team, shows creativity in problem solving as well as the ability to deal with given tasks.",
+              "I confidently recommend Asen Angelov for the position of software programmer, as I am convinced, that he will do an excellent job with any task and any project he is assigned. I hope that my recommendation will be useful for you.",
+              "(Translated with DeepL)"
+            ]
+          },
+          {
+            "title": "Yavor Varbanov",
+            "span": "Software Architect at Grind Web Studio",
+            "link": "https://www.linkedin.com/in/yavor-varbanov",
+            "subTitle": "Yavor Varbanov managed me directly",
+            "text": [
+              "Asen has the drive and curiosity to succeed. Any company that does not have people with such curiosity will undoubtedly fall into mediocrity.",
+              "Asen showed a wide range of expertise in numerous fields throughout our time together at Grind. By now, I'm sure his knowledge base has grown.",
+              "(Translated with DeepL)"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlainText",
+      "props": {
+        "id": "education",
+        "title": "Education",
+        "text": [
+          {
+            "title": "Softuni",
+            "subTitle": "Software Engineering, Javascript | October, 2014 - June, 2015"
+          }
+        ]
+      }
+    }
+  ]
+}
