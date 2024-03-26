@@ -7,7 +7,7 @@
         { "name": "Experience", "href": "#experience" },
         { "name": "Portfolio", "href": "#portfolio" },
         { "name": "Skills", "href": "#skills" },
-        { "name": "Recommendations", "href": "#recommendations" },
+        { "name": "References", "href": "#references" },
         { "name": "Education", "href": "#education" }
       ]
     }
@@ -487,8 +487,8 @@
     {
       "name": "PlainText",
       "props": {
-        "id": "recommendations",
-        "title": "Recommendations",
+        "id": "references",
+        "title": "References",
         "text": [
           {
             "title": "Johannes Solzbach",

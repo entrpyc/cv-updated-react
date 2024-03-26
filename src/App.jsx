@@ -8,7 +8,7 @@ import CV from './pages/CV/CV';
 import Resume from './pages/Resume/Resume';
 import Bio from './pages/Bio/Bio';
 import CVPdf from './pages/CVPdf/CVPdf';
-import RecommendationsPdf from './pages/RecommendationsPdf/RecommendationsPdf';
+import RecommendationsPdf from './pages/ReferencesPdf/ReferencesPdf';
 import ExperiencePdf from './pages/ExperiencePdf/ExperiencePdf';
 import PortfolioPdf from './pages/PortfolioPdf/PortfolioPdf';
 import SkillsPdf from './pages/SkillsPdf/SkillsPdf';

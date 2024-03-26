@@ -474,8 +474,8 @@
     {
       "name": "PlainText",
       "props": {
-        "id": "recommendations",
-        "title": "Recommendations",
+        "id": "references",
+        "title": "References",
         "text": [
           {
             "title": "Johannes Solzbach",
