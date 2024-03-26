@@ -495,6 +495,7 @@
             "span": "Co-Founder at Clustermarket",
             "subTitle": "I reported directly to Johannes Solzbach",
             "link": "https://www.linkedin.com/in/johannessolzbach",
+            "id": "johannes-solzbach",
             "text": [
               "Despite unfortunate circumstances leading to Asen's departure, he consistently demonstrated remarkable dedication, motivation, and reliability.",
               "His rapid learning abilities, coupled with strong technical knowledge, made him an invaluable asset to our team. Asen is not only a skilled developer but also a genuinely nice person.",
@@ -505,6 +506,7 @@
             "title": "Emil Belyov",
             "span": "Senior Game Developer at Max Win Gaming",
             "subTitle": "Emil Belyov managed me directly",
+            "id": "emil-belyov",
             "link": "https://www.linkedin.com/in/emil-belyov-581062102",
             "text": [
               "Asen is a highly skilled and motivated developer with whom I have had the pleasure of working on several challenging games.",
@@ -517,6 +519,7 @@
             "title": "Itay Grudev",
             "span": "CTO at Clustermarket",
             "link": "https://www.linkedin.com/in/itaygrudev/",
+            "id": "itay-grudev",
             "subTitle": "Itay Grudev managed me directly",
             "text": [
               "I highly recommend Asen for any Front End Engineering role.",
@@ -530,6 +533,7 @@
             "span": "Senior Developer at Clustermarket",
             "link": "https://www.linkedin.com/in/ivan-dzholev-805720151",
             "subTitle": "Ivan Dzholev managed me directly",
+            "id": "ivan-dzholev",
             "text": [
               "My name is Ivan Dzholev, and for a year I was directly responsible for Asen.",
               "Asen is self-motivated constantly learning in his free time, and diligent in his work.",
@@ -542,6 +546,7 @@
             "span": "Мanager at Max Win Gaming",
             "link": "https://www.linkedin.com/company/max-win-gaming",
             "subTitle": "I reported directly to Stoyan Statev",
+            "id": "stoyan-statev",
             "download": {
               "text": "View full recomemndation",
               "link": "https://drive.google.com/file/d/1flvxnoFueh-TbzHidGy_QJ8RCo119DPa/view?usp=sharing"
@@ -559,6 +564,7 @@
             "span": "Software Architect at Grind Web Studio",
             "link": "https://www.linkedin.com/in/yavor-varbanov",
             "subTitle": "Yavor Varbanov managed me directly",
+            "id": "yavor-varbanov",
             "text": [
               "Asen has the drive and curiosity to succeed. Any company that does not have people with such curiosity will undoubtedly fall into mediocrity.",
               "Asen showed a wide range of expertise in numerous fields throughout our time together at Grind. By now, I'm sure his knowledge base has grown.",

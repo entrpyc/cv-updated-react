@@ -8,7 +8,7 @@ import CV from './pages/CV/CV';
 import Resume from './pages/Resume/Resume';
 import Bio from './pages/Bio/Bio';
 import CVPdf from './pages/CVPdf/CVPdf';
-import RecommendationsPdf from './pages/ReferencesPdf/ReferencesPdf';
+import ReferencesPdf from './pages/ReferencesPdf/ReferencesPdf';
 import ExperiencePdf from './pages/ExperiencePdf/ExperiencePdf';
 import PortfolioPdf from './pages/PortfolioPdf/PortfolioPdf';
 import SkillsPdf from './pages/SkillsPdf/SkillsPdf';
@@ -32,7 +32,7 @@ function App() {
                   <Route path="/resume" element={<Resume />} />
                   <Route path="/bio" element={<Bio />} />
                   <Route path="/cv" element={<CVPdf />} />
-                  <Route path="/recommendations" element={<RecommendationsPdf />} />
+                  <Route path="/references" element={<ReferencesPdf />} />
                   <Route path="/experience" element={<ExperiencePdf />} />
                   <Route path="/portfolio" element={<PortfolioPdf />} />
                   <Route path="/skills" element={<SkillsPdf />} />

@@ -5,7 +5,7 @@ import Text from 'elements/Text/Text'
 import Link from "elements/Link/Link";
 import Icon from "elements/Icon/Icon";
 
-function Block({ title, subTitle, text, span, link, download }) {
+function Block({ title, subTitle, text, span, link, download, id }) {
   const renderTitle = () => {
     if(span && link) return (
       <Link href={link} target="_blank">
@@ -18,7 +18,7 @@ function Block({ title, subTitle, text, span, link, download }) {
     return <Title tag="h3">{title}</Title>
   }
   return (
-    <div className={css.block}>
+    <div className={css.block} id={id}>
       {renderTitle()}
       {subTitle ? (
         <Text className="sub">{subTitle}</Text>
