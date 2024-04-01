@@ -455,6 +455,9 @@
                   { "title": "Jest" },
                   { "title": "Mocha" },
                   { "title": "Next.js" },
+                  { "title": "Nginx" },
+                  { "title": "Certbot" },
+                  { "title": "PM2" },
                   { "title": "Adobe Animate CC" },
                   { "title": "Figma (Design)" },
                   { "title": "Adobe Xd (Design)" }
